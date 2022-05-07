@@ -10,8 +10,8 @@ namespace FinalProject.DAL
     interface IRepository
     {
         IEnumerable<Vehicle> GetAll();
-        void AddItem(Vehicle vehicle);
-        Vehicle Update(Vehicle vehicle);
+        bool AddItem(Vehicle vehicle);
+        Vehicle Update(Vehicle vehicle,int id);
         Vehicle Delete(int id);
     }
 }

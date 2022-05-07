@@ -1,4 +1,5 @@
 ﻿using FinalProject.BusinessLogic;
+using FinalProject.Forms;
 using FinalProject.Models;
 using FinalProject.Models.BikeEntities;
 using FinalProject.Models.PrivateCarEntities;
@@ -20,7 +21,7 @@ namespace FinalProject
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new ProductsForm());
         }
        
     }
