@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace FinalProject.Models.BikeEntities
 {
+    [Serializable]
     public class FighterJet : Aircraft
     {
         public int MaxArmamentWeight { get; set; }

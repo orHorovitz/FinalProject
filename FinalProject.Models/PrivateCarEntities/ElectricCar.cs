@@ -5,14 +5,15 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace FinalProject.Models.PrivateCarEntities
-{ 
+{
+    [Serializable]
     public class ElectricCar : PrivateCar
     {
         public double Power { get; set; }
 
         public ElectricCar(double price, double wight, int mileage, double power) : base(price, wight, mileage)
         {
-
+            this.Power = power;
 
         }
     }

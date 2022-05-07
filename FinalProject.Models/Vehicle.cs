@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace FinalProject.Models
 {
+    [Serializable]
     public abstract class Vehicle
     {
         public static int _id=1;
