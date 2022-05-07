@@ -26,11 +26,6 @@ namespace FinalProject.BusinessLogic
         {
            return Repository.GetAll().OfType<PassengerJet>().ToList();
         }
-        public void foo()
-        {
-
-        }
-            
             
     }
 }

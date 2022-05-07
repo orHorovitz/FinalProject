@@ -9,8 +9,11 @@ namespace FinalProject.Models.PrivateCarEntities
 {
     public class GasCar : PrivateCar
     {
-        public GasCar(double price, double wight, int mileage) : base(price, wight, mileage)
+        public double FuelStorage { get; set; }
+
+        public GasCar(double price, double wight, int mileage , double fuelStorage) : base(price, wight, mileage)
         {
+
         }
     }
 }
