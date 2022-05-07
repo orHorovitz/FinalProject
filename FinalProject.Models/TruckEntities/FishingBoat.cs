@@ -8,8 +8,10 @@ namespace FinalProject.Models.TruckEntities
 {
     public class FishingBoat : Boat
     {
-        public FishingBoat(double price, double wight, int maxSpeed, bool isSail) : base(price, wight, maxSpeed, isSail)
+        public int NumberOfHooks { get; set; }
+        public FishingBoat(double price, double wight, int maxSpeed, bool isSail, int FishHooks) : base(price, wight, maxSpeed, isSail)
         {
+            NumberOfHooks = FishHooks;
         }
     }
 }
