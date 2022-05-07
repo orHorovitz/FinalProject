@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace FinalProject.Models
 {
+    [Serializable]
     public abstract class Aircraft : Vehicle
     {
         public int MaxRange { get; set; }

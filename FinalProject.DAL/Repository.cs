@@ -1,36 +1,44 @@
 ﻿using FinalProject.DAL.Extansion;
 using FinalProject.Models;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Runtime.Serialization.Formatters.Binary;
 
 namespace FinalProject.DAL
 {
-     public class Repository : IRepository
+    public class Repository : IRepository
     {
         public List<Vehicle> Vehicles { get; set; } = new List<Vehicle>();
-        private const string dir = @".\Data";
         private readonly string _filePath;
 
         public Repository()
         {
-            //InitFromFile();
-            _filePath = Path.Combine(dir, "data.json");
+            _filePath =Path.Combine(System.Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "vehicles.bin");
+            //Vehicles.SeedData();
+            //SaveChanges();
+            InitFromFile();
         }
 
         private void InitFromFile()
         {
-            ///
-            Vehicles.SeedData();
+            using (var reader = File.Open(_filePath,FileMode.OpenOrCreate))
+            {
+                var formatter = new BinaryFormatter();
+                if(reader.Length >0)
+                {
+                    Vehicles = (List<Vehicle>)formatter.Deserialize(reader);
+                }
+            }
         }
 
 
         public void AddItem(Vehicle vehicle)
         {
             Vehicles.Add(vehicle);
+            SaveChanges();
         }
 
         public Vehicle Delete(int id)
@@ -39,7 +47,7 @@ namespace FinalProject.DAL
             if (vehicle != null)
             {
                 this.Vehicles.Remove(vehicle);
-                //
+                SaveChanges();
                 return vehicle;
             }
             else
@@ -56,6 +64,15 @@ namespace FinalProject.DAL
         public Vehicle Update(Vehicle vehicle)
         {
             throw new NotImplementedException();
+        }
+
+        private void SaveChanges()
+        {
+            using (var reader = File.Open(_filePath, FileMode.OpenOrCreate))
+            {
+                var formatter = new BinaryFormatter();
+                formatter.Serialize(reader, Vehicles);
+            }
         }
     }
 }

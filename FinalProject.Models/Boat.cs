@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace FinalProject.Models
 {
+    [Serializable]
     public abstract class Boat : Vehicle
     {
         public int MaxSpeed { get; set; }

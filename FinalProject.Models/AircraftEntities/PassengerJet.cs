@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace FinalProject.Models.BikeEntities
 {
+    [Serializable]
     public class PassengerJet : Aircraft
     {
         public int Capacity { get; set; }

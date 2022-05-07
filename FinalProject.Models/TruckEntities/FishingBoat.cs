@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace FinalProject.Models.TruckEntities
 {
+    [Serializable]
     public class FishingBoat : Boat
     {
         public int NumberOfHooks { get; set; }
