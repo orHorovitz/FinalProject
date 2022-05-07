@@ -35,10 +35,18 @@ namespace FinalProject.DAL
         }
 
 
-        public void AddItem(Vehicle vehicle)
+        public bool AddItem(Vehicle vehicle)
         {
-            Vehicles.Add(vehicle);
-            SaveChanges();
+            try
+            {
+                Vehicles.Add(vehicle);
+                SaveChanges();
+                return true;
+            }
+            catch (Exception e)
+            {
+                return false;
+            }
         }
 
         public Vehicle Delete(int id)
@@ -61,9 +69,17 @@ namespace FinalProject.DAL
             return Vehicles;
         }
 
-        public Vehicle Update(Vehicle vehicle)
+        public Vehicle Update(Vehicle vehicle,int id)
         {
-            throw new NotImplementedException();
+            var existingVehicle = Vehicles.FirstOrDefault(v => v.Id == id);
+            if (existingVehicle != null)
+            {
+                vehicle.Id = id;
+                existingVehicle = vehicle;
+                return vehicle;
+            }
+            else throw new Exception("Not Found");
+
         }
 
         private void SaveChanges()
