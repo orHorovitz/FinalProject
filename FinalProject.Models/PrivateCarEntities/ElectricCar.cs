@@ -5,11 +5,15 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace FinalProject.Models.PrivateCarEntities
-{
+{ 
     public class ElectricCar : PrivateCar
     {
-        public ElectricCar(double price, double wight, int mileage) : base(price, wight, mileage)
+        public double Power { get; set; }
+
+        public ElectricCar(double price, double wight, int mileage, double power) : base(price, wight, mileage)
         {
+
+
         }
     }
 }
