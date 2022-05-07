@@ -8,8 +8,11 @@ namespace FinalProject.Models.BikeEntities
 {
     public class PassengerJet : Aircraft
     {
-        public PassengerJet(double price, double wight, int maxRange, int maxHeight) : base(price, wight, maxRange, maxHeight)
+        public int Capacity { get; set; }
+
+        public PassengerJet(double price, double wight, int maxRange, int maxHeight,int maxCapacity) : base(price, wight, maxRange, maxHeight)
         {
+            Capacity = maxCapacity;
         }
     }
 }
