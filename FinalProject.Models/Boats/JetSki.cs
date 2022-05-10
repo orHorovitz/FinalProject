@@ -7,10 +7,10 @@ using System.Threading.Tasks;
 namespace FinalProject.Models.TruckEntities
 {
     [Serializable]
-    public class FishingBoat : Boat
+    public class JetSki : Boat
     {
         public int NumberOfHooks { get; set; }
-        public FishingBoat(double price, double wight, int maxSpeed, bool isSail, int FishHooks) : base(price, wight, maxSpeed, isSail)
+        public JetSki(double price, double wight, int maxSpeed, bool isSail, int FishHooks) : base(price, wight, maxSpeed, isSail)
         {
             NumberOfHooks = FishHooks;
         }

@@ -7,11 +7,11 @@ using System.Threading.Tasks;
 namespace FinalProject.Models.BikeEntities
 {
     [Serializable]
-    public class PassengerJet : Aircraft
+    public class Bike : Motorcycle
     {
         public int Capacity { get; set; }
 
-        public PassengerJet(double price, double wight, int maxRange, int maxHeight,int maxCapacity) : base(price, wight, maxRange, maxHeight)
+        public Bike(double price, double wight, int maxRange, int maxHeight,int maxCapacity) : base(price, wight, maxRange, maxHeight)
         {
             Capacity = maxCapacity;
         }
