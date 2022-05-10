@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 
 namespace FinalProject.Models.BikeEntities
 {
-    public class FighterJet : Aircraft
+    [Serializable]
+    public class ATV : Motorcycle
     {
         public int MaxArmamentWeight { get; set; }
-        public FighterJet(double price, double wight, int maxRange, int maxHeight,int maxArmament) : base(price, wight, maxRange, maxHeight)
+        public ATV(double price, double wight, int maxRange, int maxHeight,int maxArmament) : base(price, wight, maxRange, maxHeight)
         {
             MaxArmamentWeight = maxArmament;
         }

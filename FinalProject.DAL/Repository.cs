@@ -4,33 +4,48 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Runtime.Serialization.Formatters.Binary;
 
 namespace FinalProject.DAL
 {
-     public class Repository : IRepository
+    public class Repository : IRepository
     {
         public List<Vehicle> Vehicles { get; set; } = new List<Vehicle>();
-        private const string dir = @".\Data";
         private readonly string _filePath;
 
         public Repository()
         {
-            //InitFromFile();
-            _filePath = Path.Combine(dir, "data.json");
+            _filePath =Path.Combine(System.Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "vehicles.bin");
+            //Vehicles.SeedData();
+            //SaveChanges();
+            InitFromFile();
         }
 
         private void InitFromFile()
         {
-            ///
-            Vehicles.SeedData();
+            using (var reader = File.Open(_filePath,FileMode.OpenOrCreate))
+            {
+                var formatter = new BinaryFormatter();
+                if(reader.Length >0)
+                {
+                    Vehicles = (List<Vehicle>)formatter.Deserialize(reader);
+                }
+            }
         }
 
 
-        public void AddItem(Vehicle vehicle)
+        public bool AddItem(Vehicle vehicle)
         {
-            Vehicles.Add(vehicle);
+            try
+            {
+                Vehicles.Add(vehicle);
+                SaveChanges();
+                return true;
+            }
+            catch (Exception e)
+            {
+                return false;
+            }
         }
 
         public Vehicle Delete(int id)
@@ -39,7 +54,7 @@ namespace FinalProject.DAL
             if (vehicle != null)
             {
                 this.Vehicles.Remove(vehicle);
-                //
+                SaveChanges();
                 return vehicle;
             }
             else
@@ -53,9 +68,26 @@ namespace FinalProject.DAL
             return Vehicles;
         }
 
-        public Vehicle Update(Vehicle vehicle)
+        public Vehicle Update(Vehicle vehicle,int id)
         {
-            throw new NotImplementedException();
+            var existingVehicle = Vehicles.FirstOrDefault(v => v.Id == id);
+            if (existingVehicle != null)
+            {
+                vehicle.Id = id;
+                existingVehicle = vehicle;
+                return vehicle;
+            }
+            else throw new Exception("Not Found");
+
+        }
+
+        private void SaveChanges()
+        {
+            using (var reader = File.Open(_filePath, FileMode.OpenOrCreate))
+            {
+                var formatter = new BinaryFormatter();
+                formatter.Serialize(reader, Vehicles);
+            }
         }
     }
 }

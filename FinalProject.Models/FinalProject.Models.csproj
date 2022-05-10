@@ -41,15 +41,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AircraftEntities\FighterJet.cs" />
-    <Compile Include="AircraftEntities\PassengerJet.cs" />
+    <Compile Include="Motorcycle\ATV.cs" />
+    <Compile Include="Motorcycle\Bike.cs" />
     <Compile Include="Interfaces\IGasVehicle.cs" />
     <Compile Include="PrivateCarEntities\ElectricCar.cs" />
     <Compile Include="PrivateCarEntities\GasCar.cs" />
-    <Compile Include="TruckEntities\Yacht.cs" />
-    <Compile Include="TruckEntities\FishingBoat.cs" />
+    <Compile Include="Boats\Yacht.cs" />
+    <Compile Include="Boats\JetSki.cs" />
     <Compile Include="Vehicle.cs" />
-    <Compile Include="Aircraft.cs" />
+    <Compile Include="Motorcycle.cs" />
     <Compile Include="PrivateCar.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Boat.cs" />

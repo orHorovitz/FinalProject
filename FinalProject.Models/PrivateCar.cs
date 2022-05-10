@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace FinalProject.Models
 {
+    [Serializable]
     public abstract class PrivateCar : Vehicle
     {
         public int Mileage { get; set; }

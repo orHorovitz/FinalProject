@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace FinalProject
+namespace FinalProject.Forms
 {
-    public partial class Form1 : Form
+    public partial class ProductsForm : Form
     {
-        public Form1()
+        public ProductsForm()
         {
             InitializeComponent();
         }
