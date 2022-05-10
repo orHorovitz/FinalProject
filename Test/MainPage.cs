@@ -1,4 +1,6 @@
-﻿using System;
+﻿using FinalProject.BusinessLogic;
+using FinalProject.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,46 +9,50 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Test.ChildForms;
 
 namespace Test
 {
     public partial class MainPage : Form
     {
+        private readonly AgancyService _agancyService;
+
         public MainPage()
         {
             InitializeComponent();
-            custiomizeDesign();
+            _agancyService = new AgancyService();
+           // custiomizeDesign();
             
         }
-        private void custiomizeDesign()
-        {
-            panelCarSubManu.Visible = false;
-            panelMotorcycleSubManu.Visible = false;
-            panelShipSubManu.Visible = false;
-            //..
-        }
+        //private void custiomizeDesign()
+        //{
+            //panelCarSubManu.Visible = false;
+            //panelMotorcycleSubManu.Visible = false;
+           // panelShipSubManu.Visible = false;
+         //   //..
+       // }
 
-        private void hideSubManu()
-        {
-            if(panelCarSubManu.Visible == true)
-            {
-                panelCarSubManu.Visible=false;
-            }
-            if(panelMotorcycleSubManu.Visible == true)
-            {
-                panelMotorcycleSubManu.Visible = false;
-            }
-            if(panelShipSubManu.Visible==true)
-            {
-                panelShipSubManu.Visible = false;
-            }
+        //private void hideSubManu()
+        //{
+        //    if(panelCarSubManu.Visible == true)
+        //    {
+        //        panelCarSubManu.Visible=false;
+        //    }
+        //    if(panelMotorcycleSubManu.Visible == true)
+        //    {
+        //        panelMotorcycleSubManu.Visible = false;
+        //    }
+        //    if(panelShipSubManu.Visible==true)
+        //    {
+        //        panelShipSubManu.Visible = false;
+        //    }
 
-        }
+        //}
         private void ShowSubManu(Panel subManu)
         {
             if(subManu.Visible == false)
             {
-                hideSubManu();
+                //hideSubManu();
                 subManu.Visible=true;
             }
             else
@@ -71,63 +77,13 @@ namespace Test
             childForm.Show();
         }
 
-        private void btnCar_Click(object sender, EventArgs e)
-        {
-            ShowSubManu(panelCarSubManu);
-        }
+        //private void btnCar_Click(object sender, EventArgs e)
+        //{
+        //    ShowSubManu(panelCarSubManu);
+        //}
 
-        private void btnGasCar_Click(object sender, EventArgs e)
-        {
-            OpenChildForm(new ChildForms.ElectricCarForm());
-            //..
-           // hideSubManu();
-        }
 
-        private void btnElectricCar_Click(object sender, EventArgs e)
-        {
-            OpenChildForm(new ChildForms.GasCarForm());
-            //...
-           // hideSubManu();
-        }
 
-        private void btnShips_Click(object sender, EventArgs e)
-        {
-            ShowSubManu(panelShipSubManu);
-        }
-
-        private void btnJetski_Click(object sender, EventArgs e)
-        {
-            OpenChildForm(new ChildForms.JeySkiForm());
-            //...
-            //hideSubManu();
-        }
-
-        private void btnYacht_Click(object sender, EventArgs e)
-        {
-            OpenChildForm(new ChildForms.YachtForm());
-            //...
-            //hideSubManu();
-        }
-
-        private void btnMotorcycle_Click(object sender, EventArgs e)
-        {
-
-            ShowSubManu(panelMotorcycleSubManu);
-        }
-
-        private void btnAtv_Click(object sender, EventArgs e)
-        {
-            OpenChildForm(new ChildForms.AtvForm());
-            //..
-            //hideSubManu();
-        }
-
-        private void btnBike_Click(object sender, EventArgs e)
-        {
-            OpenChildForm(new ChildForms.BikeForm());
-            //...
-            //hideSubManu();
-        }
 
         private void btnExit_Click(object sender, EventArgs e)
         {
@@ -139,6 +95,44 @@ namespace Test
             this.Hide();
             MainPage homepage = new MainPage();
             homepage.Show();
+        }
+
+        private void btnCar_Click(object sender, EventArgs e)
+        {
+            var items = _agancyService
+                            .GetByType<PrivateCar>()
+                            .AsEnumerable<Vehicle>()
+                            .ToList();
+
+            OpenChildForm(new ProduactForm(items,"Car"));
+        }
+
+        private void btnShips_Click(object sender, EventArgs e)
+        {
+            var items = _agancyService
+                          .GetByType<Boat>()
+                          .AsEnumerable<Vehicle>()
+                          .ToList();
+            OpenChildForm(new ProduactForm(items , "Boat"));
+        }
+
+        private void btnMotorcycle_Click(object sender, EventArgs e)
+        {
+            var items = _agancyService
+                          .GetByType<PrivateCar>()
+                          .AsEnumerable<Vehicle>()
+                          .ToList();
+
+            OpenChildForm(new ProduactForm(items , "Motorcycle"));
+        }
+
+        private void btnAllVehicles_Click(object sender, EventArgs e)
+        {
+            var items = _agancyService
+                          .GetByType<PrivateCar>()
+                          .AsEnumerable<Vehicle>()
+                          .ToList();
+            OpenChildForm(new ProduactForm(items, "All Vehicles"));
         }
     }
 }

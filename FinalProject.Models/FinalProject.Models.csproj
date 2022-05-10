@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Enums\enu.cs" />
     <Compile Include="Motorcycle\ATV.cs" />
     <Compile Include="Motorcycle\Bike.cs" />
     <Compile Include="Interfaces\IGasVehicle.cs" />
