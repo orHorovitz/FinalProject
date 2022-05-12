@@ -21,6 +21,7 @@ namespace FinalProject.DAL.Extansion
             list.Add(new JetSki (44,43,3,true,1));
             list.Add(new ATV(12,13,14,15,16));
             list.Add(new Bike(33,566,75,34,3));
+            list.Add(new Bike(43, 541, 56, 35, 3));
 
 
         }

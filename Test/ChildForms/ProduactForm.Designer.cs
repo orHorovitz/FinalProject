@@ -33,10 +33,8 @@ namespace Test.ChildForms
             this.panelTitleSaction = new System.Windows.Forms.Panel();
             this.lblHeader = new System.Windows.Forms.Label();
             this.comboBoxList = new System.Windows.Forms.ComboBox();
-            this.pictureBox = new System.Windows.Forms.PictureBox();
             this.ChildFormpanel.SuspendLayout();
             this.panelTitleSaction.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // ChildFormpanel
@@ -54,7 +52,6 @@ namespace Test.ChildForms
             // panelTitleSaction
             // 
             this.panelTitleSaction.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(20)))), ((int)(((byte)(45)))));
-            this.panelTitleSaction.Controls.Add(this.pictureBox);
             this.panelTitleSaction.Controls.Add(this.comboBoxList);
             this.panelTitleSaction.Controls.Add(this.lblHeader);
             this.panelTitleSaction.Dock = System.Windows.Forms.DockStyle.Top;
@@ -68,7 +65,7 @@ namespace Test.ChildForms
             this.lblHeader.AutoSize = true;
             this.lblHeader.Font = new System.Drawing.Font("Segoe Print", 40F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHeader.ForeColor = System.Drawing.Color.LightGray;
-            this.lblHeader.Location = new System.Drawing.Point(103, -16);
+            this.lblHeader.Location = new System.Drawing.Point(99, -16);
             this.lblHeader.Name = "lblHeader";
             this.lblHeader.Size = new System.Drawing.Size(250, 116);
             this.lblHeader.TabIndex = 0;
@@ -86,14 +83,6 @@ namespace Test.ChildForms
             this.comboBoxList.TabIndex = 1;
             this.comboBoxList.SelectedIndexChanged += new System.EventHandler(this.comboBoxList_SelectedIndexChanged);
             // 
-            // pictureBox
-            // 
-            this.pictureBox.Location = new System.Drawing.Point(433, 25);
-            this.pictureBox.Name = "pictureBox";
-            this.pictureBox.Size = new System.Drawing.Size(100, 50);
-            this.pictureBox.TabIndex = 2;
-            this.pictureBox.TabStop = false;
-            // 
             // ProduactForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -106,7 +95,6 @@ namespace Test.ChildForms
             this.ChildFormpanel.ResumeLayout(false);
             this.panelTitleSaction.ResumeLayout(false);
             this.panelTitleSaction.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -117,6 +105,5 @@ namespace Test.ChildForms
         private System.Windows.Forms.Panel panelTitleSaction;
         private System.Windows.Forms.Label lblHeader;
         private System.Windows.Forms.ComboBox comboBoxList;
-        private System.Windows.Forms.PictureBox pictureBox;
     }
 }
