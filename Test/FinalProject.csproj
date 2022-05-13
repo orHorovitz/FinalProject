@@ -46,41 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ChildForms\AtvForm.cs">
+    <Compile Include="ChildForms\ProduactForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ChildForms\AtvForm.Designer.cs">
-      <DependentUpon>AtvForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ChildForms\BikeForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ChildForms\BikeForm.Designer.cs">
-      <DependentUpon>BikeForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ChildForms\ElectricCarForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ChildForms\ElectricCarForm.Designer.cs">
-      <DependentUpon>ElectricCarForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ChildForms\GasCarForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ChildForms\GasCarForm.Designer.cs">
-      <DependentUpon>GasCarForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ChildForms\JeySkiForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ChildForms\JeySkiForm.Designer.cs">
-      <DependentUpon>JeySkiForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ChildForms\YachtForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ChildForms\YachtForm.Designer.cs">
-      <DependentUpon>YachtForm.cs</DependentUpon>
+    <Compile Include="ChildForms\ProduactForm.Designer.cs">
+      <DependentUpon>ProduactForm.cs</DependentUpon>
     </Compile>
     <Compile Include="MainPage.cs">
       <SubType>Form</SubType>
@@ -90,23 +60,8 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="ChildForms\AtvForm.resx">
-      <DependentUpon>AtvForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ChildForms\BikeForm.resx">
-      <DependentUpon>BikeForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ChildForms\ElectricCarForm.resx">
-      <DependentUpon>ElectricCarForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ChildForms\GasCarForm.resx">
-      <DependentUpon>GasCarForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ChildForms\JeySkiForm.resx">
-      <DependentUpon>JeySkiForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ChildForms\YachtForm.resx">
-      <DependentUpon>YachtForm.cs</DependentUpon>
+    <EmbeddedResource Include="ChildForms\ProduactForm.resx">
+      <DependentUpon>ProduactForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainPage.resx">
       <DependentUpon>MainPage.cs</DependentUpon>
@@ -172,6 +127,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\cruise-10422.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FinalProject.BusinessLogic\FinalProject.BusinessLogic.csproj">
+      <Project>{A2A5F715-50BD-4DF6-8AD9-C76DC264726F}</Project>
+      <Name>FinalProject.BusinessLogic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FinalProject.Models\FinalProject.Models.csproj">
+      <Project>{0F5E82B6-8F26-4B67-BC19-0E432531C6B1}</Project>
+      <Name>FinalProject.Models</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
