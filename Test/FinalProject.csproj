@@ -46,6 +46,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ChildForms\AddForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildForms\AddForm.Designer.cs">
+      <DependentUpon>AddForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildForms\AddForms\AddBoatForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildForms\AddForms\AddBoatForm.Designer.cs">
+      <DependentUpon>AddBoatForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildForms\AddForms\AddBikeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildForms\AddForms\AddBikeForm.Designer.cs">
+      <DependentUpon>AddBikeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildForms\AddForms\AddCarForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildForms\AddForms\AddCarForm.Designer.cs">
+      <DependentUpon>AddCarForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="ChildForms\ProduactForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -60,6 +84,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ChildForms\AddForms\AddBoatForm.resx">
+      <DependentUpon>AddBoatForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildForms\AddForms\AddCarForm.resx">
+      <DependentUpon>AddCarForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ChildForms\ProduactForm.resx">
       <DependentUpon>ProduactForm.cs</DependentUpon>
     </EmbeddedResource>
