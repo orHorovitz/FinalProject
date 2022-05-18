@@ -28,7 +28,7 @@ namespace FinalProject.DAL
                 var formatter = new BinaryFormatter();
                 if(reader.Length >0)
                 {
-                    Vehicles = (List<Vehicle>)formatter.Deserialize(reader);
+                    //Vehicles = (List<Vehicle>)formatter.Deserialize(reader);
                 }
             }
         }
