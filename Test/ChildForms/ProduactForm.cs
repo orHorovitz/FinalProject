@@ -1,6 +1,8 @@
 ﻿using FinalProject.BusinessLogic;
 using FinalProject.Models;
+using FinalProject.Models.BoatEntities;
 using FinalProject.Models.Enums;
+using FinalProject.Models.PrivateCarEntities;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -11,6 +13,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Test.ChildForms.AddForms;
+using Test.Controls;
 
 namespace Test.ChildForms
 {
@@ -21,6 +24,8 @@ namespace Test.ChildForms
         public Vehicle SelectedItem { get; set; }
         public string HeaderName { get;private set; }
         private string[] _categories = new string[100];
+
+        private bool _selectedFlag = false;
 
         public Type CurrentType { get;  set; }
 
@@ -43,26 +48,16 @@ namespace Test.ChildForms
             GetTypesList();
             comboBoxList.Items.AddRange(_categories);
             comboBoxList.SelectedIndexChanged += ComboBoxList_SelectedIndexChanged;
-            lvItems.SelectedIndexChanged += LvItems_SelectedIndexChanged;
             btnAdd.Click += BtnAdd_Click;
             btnDelete.Click += BtnDelete_Click;
             btnEdit.Click += BtnEdit_Click;
-            if (lvItems.SelectedItems.Count != 1)
-            {
-                btnEdit.Enabled = false;
-                btnDelete.Enabled = false;
-            }
+            btnDelete.Enabled = false;
+            flp.AutoScroll = true;
+            btnEdit.Enabled = false;
             RenderItemsOnStart();
+            
         }
 
-        private void LvItems_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            var item = (ListView)sender;
-            var id = int.Parse(item.SelectedItems[0].Text);
-            SelectedItem = Vehicles.Find(v => v.Id == id);
-            btnDelete.Enabled = true;
-            btnDelete.Enabled = true;
-        }
 
         private void BtnEdit_Click(object sender, EventArgs e)
         {
@@ -86,7 +81,7 @@ namespace Test.ChildForms
 
         private void BtnAdd_Click(object sender, EventArgs e)
         {
-            switch(HeaderName)
+            switch (HeaderName)
             {
                 case "Car":
                     var window = new AddCarForm();
@@ -109,7 +104,16 @@ namespace Test.ChildForms
                 default:
                     break;
             }
+
+            ///add random without filling parameters in form
+            //_agancy.Add(new GasCar(1, 4, 2, DateTime.Now, 2, true, 5, 5, "https://th.bing.com/th/id/R.0cdbe50eedb719a9df3353ca226c062b?rik=XH1eV7%2ffDuYqcw&riu=http%3a%2f%2froadandmountainbikereviews.co.uk%2fwp-content%2fuploads%2f2020%2f11%2feurobike-x1.jpg&ehk=XrpBTfkmutpVCUXBAUOmiYF2NqLFGxx8fJupdTFT2I0%3d&risl=&pid=ImgRaw&r=0"));           
+
+            ////need to figure out how to get collection by specific type
+            //Vehicles = _agancy.GetAllItems();
+            //RenderItemsOnStart();
         }
+
+
 
         private void Window_FormClosed(object sender, FormClosedEventArgs e)
         {
@@ -133,17 +137,44 @@ namespace Test.ChildForms
         {
             foreach (var v in Vehicles)
             {
-                lvItems.Items.Add(v.Id.ToString());
+                var e = new ListItem(v);
+                e.Click += E_Click;
+                flp.Controls.Add(e);
             }
         }
+
         private void RenderItemsOnChange()
         {
-            lvItems.Items.Clear();
+            flp.Controls.Clear();
             foreach (var v in FilteredVehicles)
             {
-                lvItems.Items.Add(v.Id.ToString());
+                var e = new ListItem(v);
+                e.Click += E_Click;
+                flp.Controls.Add(e);
             }
         }
+        private void E_Click(object sender, EventArgs e)
+        {
+            if(sender is ListItem li)
+            {
+                if (!_selectedFlag)
+                {
+                    this.SelectedItem = li.Vehicle;
+                    li.BackColor = Color.Gray;
+                    btnDelete.Enabled = true;
+                    btnEdit.Enabled = true;
+                    _selectedFlag = true;
+                }
+                else
+                {
+                    li.BackColor = Color.White;
+                    btnDelete.Enabled = false;
+                    btnEdit.Enabled = false;
+                    _selectedFlag = false;
+                }
+            }
+        }
+
 
         private void GetTypesList()
         {
@@ -164,16 +195,6 @@ namespace Test.ChildForms
                 default:
                     break;
             }
-
-        }
-
-        private void comboBoxList_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void ChildFormpanel_Paint(object sender, PaintEventArgs e)
-        {
 
         }
     }

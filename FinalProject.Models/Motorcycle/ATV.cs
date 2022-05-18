@@ -9,7 +9,7 @@ namespace FinalProject.Models.BikeEntities
     [Serializable]
     public class ATV : Motorcycle
     {
-        public ATV(double price, double weight, int passangerAmount, DateTime manufactorDate, double pricePerDay, bool isRentedNow, int maxSpeed, bool isDirt, Uri imageUri) : base(price, weight, passangerAmount, manufactorDate, pricePerDay, isRentedNow, maxSpeed,imageUri)
+        public ATV(double price, double weight, int passangerAmount, DateTime manufactorDate, double pricePerDay, bool isRentedNow, int maxSpeed, bool isDirt, string imageUri) : base(price, weight, passangerAmount, manufactorDate, pricePerDay, isRentedNow, maxSpeed,imageUri)
         {
             IsDirt = isDirt;
         }

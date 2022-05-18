@@ -17,11 +17,11 @@ namespace FinalProject.Models
         public bool IsRentedNow { get; set; } = false;
         public double Weight { get; set; }
         public int PassangerAmount { get; set; }
-        public Uri ImageUri { get; set; }
+        public string ImageUri { get; set; }
 
 
 
-        public Vehicle(double price, double weight, int passangerAmount, DateTime manufactorDate, double pricePerDay, bool isRentedNow, Uri imageUri)
+        public Vehicle(double price, double weight, int passangerAmount, DateTime manufactorDate, double pricePerDay, bool isRentedNow, string imageUri)
         {
             this.Price = price;
             this.Weight = weight;

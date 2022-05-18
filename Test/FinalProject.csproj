@@ -79,23 +79,11 @@
     <Compile Include="ChildForms\ProduactForm.Designer.cs">
       <DependentUpon>ProduactForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Controls\BoatListItem.cs">
+    <Compile Include="Controls\ListItem.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Controls\BoatListItem.Designer.cs">
-      <DependentUpon>BoatListItem.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Controls\CarListItem.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Controls\CarListItem.Designer.cs">
-      <DependentUpon>CarListItem.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Controls\MotorcycleListItem.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Controls\MotorcycleListItem.Designer.cs">
-      <DependentUpon>MotorcycleListItem.cs</DependentUpon>
+    <Compile Include="Controls\ListItem.Designer.cs">
+      <DependentUpon>ListItem.cs</DependentUpon>
     </Compile>
     <Compile Include="MainPage.cs">
       <SubType>Form</SubType>
@@ -117,14 +105,8 @@
     <EmbeddedResource Include="ChildForms\ProduactForm.resx">
       <DependentUpon>ProduactForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Controls\BoatListItem.resx">
-      <DependentUpon>BoatListItem.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Controls\CarListItem.resx">
-      <DependentUpon>CarListItem.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Controls\MotorcycleListItem.resx">
-      <DependentUpon>MotorcycleListItem.cs</DependentUpon>
+    <EmbeddedResource Include="Controls\ListItem.resx">
+      <DependentUpon>ListItem.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainPage.resx">
       <DependentUpon>MainPage.cs</DependentUpon>
@@ -215,6 +197,12 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Resources\atv.png" />
+    <Content Include="Resources\bike.jfif" />
+    <Content Include="Resources\electric car.jfif" />
+    <Content Include="Resources\gascar.jfif" />
+    <Content Include="Resources\jetski.jfif" />
+    <Content Include="Resources\yacht.jfif" />
     <Content Include="Content\all.css" />
     <Content Include="Content\all.min.css" />
     <Content Include="Content\brands.css" />
@@ -246,6 +234,9 @@
     <Content Include="webfonts\fa-brands-400.svg" />
     <Content Include="webfonts\fa-regular-400.svg" />
     <Content Include="webfonts\fa-solid-900.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Assets\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

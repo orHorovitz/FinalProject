@@ -9,7 +9,7 @@ namespace FinalProject.Models
     [Serializable]
     public abstract class PrivateCar : Vehicle
     {
-        public PrivateCar(double price, double weight, int passangerAmount, DateTime manufactorDate, double pricePerDay, bool isRentedNow, int mileage ,Uri imageUri) : base(price, weight, passangerAmount, manufactorDate, pricePerDay, isRentedNow, imageUri)
+        public PrivateCar(double price, double weight, int passangerAmount, DateTime manufactorDate, double pricePerDay, bool isRentedNow, int mileage ,string imageUri) : base(price, weight, passangerAmount, manufactorDate, pricePerDay, isRentedNow, imageUri)
         {
             Mileage = mileage;
         }
