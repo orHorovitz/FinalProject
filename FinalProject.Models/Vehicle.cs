@@ -9,7 +9,7 @@ namespace FinalProject.Models
     [Serializable]
     public abstract class Vehicle
     {
-        public static int _id=1;
+        public static int StaticId { get; set; }
         public int Id { get; set; }
         public double Price { get; set; }
         public double PricePerDay { get; set; }
@@ -17,19 +17,21 @@ namespace FinalProject.Models
         public bool IsRentedNow { get; set; } = false;
         public double Weight { get; set; }
         public int PassangerAmount { get; set; }
+        public Uri ImageUri { get; set; }
 
 
-        public Vehicle(double price,double weight)
+
+        public Vehicle(double price, double weight, int passangerAmount, DateTime manufactorDate, double pricePerDay, bool isRentedNow, Uri imageUri)
         {
             this.Price = price;
             this.Weight = weight;
-            this.PassangerAmount = PassangerAmount;
-            this.Id = Vehicle._id;
-            Vehicle._id += 1;
-            this.ManufactorDate = ManufactorDate;
-            this.PricePerDay = PricePerDay;
-            this.IsRentedNow = IsRentedNow;
-          
+            this.PassangerAmount = passangerAmount;
+            this.Id = Vehicle.StaticId;
+            Vehicle.StaticId += 1;
+            this.ManufactorDate = manufactorDate;
+            this.PricePerDay = pricePerDay;
+            this.IsRentedNow = isRentedNow;
+            ImageUri = imageUri;
         }
     }
 }

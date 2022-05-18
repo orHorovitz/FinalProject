@@ -9,10 +9,12 @@ namespace FinalProject.Models.BoatEntities
     [Serializable]
     public class Yacht : Boat
     {
-        public int NumberOfRoomAmount { get; set; }
-        public Yacht(double price, double wight, int knot,int RoomAmounts) : base(price, wight, knot)
+        public Yacht(double price, double weight, int passangerAmount, DateTime manufactorDate, double pricePerDay, bool isRentedNow, int knot, int numberOfRoomAmount,Uri imageUri) : base(price, weight, passangerAmount, manufactorDate, pricePerDay, isRentedNow, knot, imageUri)
         {
-            NumberOfRoomAmount = RoomAmounts;
+            NumberOfRoomAmount = numberOfRoomAmount;
         }
+
+        public int NumberOfRoomAmount { get; set; }
+        
     }
 }

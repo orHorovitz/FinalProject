@@ -10,11 +10,13 @@ namespace FinalProject.Models.PrivateCarEntities
     [Serializable]
     public class GasCar : PrivateCar
     {
+        public GasCar(double price, double weight, int passangerAmount, DateTime manufactorDate, double pricePerDay, bool isRentedNow, int mileage,double fuelStorage, Uri imageUri) : base(price, weight, passangerAmount, manufactorDate, pricePerDay, isRentedNow, mileage, imageUri)
+        {
+            FuelStorage = fuelStorage;
+        }
+
         public double FuelStorage { get; set; }
 
-        public GasCar(double price, double wight, int mileage , double fuelStorage) : base(price, wight, mileage)
-        {
-            this.FuelStorage = fuelStorage;
-        }
+       
     }
 }

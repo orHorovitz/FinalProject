@@ -15,10 +15,22 @@ namespace FinalProject.DAL
 
         public Repository()
         {
-            _filePath =Path.Combine(System.Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "vehicles.bin");
+            _filePath =Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "vehicles.bin");
             //Vehicles.SeedData();
             //SaveChanges();
             InitFromFile();
+            GetLastId();
+        }
+
+        private void GetLastId()
+        {
+            List<int> ids = new List<int>();
+            foreach (var item in GetAll())
+            {
+                ids.Add(item.Id);
+            }
+            var biggest = ids.Max();
+            Vehicle.StaticId = biggest++;
         }
 
         private void InitFromFile()
@@ -28,7 +40,7 @@ namespace FinalProject.DAL
                 var formatter = new BinaryFormatter();
                 if(reader.Length >0)
                 {
-                    //Vehicles = (List<Vehicle>)formatter.Deserialize(reader);
+                    Vehicles = (List<Vehicle>)formatter.Deserialize(reader);
                 }
             }
         }

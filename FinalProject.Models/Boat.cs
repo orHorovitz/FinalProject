@@ -9,11 +9,13 @@ namespace FinalProject.Models
     [Serializable]
     public abstract class Boat : Vehicle
     {
-        public int Knot { get; set; }
-        protected Boat(double price, double wight,int knot) : base(price, wight)
+        public Boat(double price, double weight, int passangerAmount, DateTime manufactorDate, double pricePerDay, bool isRentedNow,int knot,Uri imageUri) : base(price, weight, passangerAmount, manufactorDate, pricePerDay, isRentedNow,imageUri)
         {
-            Knot = knot;
+               Knot= knot;
         }
+
+        public int Knot { get; set; }
+        
 
 
 

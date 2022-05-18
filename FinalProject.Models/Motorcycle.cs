@@ -10,12 +10,14 @@ namespace FinalProject.Models
     [Serializable]
     public abstract class Motorcycle : Vehicle
     {
-        public int MaxSpeed { get; set; }
-
-        public Motorcycle(double price, double wight,int maxSpeed) : base(price, wight)
+        public Motorcycle(double price, double weight, int passangerAmount, DateTime manufactorDate, double pricePerDay, bool isRentedNow, int maxSpeed, Uri imageUri) : base(price, weight, passangerAmount, manufactorDate, pricePerDay, isRentedNow,  imageUri)
         {
             MaxSpeed = maxSpeed;
         }
+
+        public int MaxSpeed { get; set; }
+
+        
     }
 
 

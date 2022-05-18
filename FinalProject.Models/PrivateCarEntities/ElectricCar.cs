@@ -9,12 +9,13 @@ namespace FinalProject.Models.PrivateCarEntities
     [Serializable]
     public class ElectricCar : PrivateCar
     {
+        public ElectricCar(double price, double weight, int passangerAmount, DateTime manufactorDate, double pricePerDay, bool isRentedNow, int mileage,double power, Uri imageUri) : base(price, weight, passangerAmount, manufactorDate, pricePerDay, isRentedNow, mileage, imageUri)
+        {
+            Power = power;
+        }
+
         public double Power { get; set; }
 
-        public ElectricCar(double price, double wight, int mileage, double power) : base(price, wight, mileage)
-        {
-            this.Power = power;
-
-        }
+        
     }
 }

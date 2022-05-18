@@ -9,11 +9,13 @@ namespace FinalProject.Models
     [Serializable]
     public abstract class PrivateCar : Vehicle
     {
-        public int Mileage { get; set; }
-        public PrivateCar(double price, double wight,int mileage) : base(price, wight)
+        public PrivateCar(double price, double weight, int passangerAmount, DateTime manufactorDate, double pricePerDay, bool isRentedNow, int mileage ,Uri imageUri) : base(price, weight, passangerAmount, manufactorDate, pricePerDay, isRentedNow, imageUri)
         {
             Mileage = mileage;
         }
+
+        public int Mileage { get; set; }
+       
     }
 
 }

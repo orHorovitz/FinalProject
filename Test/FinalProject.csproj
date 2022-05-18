@@ -79,6 +79,24 @@
     <Compile Include="ChildForms\ProduactForm.Designer.cs">
       <DependentUpon>ProduactForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Controls\BoatListItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\BoatListItem.Designer.cs">
+      <DependentUpon>BoatListItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CarListItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\CarListItem.Designer.cs">
+      <DependentUpon>CarListItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\MotorcycleListItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\MotorcycleListItem.Designer.cs">
+      <DependentUpon>MotorcycleListItem.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainPage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -98,6 +116,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ChildForms\ProduactForm.resx">
       <DependentUpon>ProduactForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\BoatListItem.resx">
+      <DependentUpon>BoatListItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\CarListItem.resx">
+      <DependentUpon>CarListItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\MotorcycleListItem.resx">
+      <DependentUpon>MotorcycleListItem.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainPage.resx">
       <DependentUpon>MainPage.cs</DependentUpon>
