@@ -19,9 +19,10 @@ namespace Test.ChildForms.AddForms
 
         public AddBoatForm()
         {
+            
             InitializeComponent();
             _categories = Enum.GetNames(typeof(Boats));
-            cmdType.Items.AddRange(_categories);
+            //cmdType.Items.AddRange(_categories);
         }
 
 
@@ -45,5 +46,27 @@ namespace Test.ChildForms.AddForms
 
             }
         }
+
+        private void btnRefrash_Click(object sender, EventArgs e)
+        {
+            lblKnotBoat.Text = "Knot :";
+            lblPriceBoat.Text = "Price : ";
+            lblWightBoat.Text = "Wight :";
+            if(this.comboBoxChoose.SelectedIndex == 1)
+            {
+                lblTypeDepended.Text = "IsWaterJet :";
+
+            }
+            else if(this.comboBoxChoose.SelectedIndex == 2)
+            {
+                lblTypeDepended.Text = "Amount of room :";
+                txtBoxTypeDepended.Location = new Point(461, 283);
+                pnlDepended.Location = new Point(462, 283);
+            }
+                
+
+            
+        }
     }
 }
+
