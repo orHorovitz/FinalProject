@@ -4,15 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FinalProject.Models.TruckEntities
+namespace FinalProject.Models.BoatEntities//was TruckEntities
 {
     [Serializable]
     public class JetSki : Boat
     {
-        public int NumberOfHooks { get; set; }
-        public JetSki(double price, double wight, int maxSpeed, bool isSail, int FishHooks) : base(price, wight, maxSpeed, isSail)
+        public bool IsWaterJet { get; set; }
+        public JetSki(double price, double wight, int knot,bool isWaterJet) : base(price, wight, knot)
         {
-            NumberOfHooks = FishHooks;
+            IsWaterJet = isWaterJet;
         }
     }
 }

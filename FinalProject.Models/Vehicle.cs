@@ -26,6 +26,9 @@ namespace FinalProject.Models
             this.PassangerAmount = PassangerAmount;
             this.Id = Vehicle._id;
             Vehicle._id += 1;
+            this.ManufactorDate = ManufactorDate;
+            this.PricePerDay = PricePerDay;
+            this.IsRentedNow = IsRentedNow;
           
         }
     }

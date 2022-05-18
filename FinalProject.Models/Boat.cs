@@ -9,12 +9,10 @@ namespace FinalProject.Models
     [Serializable]
     public abstract class Boat : Vehicle
     {
-        public int MaxSpeed { get; set; }
-        public bool IsSailBoat { get; set; }
-        protected Boat(double price, double wight,int maxSpeed,bool isSail) : base(price, wight)
+        public int Knot { get; set; }
+        protected Boat(double price, double wight,int knot) : base(price, wight)
         {
-            MaxSpeed = maxSpeed;
-            IsSailBoat = isSail;
+            Knot = knot;
         }
 
 

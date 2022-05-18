@@ -9,10 +9,11 @@ namespace FinalProject.Models.BikeEntities
     [Serializable]
     public class ATV : Motorcycle
     {
-        public int MaxArmamentWeight { get; set; }
-        public ATV(double price, double wight, int maxRange, int maxHeight,int maxArmament) : base(price, wight, maxRange, maxHeight)
+        public bool IsDirt { get; set; }
+
+        public ATV(double price, double wight,int maxSpeed, bool Isdirt) : base(price, wight,maxSpeed)
         {
-            MaxArmamentWeight = maxArmament;
+            IsDirt = Isdirt;
         }
     }
 }
