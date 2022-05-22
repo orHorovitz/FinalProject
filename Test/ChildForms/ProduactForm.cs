@@ -17,7 +17,7 @@ using Test.Controls;
 
 namespace Test.ChildForms
 {
-    public partial class ProduactForm : Form
+    public partial class ProduactForm : Form , IVehicleView
     {
         public List<Vehicle> Vehicles { get; set; }
         public List<Vehicle> FilteredVehicles { get; set; }
@@ -31,6 +31,16 @@ namespace Test.ChildForms
 
         private readonly AgancyService _agancy;
 
+        public List<Vehicle> GetVehicles()
+        {
+            return Vehicles;
+        }
+
+        public void setVehicles(List<Vehicle> list)
+        {
+            this.Vehicles = list;
+        }
+
         public ProduactForm(List<Vehicle> items,string headerName)
         {
             InitializeComponent();
@@ -38,6 +48,8 @@ namespace Test.ChildForms
             FilteredVehicles = Vehicles;
             HeaderName = headerName;
             lblHeader.Text = headerName;
+            lblHeader.Location = new Point(349, -11);
+            lblHeader.TextAlign = ContentAlignment.MiddleCenter;
             _agancy = new AgancyService();
             this.InitForm();
         }
@@ -51,6 +63,10 @@ namespace Test.ChildForms
             btnAdd.Click += BtnAdd_Click;
             btnDelete.Click += BtnDelete_Click;
             btnEdit.Click += BtnEdit_Click;
+            btnEdit.Location = new Point(417, 620);
+            btnDelete.Location = new Point(509, 620);
+            btnAdd.Location = new Point(316, 620);
+            btnEdit.ForeColor = Color.White;
             btnDelete.Enabled = false;
             flp.AutoScroll = true;
             btnEdit.Enabled = false;
@@ -84,19 +100,20 @@ namespace Test.ChildForms
             switch (HeaderName)
             {
                 case "Car":
-                    var window = new AddCarForm();
+                    var window = new AddCarForm(_agancy,this);
                     window.FormClosed += Window_FormClosed;
                     window.Show();
+                   
                     this.Enabled = false;
                     break;
                 case "Motorcycle":
-                    var window2 = new AddBikeForm();
+                    var window2 = new AddBikeForm(_agancy, this);
                     window2.FormClosed += Window_FormClosed;
                     window2.Show();
                     this.Enabled = false;
                     break;
                 case "Boat":
-                    var window3 = new AddBoatForm();
+                    var window3 = new AddBoatForm(_agancy, this);
                     window3.FormClosed += Window_FormClosed;
                     window3.Show();
                     this.Enabled = false;
@@ -105,6 +122,7 @@ namespace Test.ChildForms
                     break;
             }
 
+           
             ///add random without filling parameters in form
             //_agancy.Add(new GasCar(1, 4, 2, DateTime.Now, 2, true, 5, 5, "https://th.bing.com/th/id/R.0cdbe50eedb719a9df3353ca226c062b?rik=XH1eV7%2ffDuYqcw&riu=http%3a%2f%2froadandmountainbikereviews.co.uk%2fwp-content%2fuploads%2f2020%2f11%2feurobike-x1.jpg&ehk=XrpBTfkmutpVCUXBAUOmiYF2NqLFGxx8fJupdTFT2I0%3d&risl=&pid=ImgRaw&r=0"));           
 
@@ -143,7 +161,7 @@ namespace Test.ChildForms
             }
         }
 
-        private void RenderItemsOnChange()
+        public void RenderItemsOnChange()
         {
             flp.Controls.Clear();
             foreach (var v in FilteredVehicles)
@@ -195,6 +213,22 @@ namespace Test.ChildForms
                 default:
                     break;
             }
+
+        }
+
+        public void AddVehicle(Vehicle v)
+        {
+            Vehicles.Add(v);
+            RenderItemsOnChange();
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
 
         }
     }

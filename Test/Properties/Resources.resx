@@ -118,43 +118,46 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="motorcycle32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\motorcycle32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="electric-car-12837" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\electric-car-12837.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="cruise-10422" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cruise-10422.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="home-2490" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\home-2490.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="car-4760" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\car-4760.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="scooter-1041" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\scooter-1041.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="jet-ski-1823" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\jet-ski-1823.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="car-2900" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\car-2900.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="exit-logout-2857" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\exit-logout-2857.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cruise-1042" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cruise-1042.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="motorcycle32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\motorcycle32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="car-fuel-12847" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\car-fuel-12847.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="scooter-1041" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\scooter-1041.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ship-1051" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ship-1051.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cruise-1042" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cruise-1042.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="car-4760" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\car-4760.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="exit-logout-2857" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\exit-logout-2857.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="jet-ski-1823" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\jet-ski-1823.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="electric-car-12837" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\electric-car-12837.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="cruise-10421" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cruise-10421.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ship-1051" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ship-1051.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="car-2900" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\car-2900.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="cruise-10422" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cruise-10422.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="user-3295" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\user-3295.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

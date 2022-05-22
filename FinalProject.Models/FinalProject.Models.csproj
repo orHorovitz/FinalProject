@@ -45,8 +45,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Enums\enu.cs" />
-    <Compile Include="Motorcycle\ATV.cs" />
-    <Compile Include="Motorcycle\Bike.cs" />
+    <Compile Include="EntitiesMotorcycle\ATV.cs" />
+    <Compile Include="EntitiesMotorcycle\Bike.cs" />
     <Compile Include="Interfaces\IGasVehicle.cs" />
     <Compile Include="PrivateCarEntities\ElectricCar.cs" />
     <Compile Include="PrivateCarEntities\GasCar.cs" />

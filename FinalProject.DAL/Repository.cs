@@ -8,16 +8,19 @@ using System.Runtime.Serialization.Formatters.Binary;
 
 namespace FinalProject.DAL
 {
+  
     public class Repository : IRepository
     {
         public List<Vehicle> Vehicles { get; set; } = new List<Vehicle>();
         private readonly string _filePath;
+        private static Repository instance = null;
+        public event EventHandler<EventArgs> RepositoryChanged;
 
-        public Repository()
+         private Repository()
         {
-            _filePath =Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "vehicles.bin");
-            //Vehicles.SeedData();
-            //SaveChanges();
+            _filePath =Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "vehiclesp.bin");
+            Vehicles.SeedData();
+            SaveChanges();
             InitFromFile();
             GetLastId();
         }
@@ -65,7 +68,7 @@ namespace FinalProject.DAL
             var vehicle = Vehicles.FirstOrDefault(v => v.Id == id);
             if (vehicle != null)
             {
-                this.Vehicles.Remove(vehicle);
+                Vehicles.Remove(vehicle);
                 SaveChanges();
                 return vehicle;
             }
@@ -100,6 +103,15 @@ namespace FinalProject.DAL
                 var formatter = new BinaryFormatter();
                 formatter.Serialize(reader, Vehicles);
             }
+        }
+
+        public static Repository GetInstance()
+        {
+            if(instance == null)
+            {
+                instance = new Repository();
+            }
+            return instance;
         }
     }
 }

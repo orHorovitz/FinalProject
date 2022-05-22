@@ -13,7 +13,7 @@ namespace FinalProject.BusinessLogic
 
         public AgancyService()
         {
-            this._repo = new Repository();
+            this._repo =Repository.GetInstance();
         }
 
         public bool Add(Vehicle vehicle)
@@ -48,7 +48,8 @@ namespace FinalProject.BusinessLogic
         }
         public List<T> GetByType<T>()
         {
-            return _repo.GetAll().OfType<T>().ToList();
+            var someList = _repo.GetAll().OfType<T>().ToList();
+            return someList;
         }
     }
 }

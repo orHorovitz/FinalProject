@@ -29,6 +29,11 @@ namespace Test.Controls
             pbx.ImageLocation = @"https://th.bing.com/th/id/R.0cdbe50eedb719a9df3353ca226c062b?rik=XH1eV7%2ffDuYqcw&riu=http%3a%2f%2froadandmountainbikereviews.co.uk%2fwp-content%2fuploads%2f2020%2f11%2feurobike-x1.jpg&ehk=XrpBTfkmutpVCUXBAUOmiYF2NqLFGxx8fJupdTFT2I0%3d&risl=&pid=ImgRaw&r=0";
         }
 
+        private void ListItem_Load(object sender, EventArgs e)
+        {
+
+        }
+
         //protected override void OnClick(EventArgs e)
         //{
         //    if (_flag)
@@ -42,7 +47,10 @@ namespace Test.Controls
         //        _flag = true;
         //    }
         //}
+        private void addNewItem()
+        {
 
-     
+        }
+
     }
 }
