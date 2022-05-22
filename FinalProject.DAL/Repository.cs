@@ -33,7 +33,7 @@ namespace FinalProject.DAL
                 ids.Add(item.Id);
             }
             var biggest = ids.Max();
-            Vehicle.StaticId = biggest++;
+            Vehicle.StaticId = ++biggest;
         }
 
         private void InitFromFile()

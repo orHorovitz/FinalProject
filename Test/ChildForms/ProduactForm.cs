@@ -13,6 +13,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Test.ChildForms.AddForms;
+using Test.ChildForms.EditForms;
 using Test.Controls;
 
 namespace Test.ChildForms
@@ -77,7 +78,11 @@ namespace Test.ChildForms
 
         private void BtnEdit_Click(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            if(SelectedItem is Motorcycle c)
+            {
+                var editView = new EditBikeForm(c);
+                editView.Show();
+            }
         }
 
         private void BtnDelete_Click(object sender, EventArgs e)

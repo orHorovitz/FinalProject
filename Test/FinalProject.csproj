@@ -56,12 +56,6 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ChildForms\AddForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ChildForms\AddForm.Designer.cs">
-      <DependentUpon>AddForm.cs</DependentUpon>
-    </Compile>
     <Compile Include="ChildForms\AddForms\AddBoatForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -79,6 +73,12 @@
     </Compile>
     <Compile Include="ChildForms\AddForms\AddCarForm.Designer.cs">
       <DependentUpon>AddCarForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildForms\EditForms\EditBikeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildForms\EditForms\EditBikeForm.Designer.cs">
+      <DependentUpon>EditBikeForm.cs</DependentUpon>
     </Compile>
     <Compile Include="ChildForms\iCarView.cs" />
     <Compile Include="ChildForms\LoginPage.cs">
@@ -122,6 +122,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ChildForms\AddForms\AddCarForm.resx">
       <DependentUpon>AddCarForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildForms\EditForms\EditBikeForm.resx">
+      <DependentUpon>EditBikeForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ChildForms\LoginPage.resx">
       <DependentUpon>LoginPage.cs</DependentUpon>

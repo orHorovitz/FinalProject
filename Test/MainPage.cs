@@ -119,7 +119,7 @@ namespace Test
         private void btnMotorcycle_Click(object sender, EventArgs e)
         {
             var items = _agancyService
-                          .GetByType<PrivateCar>()
+                          .GetByType<Motorcycle>()
                           .AsEnumerable<Vehicle>()
                           .ToList();
 
