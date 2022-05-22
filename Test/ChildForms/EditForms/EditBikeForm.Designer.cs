@@ -29,8 +29,6 @@ namespace Test.ChildForms.EditForms
         /// </summary>
         private void InitializeComponent()
         {
-            this.txtBoxDependedEditBike = new Guna.UI2.WinForms.Guna2TextBox();
-            this.lbl___Depended = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.comboBoxDependedEditBike = new Guna.UI2.WinForms.Guna2ComboBox();
             this.comboBoxIsRentEditBike = new Guna.UI2.WinForms.Guna2ComboBox();
             this.txtBoxPricePerEditBike = new Guna.UI2.WinForms.Guna2TextBox();
@@ -65,42 +63,6 @@ namespace Test.ChildForms.EditForms
             this.guna2GradientCircleButton1 = new Guna.UI2.WinForms.Guna2GradientCircleButton();
             this.SuspendLayout();
             // 
-            // txtBoxDependedEditBike
-            // 
-            this.txtBoxDependedEditBike.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
-            this.txtBoxDependedEditBike.BorderThickness = 0;
-            this.txtBoxDependedEditBike.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtBoxDependedEditBike.DefaultText = "";
-            this.txtBoxDependedEditBike.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtBoxDependedEditBike.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtBoxDependedEditBike.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtBoxDependedEditBike.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtBoxDependedEditBike.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
-            this.txtBoxDependedEditBike.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtBoxDependedEditBike.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtBoxDependedEditBike.ForeColor = System.Drawing.Color.White;
-            this.txtBoxDependedEditBike.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtBoxDependedEditBike.Location = new System.Drawing.Point(961, 501);
-            this.txtBoxDependedEditBike.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.txtBoxDependedEditBike.Name = "txtBoxDependedEditBike";
-            this.txtBoxDependedEditBike.PasswordChar = '\0';
-            this.txtBoxDependedEditBike.PlaceholderText = "";
-            this.txtBoxDependedEditBike.SelectedText = "";
-            this.txtBoxDependedEditBike.Size = new System.Drawing.Size(166, 43);
-            this.txtBoxDependedEditBike.TabIndex = 144;
-            // 
-            // lbl___Depended
-            // 
-            this.lbl___Depended.BackColor = System.Drawing.Color.Transparent;
-            this.lbl___Depended.Font = new System.Drawing.Font("Century Gothic", 18F);
-            this.lbl___Depended.ForeColor = System.Drawing.Color.White;
-            this.lbl___Depended.Location = new System.Drawing.Point(961, 501);
-            this.lbl___Depended.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.lbl___Depended.Name = "lbl___Depended";
-            this.lbl___Depended.Size = new System.Drawing.Size(165, 45);
-            this.lbl___Depended.TabIndex = 143;
-            this.lbl___Depended.Text = "_________";
-            // 
             // comboBoxDependedEditBike
             // 
             this.comboBoxDependedEditBike.BackColor = System.Drawing.Color.Transparent;
@@ -114,7 +76,7 @@ namespace Test.ChildForms.EditForms
             this.comboBoxDependedEditBike.Items.AddRange(new object[] {
             "Yes",
             "No"});
-            this.comboBoxDependedEditBike.Location = new System.Drawing.Point(961, 501);
+            this.comboBoxDependedEditBike.Location = new System.Drawing.Point(876, 516);
             this.comboBoxDependedEditBike.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.comboBoxDependedEditBike.Name = "comboBoxDependedEditBike";
             this.comboBoxDependedEditBike.Size = new System.Drawing.Size(208, 36);
@@ -600,8 +562,6 @@ namespace Test.ChildForms.EditForms
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
             this.ClientSize = new System.Drawing.Size(1200, 692);
-            this.Controls.Add(this.txtBoxDependedEditBike);
-            this.Controls.Add(this.lbl___Depended);
             this.Controls.Add(this.comboBoxDependedEditBike);
             this.Controls.Add(this.comboBoxIsRentEditBike);
             this.Controls.Add(this.txtBoxPricePerEditBike);
@@ -642,9 +602,6 @@ namespace Test.ChildForms.EditForms
         }
 
         #endregion
-
-        private Guna.UI2.WinForms.Guna2TextBox txtBoxDependedEditBike;
-        private Guna.UI2.WinForms.Guna2HtmlLabel lbl___Depended;
         private Guna.UI2.WinForms.Guna2ComboBox comboBoxDependedEditBike;
         private Guna.UI2.WinForms.Guna2ComboBox comboBoxIsRentEditBike;
         private Guna.UI2.WinForms.Guna2TextBox txtBoxPricePerEditBike;

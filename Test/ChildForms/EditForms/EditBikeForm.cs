@@ -1,4 +1,5 @@
-﻿using FinalProject.Models;
+﻿using FinalProject.BusinessLogic;
+using FinalProject.Models;
 using FinalProject.Models.BikeEntities;
 using System;
 using System.Collections.Generic;
@@ -14,13 +15,50 @@ namespace Test.ChildForms.EditForms
 {
     public partial class EditBikeForm : Form
     {
+        private readonly Motorcycle _motorcycle;
+        private readonly AgancyService _service;
 
         public EditBikeForm(Motorcycle motorcycle)
         {
             InitializeComponent();
-            GenerateFields(motorcycle);
+            this._motorcycle = motorcycle;
+            _service = new AgancyService();
+            GenerateFields(_motorcycle);
             lblPleaseChooseType.Visible = false;
+            btnEditBike.Click += BtnEditBike_Click;
         }
+
+        private void BtnEditBike_Click(object sender, EventArgs e)
+        {
+            if(_motorcycle is Bike b)
+            {
+                _service.UpdateItem(
+                    new Bike(int.Parse(txtBoxPriceEditBike.Text),
+                             double.Parse(txtBoxWeightEditBike.Text),
+                             int.Parse(txtBoxPassAmountEditBike.Text),
+                             DateTime.Parse(txtboxManfactorEditBike.Text),
+                             /*double.Parse(txtBoxPricePerEditBike.Text)*/ 34,
+                             comboBoxIsRentEditBike.SelectedIndex == 0 ? true : false,
+                             int.Parse(txtBoxKnotEditBike.Text),
+                             comboBoxDependedEditBike.SelectedIndex == 0 ? true : false,
+                             ""), _motorcycle.Id);
+            }
+            else if(_motorcycle is ATV a)
+            {
+                _service.UpdateItem(
+                   new ATV(int.Parse(txtBoxPriceEditBike.Text),
+                            double.Parse(txtBoxWeightEditBike.Text),
+                            int.Parse(txtBoxPassAmountEditBike.Text),
+                            DateTime.Parse(txtboxManfactorEditBike.Text),
+                            double.Parse(txtBoxPricePerEditBike.Text),
+                            comboBoxIsRentEditBike.SelectedIndex == 0 ? true : false,
+                            int.Parse(txtBoxKnotEditBike.Text),
+                            comboBoxDependedEditBike.SelectedIndex == 0 ? true : false,
+                            ""), _motorcycle.Id);
+            }
+            this.Close();
+        }
+
         private void GenerateFields(Motorcycle motorcycle)
         {
             this.txtBoxPriceEditBike.Text = motorcycle.PricePerDay.ToString();

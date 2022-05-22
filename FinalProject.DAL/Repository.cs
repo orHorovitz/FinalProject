@@ -89,7 +89,9 @@ namespace FinalProject.DAL
             if (existingVehicle != null)
             {
                 vehicle.Id = id;
-                existingVehicle = vehicle;
+                var index = Vehicles.IndexOf(existingVehicle);
+                Vehicles[index] = vehicle;
+                SaveChanges();
                 return vehicle;
             }
             else throw new Exception("Not Found");
