@@ -86,11 +86,11 @@
     <Compile Include="ChildForms\EditForms\EditCarForms.Designer.cs">
       <DependentUpon>EditCarForms.cs</DependentUpon>
     </Compile>
-    <Compile Include="ChildForms\EditForms\EditShipBoat.cs">
+    <Compile Include="ChildForms\EditForms\EditShipForms.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ChildForms\EditForms\EditShipBoat.Designer.cs">
-      <DependentUpon>EditShipBoat.cs</DependentUpon>
+    <Compile Include="ChildForms\EditForms\EditShipForms.Designer.cs">
+      <DependentUpon>EditShipForms.cs</DependentUpon>
     </Compile>
     <Compile Include="ChildForms\iCarView.cs" />
     <Compile Include="ChildForms\LoginPage.cs">
@@ -141,8 +141,8 @@
     <EmbeddedResource Include="ChildForms\EditForms\EditCarForms.resx">
       <DependentUpon>EditCarForms.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ChildForms\EditForms\EditShipBoat.resx">
-      <DependentUpon>EditShipBoat.cs</DependentUpon>
+    <EmbeddedResource Include="ChildForms\EditForms\EditShipForms.resx">
+      <DependentUpon>EditShipForms.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ChildForms\LoginPage.resx">
       <DependentUpon>LoginPage.cs</DependentUpon>

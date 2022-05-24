@@ -51,8 +51,9 @@ namespace Test.ChildForms
             this.ChildFormpanel.Controls.Add(this.panelTitleSaction);
             this.ChildFormpanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ChildFormpanel.Location = new System.Drawing.Point(0, 0);
+            this.ChildFormpanel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.ChildFormpanel.Name = "ChildFormpanel";
-            this.ChildFormpanel.Size = new System.Drawing.Size(975, 601);
+            this.ChildFormpanel.Size = new System.Drawing.Size(1462, 925);
             this.ChildFormpanel.TabIndex = 2;
             // 
             // btnDelete
@@ -60,9 +61,10 @@ namespace Test.ChildForms
             this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDelete.Font = new System.Drawing.Font("Century Gothic", 9F);
             this.btnDelete.ForeColor = System.Drawing.Color.Coral;
-            this.btnDelete.Location = new System.Drawing.Point(513, 553);
+            this.btnDelete.Location = new System.Drawing.Point(770, 851);
+            this.btnDelete.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(78, 36);
+            this.btnDelete.Size = new System.Drawing.Size(117, 55);
             this.btnDelete.TabIndex = 4;
             this.btnDelete.Text = "DELETE";
             this.btnDelete.UseVisualStyleBackColor = true;
@@ -72,19 +74,19 @@ namespace Test.ChildForms
             this.btnEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEdit.Font = new System.Drawing.Font("Century Gothic", 9F);
             this.btnEdit.ForeColor = System.Drawing.Color.White;
-            this.btnEdit.Location = new System.Drawing.Point(421, 553);
+            this.btnEdit.Location = new System.Drawing.Point(632, 851);
+            this.btnEdit.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(85, 37);
+            this.btnEdit.Size = new System.Drawing.Size(128, 57);
             this.btnEdit.TabIndex = 3;
             this.btnEdit.Text = "EDIT";
             this.btnEdit.UseVisualStyleBackColor = true;
             // 
             // flp
             // 
-            this.flp.Location = new System.Drawing.Point(25, 103);
-            this.flp.Margin = new System.Windows.Forms.Padding(2);
+            this.flp.Location = new System.Drawing.Point(38, 158);
             this.flp.Name = "flp";
-            this.flp.Size = new System.Drawing.Size(891, 439);
+            this.flp.Size = new System.Drawing.Size(1336, 675);
             this.flp.TabIndex = 2;
             // 
             // btnAdd
@@ -92,13 +94,13 @@ namespace Test.ChildForms
             this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdd.Font = new System.Drawing.Font("Century Gothic", 9F);
             this.btnAdd.ForeColor = System.Drawing.Color.White;
-            this.btnAdd.Location = new System.Drawing.Point(320, 553);
+            this.btnAdd.Location = new System.Drawing.Point(480, 851);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(94, 38);
+            this.btnAdd.Size = new System.Drawing.Size(141, 58);
             this.btnAdd.TabIndex = 2;
             this.btnAdd.Text = "ADD";
             this.btnAdd.UseVisualStyleBackColor = true;
-            
             // 
             // panelTitleSaction
             // 
@@ -107,9 +109,8 @@ namespace Test.ChildForms
             this.panelTitleSaction.Controls.Add(this.lblHeader);
             this.panelTitleSaction.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTitleSaction.Location = new System.Drawing.Point(0, 0);
-            this.panelTitleSaction.Margin = new System.Windows.Forms.Padding(2);
             this.panelTitleSaction.Name = "panelTitleSaction";
-            this.panelTitleSaction.Size = new System.Drawing.Size(975, 81);
+            this.panelTitleSaction.Size = new System.Drawing.Size(1462, 125);
             this.panelTitleSaction.TabIndex = 0;
             // 
             // comboBoxList
@@ -117,10 +118,9 @@ namespace Test.ChildForms
             this.comboBoxList.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(7)))), ((int)(((byte)(7)))));
             this.comboBoxList.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.comboBoxList.ForeColor = System.Drawing.Color.LightGray;
-            this.comboBoxList.Location = new System.Drawing.Point(776, 41);
-            this.comboBoxList.Margin = new System.Windows.Forms.Padding(2);
+            this.comboBoxList.Location = new System.Drawing.Point(1164, 63);
             this.comboBoxList.Name = "comboBoxList";
-            this.comboBoxList.Size = new System.Drawing.Size(163, 21);
+            this.comboBoxList.Size = new System.Drawing.Size(242, 28);
             this.comboBoxList.TabIndex = 1;
             // 
             // lblHeader
@@ -128,22 +128,20 @@ namespace Test.ChildForms
             this.lblHeader.AutoSize = true;
             this.lblHeader.Font = new System.Drawing.Font("Century Gothic", 45F);
             this.lblHeader.ForeColor = System.Drawing.Color.LightGray;
-            this.lblHeader.Location = new System.Drawing.Point(316, 7);
-            this.lblHeader.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblHeader.Location = new System.Drawing.Point(474, 11);
             this.lblHeader.Name = "lblHeader";
-            this.lblHeader.Size = new System.Drawing.Size(214, 74);
+            this.lblHeader.Size = new System.Drawing.Size(313, 108);
             this.lblHeader.TabIndex = 0;
             this.lblHeader.Text = "label1";
             this.lblHeader.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // ProduactForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(975, 601);
+            this.ClientSize = new System.Drawing.Size(1462, 925);
             this.Controls.Add(this.ChildFormpanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "ProduactForm";
             this.Text = "ProduactForm";
             this.ChildFormpanel.ResumeLayout(false);

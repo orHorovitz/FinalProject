@@ -83,11 +83,18 @@ namespace Test.ChildForms
                 var editView = new EditBikeForm(c);
                 editView.Show();
             }
-            if(SelectedItem is PrivateCar b)
+            else if(SelectedItem is PrivateCar b)
             {
                 var editView = new EditCarForms(b);
                 editView.Show();
             }
+            else if(SelectedItem is Boat t)
+            {
+                var editView = new EditShipForms(t);
+                editView.Show();
+            }
+
+
                
         }
 
@@ -233,5 +240,6 @@ namespace Test.ChildForms
             RenderItemsOnChange();
         }
 
+        
     }
 }

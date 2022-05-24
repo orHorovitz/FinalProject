@@ -32,7 +32,7 @@ namespace Test.ChildForms.EditForms
             if(_motorcycle is Bike b)
             {
                 _service.UpdateItem(
-                    new Bike(int.Parse(txtBoxPriceEditBike.Text),
+                    new Bike(double.Parse(txtBoxPriceEditBike.Text),
                              double.Parse(txtBoxWeightEditBike.Text),
                              int.Parse(txtBoxPassAmountEditBike.Text),
                              DateTime.Parse(txtboxManfactorEditBike.Text),
@@ -45,11 +45,11 @@ namespace Test.ChildForms.EditForms
             else if(_motorcycle is ATV a)
             {
                 _service.UpdateItem(
-                   new ATV(int.Parse(txtBoxPriceEditBike.Text),
+                   new ATV(double.Parse(txtBoxPriceEditBike.Text),
                             double.Parse(txtBoxWeightEditBike.Text),
                             int.Parse(txtBoxPassAmountEditBike.Text),
                             DateTime.Parse(txtboxManfactorEditBike.Text),
-                            double.Parse(txtBoxPricePerEditBike.Text),
+                            /*double.Parse(txtBoxPricePerEditBike.Text)*/34,
                             comboBoxIsRentEditBike.SelectedIndex == 0 ? true : false,
                             int.Parse(txtBoxKnotEditBike.Text),
                             comboBoxDependedEditBike.SelectedIndex == 0 ? true : false), _motorcycle.Id);
