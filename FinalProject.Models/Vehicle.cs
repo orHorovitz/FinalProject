@@ -17,11 +17,11 @@ namespace FinalProject.Models
         public bool IsRentedNow { get; set; } = false;
         public double Weight { get; set; }
         public int PassangerAmount { get; set; }
-        public string ImageUri { get; set; }
+        
 
 
 
-        public Vehicle(double price, double weight, int passangerAmount, DateTime manufactorDate, double pricePerDay, bool isRentedNow, string imageUri)
+        public Vehicle(double price, double weight, int passangerAmount, DateTime manufactorDate, double pricePerDay, bool isRentedNow)
         {
             this.Price = price;
             this.Weight = weight;
@@ -31,7 +31,6 @@ namespace FinalProject.Models
             this.ManufactorDate = manufactorDate;
             this.PricePerDay = pricePerDay;
             this.IsRentedNow = isRentedNow;
-            ImageUri = imageUri;
         }
     }
 }

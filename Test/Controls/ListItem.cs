@@ -26,7 +26,8 @@ namespace Test.Controls
             tblPPD.Text = Vehicle.PricePerDay.ToString();
             tlbWeight.Text = Vehicle.Weight.ToString();
             tlbPassangerAmount.Text = Vehicle.PassangerAmount.ToString();
-            pbx.ImageLocation = @"https://th.bing.com/th/id/R.0cdbe50eedb719a9df3353ca226c062b?rik=XH1eV7%2ffDuYqcw&riu=http%3a%2f%2froadandmountainbikereviews.co.uk%2fwp-content%2fuploads%2f2020%2f11%2feurobike-x1.jpg&ehk=XrpBTfkmutpVCUXBAUOmiYF2NqLFGxx8fJupdTFT2I0%3d&risl=&pid=ImgRaw&r=0";
+            pbx.ImageLocation = @"https://user-images.githubusercontent.com/90088412/170076671-63d06347-d9c3-4fda-88db-6e59221e8632.png";
+            
         }
 
         private void ListItem_Load(object sender, EventArgs e)

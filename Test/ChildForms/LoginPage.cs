@@ -54,5 +54,10 @@ namespace Test.ChildForms
         {
             this.WindowState = FormWindowState.Minimized;
         }
+
+        private void LoginPage_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

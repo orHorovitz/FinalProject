@@ -54,7 +54,7 @@ namespace Test.ChildForms.AddForms
             lblDependedMotor.Visible = false;
             lblIsRendMotor.Visible = false;
             lblWeightMotor.Visible = false;
-            lblImageMotor.Visible = false;
+            
             ComboBoxDependedBike.Visible = false;
             //lbl__ImageMotor.Visible = false;
             lbl__ManfactorMotor.Visible = false;
@@ -76,7 +76,7 @@ namespace Test.ChildForms.AddForms
             lblDependedMotor.Visible = true;
             lblIsRendMotor.Visible = true;
             lblWeightMotor.Visible = true;
-            lblImageMotor.Visible = true;
+            
             ComboBoxDependedBike.Visible=true;
             //lbl__ImageMotor.Visible = true;
             lbl__ManfactorMotor.Visible = true;
@@ -108,7 +108,7 @@ namespace Test.ChildForms.AddForms
                 isRend = false;
             }
             int MaxSpeed = int.Parse(txtBoxMaxSpeedMotor.Text);
-            string Url = txtBoxImageMotor.Text;
+
             if (comboBoxTypeMotor.SelectedIndex == 1)
             {
                 if(ComboBoxDependedBike.SelectedIndex == 0)
@@ -119,7 +119,7 @@ namespace Test.ChildForms.AddForms
                 {
                     isDirt= false;
                 }
-                NewMotorcycle = new FinalProject.Models.BikeEntities.ATV(Price, Weight, PassangerAmount, dateTime, PricePerDay, isRend, MaxSpeed, isDirt, Url);
+                NewMotorcycle = new FinalProject.Models.BikeEntities.ATV(Price, Weight, PassangerAmount, dateTime, PricePerDay, isRend, MaxSpeed, isDirt);
             }
             else if (comboBoxTypeMotor.SelectedIndex == 2)
             {
@@ -132,7 +132,7 @@ namespace Test.ChildForms.AddForms
                     isSport = false;
                 }
 
-                NewMotorcycle = new FinalProject.Models.BikeEntities.Bike(Price, Weight, PassangerAmount, dateTime, PricePerDay, isRend, MaxSpeed, isSport, Url);
+                NewMotorcycle = new FinalProject.Models.BikeEntities.Bike(Price, Weight, PassangerAmount, dateTime, PricePerDay, isRend, MaxSpeed, isSport);
             }
 
             //return newCar;
@@ -144,25 +144,6 @@ namespace Test.ChildForms.AddForms
             }
 
             this.Close();
-        }
-
-        private void btnUploadBike_Click(object sender, EventArgs e)
-        {
-            String imageLocation;
-            try
-            {
-                OpenFileDialog dialog = new OpenFileDialog();
-                //dialog.Filter = "jpg files(*.jpg)|*.jpg| PNG files(*.png)| All Files(*.*)|*.*";
-
-                if(dialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
-                {
-                    imageLocation = dialog.FileName;
-                    pictureBox1.ImageLocation = imageLocation;
-                }
-            }catch (Exception)
-            {
-                MessageBox.Show("An Error Occured","Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
-            }
         }
     }
 }

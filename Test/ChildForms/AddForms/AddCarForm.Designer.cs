@@ -45,10 +45,8 @@ namespace Test.ChildForms.AddForms
             this.lblManufactorCar = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblPricePerDayCar = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblMileageCar = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lblImage = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lbl__PriceCar = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lbl__WeightCar = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lbl__ImageCar = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lbl__PassCar = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lbl__ManfactorCar = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lbl__MileageCar = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -58,7 +56,6 @@ namespace Test.ChildForms.AddForms
             this.txtBoxPriceCar = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtBoxWeightCar = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtBoxPassAmountCar = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtBoxImageCar = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtBoxDependedCar = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtBoxManufactorCar = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtBoxMileageCar = new Guna.UI2.WinForms.Guna2TextBox();
@@ -287,17 +284,6 @@ namespace Test.ChildForms.AddForms
             this.lblMileageCar.TabIndex = 52;
             this.lblMileageCar.Text = "Mileage :";
             // 
-            // lblImage
-            // 
-            this.lblImage.BackColor = System.Drawing.Color.Transparent;
-            this.lblImage.Font = new System.Drawing.Font("Century Gothic", 16F);
-            this.lblImage.ForeColor = System.Drawing.Color.White;
-            this.lblImage.Location = new System.Drawing.Point(146, 323);
-            this.lblImage.Name = "lblImage";
-            this.lblImage.Size = new System.Drawing.Size(118, 26);
-            this.lblImage.TabIndex = 53;
-            this.lblImage.Text = "ImageURL : ";
-            // 
             // lbl__PriceCar
             // 
             this.lbl__PriceCar.BackColor = System.Drawing.Color.Transparent;
@@ -319,17 +305,6 @@ namespace Test.ChildForms.AddForms
             this.lbl__WeightCar.Size = new System.Drawing.Size(111, 32);
             this.lbl__WeightCar.TabIndex = 55;
             this.lbl__WeightCar.Text = "_________";
-            // 
-            // lbl__ImageCar
-            // 
-            this.lbl__ImageCar.BackColor = System.Drawing.Color.Transparent;
-            this.lbl__ImageCar.Font = new System.Drawing.Font("Century Gothic", 18F);
-            this.lbl__ImageCar.ForeColor = System.Drawing.Color.White;
-            this.lbl__ImageCar.Location = new System.Drawing.Point(270, 317);
-            this.lbl__ImageCar.Name = "lbl__ImageCar";
-            this.lbl__ImageCar.Size = new System.Drawing.Size(183, 32);
-            this.lbl__ImageCar.TabIndex = 57;
-            this.lbl__ImageCar.Text = "_______________";
             // 
             // lbl__PassCar
             // 
@@ -465,29 +440,6 @@ namespace Test.ChildForms.AddForms
             this.txtBoxPassAmountCar.Size = new System.Drawing.Size(111, 28);
             this.txtBoxPassAmountCar.TabIndex = 68;
             // 
-            // txtBoxImageCar
-            // 
-            this.txtBoxImageCar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
-            this.txtBoxImageCar.BorderThickness = 0;
-            this.txtBoxImageCar.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtBoxImageCar.DefaultText = "";
-            this.txtBoxImageCar.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtBoxImageCar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtBoxImageCar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtBoxImageCar.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtBoxImageCar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
-            this.txtBoxImageCar.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtBoxImageCar.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtBoxImageCar.ForeColor = System.Drawing.Color.White;
-            this.txtBoxImageCar.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtBoxImageCar.Location = new System.Drawing.Point(270, 317);
-            this.txtBoxImageCar.Name = "txtBoxImageCar";
-            this.txtBoxImageCar.PasswordChar = '\0';
-            this.txtBoxImageCar.PlaceholderText = "";
-            this.txtBoxImageCar.SelectedText = "";
-            this.txtBoxImageCar.Size = new System.Drawing.Size(183, 28);
-            this.txtBoxImageCar.TabIndex = 69;
-            // 
             // txtBoxDependedCar
             // 
             this.txtBoxDependedCar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
@@ -621,7 +573,6 @@ namespace Test.ChildForms.AddForms
             this.Controls.Add(this.txtBoxMileageCar);
             this.Controls.Add(this.txtBoxManufactorCar);
             this.Controls.Add(this.txtBoxDependedCar);
-            this.Controls.Add(this.txtBoxImageCar);
             this.Controls.Add(this.txtBoxPassAmountCar);
             this.Controls.Add(this.txtBoxWeightCar);
             this.Controls.Add(this.txtBoxPriceCar);
@@ -632,10 +583,8 @@ namespace Test.ChildForms.AddForms
             this.Controls.Add(this.lbl__MileageCar);
             this.Controls.Add(this.lbl__ManfactorCar);
             this.Controls.Add(this.lbl__PassCar);
-            this.Controls.Add(this.lbl__ImageCar);
             this.Controls.Add(this.lbl__WeightCar);
             this.Controls.Add(this.lbl__PriceCar);
-            this.Controls.Add(this.lblImage);
             this.Controls.Add(this.lblMileageCar);
             this.Controls.Add(this.lblPricePerDayCar);
             this.Controls.Add(this.lblManufactorCar);
@@ -678,10 +627,8 @@ namespace Test.ChildForms.AddForms
         private Guna.UI2.WinForms.Guna2HtmlLabel lblManufactorCar;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblPricePerDayCar;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblMileageCar;
-        private Guna.UI2.WinForms.Guna2HtmlLabel lblImage;
         private Guna.UI2.WinForms.Guna2HtmlLabel lbl__PriceCar;
         private Guna.UI2.WinForms.Guna2HtmlLabel lbl__WeightCar;
-        private Guna.UI2.WinForms.Guna2HtmlLabel lbl__ImageCar;
         private Guna.UI2.WinForms.Guna2HtmlLabel lbl__PassCar;
         private Guna.UI2.WinForms.Guna2HtmlLabel lbl__ManfactorCar;
         private Guna.UI2.WinForms.Guna2HtmlLabel lbl__MileageCar;
@@ -691,7 +638,6 @@ namespace Test.ChildForms.AddForms
         private Guna.UI2.WinForms.Guna2TextBox txtBoxPriceCar;
         private Guna.UI2.WinForms.Guna2TextBox txtBoxWeightCar;
         private Guna.UI2.WinForms.Guna2TextBox txtBoxPassAmountCar;
-        private Guna.UI2.WinForms.Guna2TextBox txtBoxImageCar;
         private Guna.UI2.WinForms.Guna2TextBox txtBoxDependedCar;
         private Guna.UI2.WinForms.Guna2TextBox txtBoxManufactorCar;
         private Guna.UI2.WinForms.Guna2TextBox txtBoxMileageCar;

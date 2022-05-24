@@ -33,7 +33,6 @@ namespace Test.ChildForms.AddForms
             this.txtBoxPricePerMotor = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtBoxMaxSpeedMotor = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtBoxManufactorMotor = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtBoxImageMotor = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtBoxPassAmountMotor = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtBoxWeightMotor = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtBoxPriceMotor = new Guna.UI2.WinForms.Guna2TextBox();
@@ -45,7 +44,6 @@ namespace Test.ChildForms.AddForms
             this.lbl__PassMotor = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lbl__WeightMotor = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lbl__PriceMotor = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lblImageMotor = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblMaxSpeedMotor = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblPricePerDayMotor = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblManufactorMotor = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -61,9 +59,6 @@ namespace Test.ChildForms.AddForms
             this.btnAddBoat = new Guna.UI2.WinForms.Guna2Button();
             this.ComboBoxDependedBike = new Guna.UI2.WinForms.Guna2ComboBox();
             this.ComboBoxIsRendMotor = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.btnUploadBike = new Guna.UI2.WinForms.Guna2Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2GradientCircleButton1
@@ -151,29 +146,6 @@ namespace Test.ChildForms.AddForms
             this.txtBoxManufactorMotor.SelectedText = "";
             this.txtBoxManufactorMotor.Size = new System.Drawing.Size(111, 28);
             this.txtBoxManufactorMotor.TabIndex = 102;
-            // 
-            // txtBoxImageMotor
-            // 
-            this.txtBoxImageMotor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
-            this.txtBoxImageMotor.BorderThickness = 0;
-            this.txtBoxImageMotor.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtBoxImageMotor.DefaultText = "";
-            this.txtBoxImageMotor.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtBoxImageMotor.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtBoxImageMotor.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtBoxImageMotor.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtBoxImageMotor.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
-            this.txtBoxImageMotor.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtBoxImageMotor.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtBoxImageMotor.ForeColor = System.Drawing.Color.White;
-            this.txtBoxImageMotor.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtBoxImageMotor.Location = new System.Drawing.Point(289, 356);
-            this.txtBoxImageMotor.Name = "txtBoxImageMotor";
-            this.txtBoxImageMotor.PasswordChar = '\0';
-            this.txtBoxImageMotor.PlaceholderText = "";
-            this.txtBoxImageMotor.SelectedText = "";
-            this.txtBoxImageMotor.Size = new System.Drawing.Size(183, 28);
-            this.txtBoxImageMotor.TabIndex = 100;
             // 
             // txtBoxPassAmountMotor
             // 
@@ -330,17 +302,6 @@ namespace Test.ChildForms.AddForms
             this.lbl__PriceMotor.Size = new System.Drawing.Size(111, 32);
             this.lbl__PriceMotor.TabIndex = 85;
             this.lbl__PriceMotor.Text = "_________";
-            // 
-            // lblImageMotor
-            // 
-            this.lblImageMotor.BackColor = System.Drawing.Color.Transparent;
-            this.lblImageMotor.Font = new System.Drawing.Font("Century Gothic", 16F);
-            this.lblImageMotor.ForeColor = System.Drawing.Color.White;
-            this.lblImageMotor.Location = new System.Drawing.Point(165, 358);
-            this.lblImageMotor.Name = "lblImageMotor";
-            this.lblImageMotor.Size = new System.Drawing.Size(118, 26);
-            this.lblImageMotor.TabIndex = 84;
-            this.lblImageMotor.Text = "ImageURL : ";
             // 
             // lblMaxSpeedMotor
             // 
@@ -548,41 +509,12 @@ namespace Test.ChildForms.AddForms
             this.ComboBoxIsRendMotor.StartIndex = 0;
             this.ComboBoxIsRendMotor.TabIndex = 109;
             // 
-            // btnUploadBike
-            // 
-            this.btnUploadBike.BackColor = System.Drawing.Color.Transparent;
-            this.btnUploadBike.BorderRadius = 10;
-            this.btnUploadBike.BorderThickness = 2;
-            this.btnUploadBike.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnUploadBike.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnUploadBike.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnUploadBike.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnUploadBike.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
-            this.btnUploadBike.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnUploadBike.ForeColor = System.Drawing.Color.White;
-            this.btnUploadBike.Location = new System.Drawing.Point(149, 404);
-            this.btnUploadBike.Name = "btnUploadBike";
-            this.btnUploadBike.Size = new System.Drawing.Size(125, 34);
-            this.btnUploadBike.TabIndex = 110;
-            this.btnUploadBike.Text = "Upload";
-            this.btnUploadBike.Click += new System.EventHandler(this.btnUploadBike_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(289, 337);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(135, 61);
-            this.pictureBox1.TabIndex = 111;
-            this.pictureBox1.TabStop = false;
-            // 
             // AddBikeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.btnUploadBike);
             this.Controls.Add(this.ComboBoxIsRendMotor);
             this.Controls.Add(this.ComboBoxDependedBike);
             this.Controls.Add(this.btnAddBoat);
@@ -591,7 +523,6 @@ namespace Test.ChildForms.AddForms
             this.Controls.Add(this.txtBoxPricePerMotor);
             this.Controls.Add(this.txtBoxMaxSpeedMotor);
             this.Controls.Add(this.txtBoxManufactorMotor);
-            this.Controls.Add(this.txtBoxImageMotor);
             this.Controls.Add(this.txtBoxPassAmountMotor);
             this.Controls.Add(this.txtBoxWeightMotor);
             this.Controls.Add(this.txtBoxPriceMotor);
@@ -603,7 +534,6 @@ namespace Test.ChildForms.AddForms
             this.Controls.Add(this.lbl__PassMotor);
             this.Controls.Add(this.lbl__WeightMotor);
             this.Controls.Add(this.lbl__PriceMotor);
-            this.Controls.Add(this.lblImageMotor);
             this.Controls.Add(this.lblMaxSpeedMotor);
             this.Controls.Add(this.lblPricePerDayMotor);
             this.Controls.Add(this.lblManufactorMotor);
@@ -618,7 +548,6 @@ namespace Test.ChildForms.AddForms
             this.ForeColor = System.Drawing.Color.White;
             this.Name = "AddBikeForm";
             this.Text = "AddBikeForm";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -630,7 +559,6 @@ namespace Test.ChildForms.AddForms
         private Guna.UI2.WinForms.Guna2TextBox txtBoxPricePerMotor;
         private Guna.UI2.WinForms.Guna2TextBox txtBoxMaxSpeedMotor;
         private Guna.UI2.WinForms.Guna2TextBox txtBoxManufactorMotor;
-        private Guna.UI2.WinForms.Guna2TextBox txtBoxImageMotor;
         private Guna.UI2.WinForms.Guna2TextBox txtBoxPassAmountMotor;
         private Guna.UI2.WinForms.Guna2TextBox txtBoxWeightMotor;
         private Guna.UI2.WinForms.Guna2TextBox txtBoxPriceMotor;
@@ -642,7 +570,6 @@ namespace Test.ChildForms.AddForms
         private Guna.UI2.WinForms.Guna2HtmlLabel lbl__PassMotor;
         private Guna.UI2.WinForms.Guna2HtmlLabel lbl__WeightMotor;
         private Guna.UI2.WinForms.Guna2HtmlLabel lbl__PriceMotor;
-        private Guna.UI2.WinForms.Guna2HtmlLabel lblImageMotor;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblMaxSpeedMotor;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblPricePerDayMotor;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblManufactorMotor;
@@ -658,7 +585,5 @@ namespace Test.ChildForms.AddForms
         private Guna.UI2.WinForms.Guna2Button btnAddBoat;
         private Guna.UI2.WinForms.Guna2ComboBox ComboBoxDependedBike;
         private Guna.UI2.WinForms.Guna2ComboBox ComboBoxIsRendMotor;
-        private Guna.UI2.WinForms.Guna2Button btnUploadBike;
-        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

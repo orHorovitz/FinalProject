@@ -24,7 +24,6 @@ namespace Test.ChildForms.EditForms
             this._motorcycle = motorcycle;
             _service = new AgancyService();
             GenerateFields(_motorcycle);
-            lblPleaseChooseType.Visible = false;
             btnEditBike.Click += BtnEditBike_Click;
         }
 
@@ -40,8 +39,8 @@ namespace Test.ChildForms.EditForms
                              /*double.Parse(txtBoxPricePerEditBike.Text)*/ 34,
                              comboBoxIsRentEditBike.SelectedIndex == 0 ? true : false,
                              int.Parse(txtBoxKnotEditBike.Text),
-                             comboBoxDependedEditBike.SelectedIndex == 0 ? true : false,
-                             ""), _motorcycle.Id);
+                             comboBoxDependedEditBike.SelectedIndex == 0 ? true : false
+                             ), _motorcycle.Id);
             }
             else if(_motorcycle is ATV a)
             {
@@ -53,8 +52,7 @@ namespace Test.ChildForms.EditForms
                             double.Parse(txtBoxPricePerEditBike.Text),
                             comboBoxIsRentEditBike.SelectedIndex == 0 ? true : false,
                             int.Parse(txtBoxKnotEditBike.Text),
-                            comboBoxDependedEditBike.SelectedIndex == 0 ? true : false,
-                            ""), _motorcycle.Id);
+                            comboBoxDependedEditBike.SelectedIndex == 0 ? true : false), _motorcycle.Id);
             }
             this.Close();
         }
@@ -80,5 +78,6 @@ namespace Test.ChildForms.EditForms
                 this.comboBoxDependedEditBike.SelectedIndex = a.IsDirt ? 0 : 1;
             }
         }
+
     }
 }

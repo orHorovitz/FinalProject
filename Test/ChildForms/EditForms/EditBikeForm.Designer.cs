@@ -34,20 +34,16 @@ namespace Test.ChildForms.EditForms
             this.txtBoxPricePerEditBike = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtBoxKnotEditBike = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtboxManfactorEditBike = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtBoxImageEditBike = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtBoxPassAmountEditBike = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtBoxWeightEditBike = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtBoxPriceEditBike = new Guna.UI2.WinForms.Guna2TextBox();
             this.lblDependedEditBike = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lblPleaseChooseType = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lbl__6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lbl__7 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lbl__8 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lbl__4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lbl__5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lbl__2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lbl__1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lblImageEditBike = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblKnotEditBike = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblPricePerDayEditBike = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblManufactorEditBike = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -76,10 +72,9 @@ namespace Test.ChildForms.EditForms
             this.comboBoxDependedEditBike.Items.AddRange(new object[] {
             "Yes",
             "No"});
-            this.comboBoxDependedEditBike.Location = new System.Drawing.Point(876, 516);
-            this.comboBoxDependedEditBike.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.comboBoxDependedEditBike.Location = new System.Drawing.Point(584, 279);
             this.comboBoxDependedEditBike.Name = "comboBoxDependedEditBike";
-            this.comboBoxDependedEditBike.Size = new System.Drawing.Size(208, 36);
+            this.comboBoxDependedEditBike.Size = new System.Drawing.Size(140, 36);
             this.comboBoxDependedEditBike.TabIndex = 142;
             // 
             // comboBoxIsRentEditBike
@@ -95,10 +90,9 @@ namespace Test.ChildForms.EditForms
             this.comboBoxIsRentEditBike.Items.AddRange(new object[] {
             "Yes",
             "No"});
-            this.comboBoxIsRentEditBike.Location = new System.Drawing.Point(457, 296);
-            this.comboBoxIsRentEditBike.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.comboBoxIsRentEditBike.Location = new System.Drawing.Point(305, 145);
             this.comboBoxIsRentEditBike.Name = "comboBoxIsRentEditBike";
-            this.comboBoxIsRentEditBike.Size = new System.Drawing.Size(208, 36);
+            this.comboBoxIsRentEditBike.Size = new System.Drawing.Size(140, 36);
             this.comboBoxIsRentEditBike.TabIndex = 141;
             // 
             // txtBoxPricePerEditBike
@@ -116,13 +110,12 @@ namespace Test.ChildForms.EditForms
             this.txtBoxPricePerEditBike.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtBoxPricePerEditBike.ForeColor = System.Drawing.Color.White;
             this.txtBoxPricePerEditBike.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtBoxPricePerEditBike.Location = new System.Drawing.Point(961, 125);
-            this.txtBoxPricePerEditBike.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtBoxPricePerEditBike.Location = new System.Drawing.Point(641, 102);
             this.txtBoxPricePerEditBike.Name = "txtBoxPricePerEditBike";
             this.txtBoxPricePerEditBike.PasswordChar = '\0';
             this.txtBoxPricePerEditBike.PlaceholderText = "";
             this.txtBoxPricePerEditBike.SelectedText = "";
-            this.txtBoxPricePerEditBike.Size = new System.Drawing.Size(166, 43);
+            this.txtBoxPricePerEditBike.Size = new System.Drawing.Size(111, 28);
             this.txtBoxPricePerEditBike.TabIndex = 140;
             // 
             // txtBoxKnotEditBike
@@ -140,13 +133,12 @@ namespace Test.ChildForms.EditForms
             this.txtBoxKnotEditBike.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtBoxKnotEditBike.ForeColor = System.Drawing.Color.White;
             this.txtBoxKnotEditBike.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtBoxKnotEditBike.Location = new System.Drawing.Point(829, 214);
-            this.txtBoxKnotEditBike.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtBoxKnotEditBike.Location = new System.Drawing.Point(622, 160);
             this.txtBoxKnotEditBike.Name = "txtBoxKnotEditBike";
             this.txtBoxKnotEditBike.PasswordChar = '\0';
             this.txtBoxKnotEditBike.PlaceholderText = "";
             this.txtBoxKnotEditBike.SelectedText = "";
-            this.txtBoxKnotEditBike.Size = new System.Drawing.Size(166, 43);
+            this.txtBoxKnotEditBike.Size = new System.Drawing.Size(111, 28);
             this.txtBoxKnotEditBike.TabIndex = 139;
             // 
             // txtboxManfactorEditBike
@@ -164,38 +156,13 @@ namespace Test.ChildForms.EditForms
             this.txtboxManfactorEditBike.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtboxManfactorEditBike.ForeColor = System.Drawing.Color.White;
             this.txtboxManfactorEditBike.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtboxManfactorEditBike.Location = new System.Drawing.Point(1025, 310);
-            this.txtboxManfactorEditBike.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtboxManfactorEditBike.Location = new System.Drawing.Point(683, 206);
             this.txtboxManfactorEditBike.Name = "txtboxManfactorEditBike";
             this.txtboxManfactorEditBike.PasswordChar = '\0';
             this.txtboxManfactorEditBike.PlaceholderText = "";
             this.txtboxManfactorEditBike.SelectedText = "";
-            this.txtboxManfactorEditBike.Size = new System.Drawing.Size(166, 43);
+            this.txtboxManfactorEditBike.Size = new System.Drawing.Size(111, 28);
             this.txtboxManfactorEditBike.TabIndex = 138;
-            // 
-            // txtBoxImageEditBike
-            // 
-            this.txtBoxImageEditBike.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
-            this.txtBoxImageEditBike.BorderThickness = 0;
-            this.txtBoxImageEditBike.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtBoxImageEditBike.DefaultText = "";
-            this.txtBoxImageEditBike.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtBoxImageEditBike.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtBoxImageEditBike.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtBoxImageEditBike.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtBoxImageEditBike.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
-            this.txtBoxImageEditBike.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtBoxImageEditBike.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtBoxImageEditBike.ForeColor = System.Drawing.Color.White;
-            this.txtBoxImageEditBike.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtBoxImageEditBike.Location = new System.Drawing.Point(402, 516);
-            this.txtBoxImageEditBike.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.txtBoxImageEditBike.Name = "txtBoxImageEditBike";
-            this.txtBoxImageEditBike.PasswordChar = '\0';
-            this.txtBoxImageEditBike.PlaceholderText = "";
-            this.txtBoxImageEditBike.SelectedText = "";
-            this.txtBoxImageEditBike.Size = new System.Drawing.Size(274, 43);
-            this.txtBoxImageEditBike.TabIndex = 137;
             // 
             // txtBoxPassAmountEditBike
             // 
@@ -211,13 +178,12 @@ namespace Test.ChildForms.EditForms
             this.txtBoxPassAmountEditBike.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtBoxPassAmountEditBike.ForeColor = System.Drawing.Color.White;
             this.txtBoxPassAmountEditBike.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtBoxPassAmountEditBike.Location = new System.Drawing.Point(561, 419);
-            this.txtBoxPassAmountEditBike.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtBoxPassAmountEditBike.Location = new System.Drawing.Point(376, 207);
             this.txtBoxPassAmountEditBike.Name = "txtBoxPassAmountEditBike";
             this.txtBoxPassAmountEditBike.PasswordChar = '\0';
             this.txtBoxPassAmountEditBike.PlaceholderText = "";
             this.txtBoxPassAmountEditBike.SelectedText = "";
-            this.txtBoxPassAmountEditBike.Size = new System.Drawing.Size(166, 43);
+            this.txtBoxPassAmountEditBike.Size = new System.Drawing.Size(111, 28);
             this.txtBoxPassAmountEditBike.TabIndex = 136;
             // 
             // txtBoxWeightEditBike
@@ -235,13 +201,12 @@ namespace Test.ChildForms.EditForms
             this.txtBoxWeightEditBike.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtBoxWeightEditBike.ForeColor = System.Drawing.Color.White;
             this.txtBoxWeightEditBike.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtBoxWeightEditBike.Location = new System.Drawing.Point(389, 222);
-            this.txtBoxWeightEditBike.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtBoxWeightEditBike.Location = new System.Drawing.Point(259, 100);
             this.txtBoxWeightEditBike.Name = "txtBoxWeightEditBike";
             this.txtBoxWeightEditBike.PasswordChar = '\0';
             this.txtBoxWeightEditBike.PlaceholderText = "";
             this.txtBoxWeightEditBike.SelectedText = "";
-            this.txtBoxWeightEditBike.Size = new System.Drawing.Size(166, 43);
+            this.txtBoxWeightEditBike.Size = new System.Drawing.Size(111, 28);
             this.txtBoxWeightEditBike.TabIndex = 135;
             // 
             // txtBoxPriceEditBike
@@ -259,13 +224,12 @@ namespace Test.ChildForms.EditForms
             this.txtBoxPriceEditBike.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtBoxPriceEditBike.ForeColor = System.Drawing.Color.White;
             this.txtBoxPriceEditBike.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtBoxPriceEditBike.Location = new System.Drawing.Point(369, 116);
-            this.txtBoxPriceEditBike.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtBoxPriceEditBike.Location = new System.Drawing.Point(246, 51);
             this.txtBoxPriceEditBike.Name = "txtBoxPriceEditBike";
             this.txtBoxPriceEditBike.PasswordChar = '\0';
             this.txtBoxPriceEditBike.PlaceholderText = "";
             this.txtBoxPriceEditBike.SelectedText = "";
-            this.txtBoxPriceEditBike.Size = new System.Drawing.Size(166, 43);
+            this.txtBoxPriceEditBike.Size = new System.Drawing.Size(111, 28);
             this.txtBoxPriceEditBike.TabIndex = 134;
             // 
             // lblDependedEditBike
@@ -273,34 +237,20 @@ namespace Test.ChildForms.EditForms
             this.lblDependedEditBike.BackColor = System.Drawing.Color.Transparent;
             this.lblDependedEditBike.Font = new System.Drawing.Font("Century Gothic", 16F);
             this.lblDependedEditBike.ForeColor = System.Drawing.Color.White;
-            this.lblDependedEditBike.Location = new System.Drawing.Point(731, 516);
-            this.lblDependedEditBike.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.lblDependedEditBike.Location = new System.Drawing.Point(487, 279);
             this.lblDependedEditBike.Name = "lblDependedEditBike";
-            this.lblDependedEditBike.Size = new System.Drawing.Size(120, 41);
+            this.lblDependedEditBike.Size = new System.Drawing.Size(78, 26);
             this.lblDependedEditBike.TabIndex = 133;
             this.lblDependedEditBike.Text = "Power :";
-            // 
-            // lblPleaseChooseType
-            // 
-            this.lblPleaseChooseType.BackColor = System.Drawing.Color.Transparent;
-            this.lblPleaseChooseType.Font = new System.Drawing.Font("Century Gothic", 18F);
-            this.lblPleaseChooseType.ForeColor = System.Drawing.Color.White;
-            this.lblPleaseChooseType.Location = new System.Drawing.Point(457, 185);
-            this.lblPleaseChooseType.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.lblPleaseChooseType.Name = "lblPleaseChooseType";
-            this.lblPleaseChooseType.Size = new System.Drawing.Size(355, 45);
-            this.lblPleaseChooseType.TabIndex = 132;
-            this.lblPleaseChooseType.Text = "Please Choose Type";
             // 
             // lbl__6
             // 
             this.lbl__6.BackColor = System.Drawing.Color.Transparent;
             this.lbl__6.Font = new System.Drawing.Font("Century Gothic", 18F);
             this.lbl__6.ForeColor = System.Drawing.Color.White;
-            this.lbl__6.Location = new System.Drawing.Point(961, 130);
-            this.lbl__6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.lbl__6.Location = new System.Drawing.Point(641, 105);
             this.lbl__6.Name = "lbl__6";
-            this.lbl__6.Size = new System.Drawing.Size(165, 45);
+            this.lbl__6.Size = new System.Drawing.Size(111, 32);
             this.lbl__6.TabIndex = 131;
             this.lbl__6.Text = "_________";
             // 
@@ -309,10 +259,9 @@ namespace Test.ChildForms.EditForms
             this.lbl__7.BackColor = System.Drawing.Color.Transparent;
             this.lbl__7.Font = new System.Drawing.Font("Century Gothic", 18F);
             this.lbl__7.ForeColor = System.Drawing.Color.White;
-            this.lbl__7.Location = new System.Drawing.Point(822, 214);
-            this.lbl__7.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.lbl__7.Location = new System.Drawing.Point(617, 160);
             this.lbl__7.Name = "lbl__7";
-            this.lbl__7.Size = new System.Drawing.Size(165, 45);
+            this.lbl__7.Size = new System.Drawing.Size(111, 32);
             this.lbl__7.TabIndex = 130;
             this.lbl__7.Text = "_________";
             // 
@@ -321,10 +270,9 @@ namespace Test.ChildForms.EditForms
             this.lbl__8.BackColor = System.Drawing.Color.Transparent;
             this.lbl__8.Font = new System.Drawing.Font("Century Gothic", 18F);
             this.lbl__8.ForeColor = System.Drawing.Color.White;
-            this.lbl__8.Location = new System.Drawing.Point(1025, 311);
-            this.lbl__8.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.lbl__8.Location = new System.Drawing.Point(683, 206);
             this.lbl__8.Name = "lbl__8";
-            this.lbl__8.Size = new System.Drawing.Size(165, 45);
+            this.lbl__8.Size = new System.Drawing.Size(111, 32);
             this.lbl__8.TabIndex = 129;
             this.lbl__8.Text = "_________";
             // 
@@ -333,34 +281,20 @@ namespace Test.ChildForms.EditForms
             this.lbl__4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
             this.lbl__4.Font = new System.Drawing.Font("Century Gothic", 18F);
             this.lbl__4.ForeColor = System.Drawing.Color.White;
-            this.lbl__4.Location = new System.Drawing.Point(561, 419);
-            this.lbl__4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.lbl__4.Location = new System.Drawing.Point(376, 207);
             this.lbl__4.Name = "lbl__4";
-            this.lbl__4.Size = new System.Drawing.Size(165, 45);
+            this.lbl__4.Size = new System.Drawing.Size(111, 32);
             this.lbl__4.TabIndex = 128;
             this.lbl__4.Text = "_________";
-            // 
-            // lbl__5
-            // 
-            this.lbl__5.BackColor = System.Drawing.Color.Transparent;
-            this.lbl__5.Font = new System.Drawing.Font("Century Gothic", 18F);
-            this.lbl__5.ForeColor = System.Drawing.Color.White;
-            this.lbl__5.Location = new System.Drawing.Point(402, 516);
-            this.lbl__5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.lbl__5.Name = "lbl__5";
-            this.lbl__5.Size = new System.Drawing.Size(273, 45);
-            this.lbl__5.TabIndex = 127;
-            this.lbl__5.Text = "_______________";
             // 
             // lbl__2
             // 
             this.lbl__2.BackColor = System.Drawing.Color.Transparent;
             this.lbl__2.Font = new System.Drawing.Font("Century Gothic", 18F);
             this.lbl__2.ForeColor = System.Drawing.Color.White;
-            this.lbl__2.Location = new System.Drawing.Point(389, 222);
-            this.lbl__2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.lbl__2.Location = new System.Drawing.Point(259, 100);
             this.lbl__2.Name = "lbl__2";
-            this.lbl__2.Size = new System.Drawing.Size(165, 45);
+            this.lbl__2.Size = new System.Drawing.Size(111, 32);
             this.lbl__2.TabIndex = 126;
             this.lbl__2.Text = "_________";
             // 
@@ -369,34 +303,20 @@ namespace Test.ChildForms.EditForms
             this.lbl__1.BackColor = System.Drawing.Color.Transparent;
             this.lbl__1.Font = new System.Drawing.Font("Century Gothic", 18F);
             this.lbl__1.ForeColor = System.Drawing.Color.White;
-            this.lbl__1.Location = new System.Drawing.Point(369, 116);
-            this.lbl__1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.lbl__1.Location = new System.Drawing.Point(246, 51);
             this.lbl__1.Name = "lbl__1";
-            this.lbl__1.Size = new System.Drawing.Size(165, 45);
+            this.lbl__1.Size = new System.Drawing.Size(111, 32);
             this.lbl__1.TabIndex = 125;
             this.lbl__1.Text = "_________";
-            // 
-            // lblImageEditBike
-            // 
-            this.lblImageEditBike.BackColor = System.Drawing.Color.Transparent;
-            this.lblImageEditBike.Font = new System.Drawing.Font("Century Gothic", 16F);
-            this.lblImageEditBike.ForeColor = System.Drawing.Color.White;
-            this.lblImageEditBike.Location = new System.Drawing.Point(252, 525);
-            this.lblImageEditBike.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.lblImageEditBike.Name = "lblImageEditBike";
-            this.lblImageEditBike.Size = new System.Drawing.Size(179, 41);
-            this.lblImageEditBike.TabIndex = 124;
-            this.lblImageEditBike.Text = "ImageURL : ";
             // 
             // lblKnotEditBike
             // 
             this.lblKnotEditBike.BackColor = System.Drawing.Color.Transparent;
             this.lblKnotEditBike.Font = new System.Drawing.Font("Century Gothic", 16F);
             this.lblKnotEditBike.ForeColor = System.Drawing.Color.White;
-            this.lblKnotEditBike.Location = new System.Drawing.Point(731, 225);
-            this.lblKnotEditBike.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.lblKnotEditBike.Location = new System.Drawing.Point(487, 162);
             this.lblKnotEditBike.Name = "lblKnotEditBike";
-            this.lblKnotEditBike.Size = new System.Drawing.Size(198, 41);
+            this.lblKnotEditBike.Size = new System.Drawing.Size(129, 26);
             this.lblKnotEditBike.TabIndex = 123;
             this.lblKnotEditBike.Text = "Max Speed :";
             // 
@@ -405,10 +325,9 @@ namespace Test.ChildForms.EditForms
             this.lblPricePerDayEditBike.BackColor = System.Drawing.Color.Transparent;
             this.lblPricePerDayEditBike.Font = new System.Drawing.Font("Century Gothic", 16F);
             this.lblPricePerDayEditBike.ForeColor = System.Drawing.Color.White;
-            this.lblPricePerDayEditBike.Location = new System.Drawing.Point(731, 125);
-            this.lblPricePerDayEditBike.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.lblPricePerDayEditBike.Location = new System.Drawing.Point(487, 102);
             this.lblPricePerDayEditBike.Name = "lblPricePerDayEditBike";
-            this.lblPricePerDayEditBike.Size = new System.Drawing.Size(231, 41);
+            this.lblPricePerDayEditBike.Size = new System.Drawing.Size(148, 26);
             this.lblPricePerDayEditBike.TabIndex = 122;
             this.lblPricePerDayEditBike.Text = "Price per day :";
             // 
@@ -417,10 +336,9 @@ namespace Test.ChildForms.EditForms
             this.lblManufactorEditBike.BackColor = System.Drawing.Color.Transparent;
             this.lblManufactorEditBike.Font = new System.Drawing.Font("Century Gothic", 16F);
             this.lblManufactorEditBike.ForeColor = System.Drawing.Color.White;
-            this.lblManufactorEditBike.Location = new System.Drawing.Point(731, 321);
-            this.lblManufactorEditBike.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.lblManufactorEditBike.Location = new System.Drawing.Point(487, 213);
             this.lblManufactorEditBike.Name = "lblManufactorEditBike";
-            this.lblManufactorEditBike.Size = new System.Drawing.Size(282, 41);
+            this.lblManufactorEditBike.Size = new System.Drawing.Size(186, 26);
             this.lblManufactorEditBike.TabIndex = 121;
             this.lblManufactorEditBike.Text = "ManufactorDate :";
             // 
@@ -429,10 +347,9 @@ namespace Test.ChildForms.EditForms
             this.lblPassAmountEditBike.BackColor = System.Drawing.Color.Transparent;
             this.lblPassAmountEditBike.Font = new System.Drawing.Font("Century Gothic", 16F);
             this.lblPassAmountEditBike.ForeColor = System.Drawing.Color.White;
-            this.lblPassAmountEditBike.Location = new System.Drawing.Point(252, 422);
-            this.lblPassAmountEditBike.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.lblPassAmountEditBike.Location = new System.Drawing.Point(170, 209);
             this.lblPassAmountEditBike.Name = "lblPassAmountEditBike";
-            this.lblPassAmountEditBike.Size = new System.Drawing.Size(303, 41);
+            this.lblPassAmountEditBike.Size = new System.Drawing.Size(200, 26);
             this.lblPassAmountEditBike.TabIndex = 120;
             this.lblPassAmountEditBike.Text = "Passenger Amount:";
             // 
@@ -441,10 +358,9 @@ namespace Test.ChildForms.EditForms
             this.lblIsRendEditBike.BackColor = System.Drawing.Color.Transparent;
             this.lblIsRendEditBike.Font = new System.Drawing.Font("Century Gothic", 16F);
             this.lblIsRendEditBike.ForeColor = System.Drawing.Color.White;
-            this.lblIsRendEditBike.Location = new System.Drawing.Point(252, 321);
-            this.lblIsRendEditBike.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.lblIsRendEditBike.Location = new System.Drawing.Point(168, 162);
             this.lblIsRendEditBike.Name = "lblIsRendEditBike";
-            this.lblIsRendEditBike.Size = new System.Drawing.Size(196, 41);
+            this.lblIsRendEditBike.Size = new System.Drawing.Size(129, 26);
             this.lblIsRendEditBike.TabIndex = 119;
             this.lblIsRendEditBike.Text = "IsRendNow :";
             // 
@@ -453,10 +369,9 @@ namespace Test.ChildForms.EditForms
             this.lblWeightEditBike.BackColor = System.Drawing.Color.Transparent;
             this.lblWeightEditBike.Font = new System.Drawing.Font("Century Gothic", 16F);
             this.lblWeightEditBike.ForeColor = System.Drawing.Color.White;
-            this.lblWeightEditBike.Location = new System.Drawing.Point(252, 231);
-            this.lblWeightEditBike.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.lblWeightEditBike.Location = new System.Drawing.Point(168, 106);
             this.lblWeightEditBike.Name = "lblWeightEditBike";
-            this.lblWeightEditBike.Size = new System.Drawing.Size(131, 41);
+            this.lblWeightEditBike.Size = new System.Drawing.Size(84, 26);
             this.lblWeightEditBike.TabIndex = 118;
             this.lblWeightEditBike.Text = "Weight :";
             // 
@@ -465,10 +380,9 @@ namespace Test.ChildForms.EditForms
             this.lblPriceEditB.BackColor = System.Drawing.Color.Transparent;
             this.lblPriceEditB.Font = new System.Drawing.Font("Century Gothic", 16F);
             this.lblPriceEditB.ForeColor = System.Drawing.Color.White;
-            this.lblPriceEditB.Location = new System.Drawing.Point(245, 125);
-            this.lblPriceEditB.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.lblPriceEditB.Location = new System.Drawing.Point(168, 53);
             this.lblPriceEditB.Name = "lblPriceEditB";
-            this.lblPriceEditB.Size = new System.Drawing.Size(99, 41);
+            this.lblPriceEditB.Size = new System.Drawing.Size(63, 26);
             this.lblPriceEditB.TabIndex = 117;
             this.lblPriceEditB.Text = "Price :";
             // 
@@ -477,8 +391,7 @@ namespace Test.ChildForms.EditForms
             this.lblTypeDepended.BackColor = System.Drawing.Color.Transparent;
             this.lblTypeDepended.Font = new System.Drawing.Font("Century Gothic", 20.5F);
             this.lblTypeDepended.ForeColor = System.Drawing.Color.Gainsboro;
-            this.lblTypeDepended.Location = new System.Drawing.Point(402, 431);
-            this.lblTypeDepended.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.lblTypeDepended.Location = new System.Drawing.Point(270, 215);
             this.lblTypeDepended.Name = "lblTypeDepended";
             this.lblTypeDepended.Size = new System.Drawing.Size(3, 2);
             this.lblTypeDepended.TabIndex = 114;
@@ -495,10 +408,9 @@ namespace Test.ChildForms.EditForms
             this.btnEditBike.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
             this.btnEditBike.Font = new System.Drawing.Font("Century Gothic", 11F);
             this.btnEditBike.ForeColor = System.Drawing.Color.White;
-            this.btnEditBike.Location = new System.Drawing.Point(481, 602);
-            this.btnEditBike.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnEditBike.Location = new System.Drawing.Point(321, 391);
             this.btnEditBike.Name = "btnEditBike";
-            this.btnEditBike.Size = new System.Drawing.Size(426, 52);
+            this.btnEditBike.Size = new System.Drawing.Size(284, 34);
             this.btnEditBike.TabIndex = 113;
             this.btnEditBike.Text = "EDIT";
             // 
@@ -507,8 +419,7 @@ namespace Test.ChildForms.EditForms
             this.lblWightBoat.BackColor = System.Drawing.Color.Transparent;
             this.lblWightBoat.Font = new System.Drawing.Font("Century Gothic", 20.5F);
             this.lblWightBoat.ForeColor = System.Drawing.Color.Gainsboro;
-            this.lblWightBoat.Location = new System.Drawing.Point(389, 242);
-            this.lblWightBoat.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.lblWightBoat.Location = new System.Drawing.Point(259, 113);
             this.lblWightBoat.Name = "lblWightBoat";
             this.lblWightBoat.Size = new System.Drawing.Size(3, 2);
             this.lblWightBoat.TabIndex = 112;
@@ -519,8 +430,7 @@ namespace Test.ChildForms.EditForms
             this.lblKnotBoat.BackColor = System.Drawing.Color.Transparent;
             this.lblKnotBoat.Font = new System.Drawing.Font("Century Gothic", 20.5F);
             this.lblKnotBoat.ForeColor = System.Drawing.Color.Gainsboro;
-            this.lblKnotBoat.Location = new System.Drawing.Point(402, 321);
-            this.lblKnotBoat.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.lblKnotBoat.Location = new System.Drawing.Point(268, 162);
             this.lblKnotBoat.Name = "lblKnotBoat";
             this.lblKnotBoat.Size = new System.Drawing.Size(3, 2);
             this.lblKnotBoat.TabIndex = 111;
@@ -531,8 +441,7 @@ namespace Test.ChildForms.EditForms
             this.lblPriceBoat.BackColor = System.Drawing.Color.Transparent;
             this.lblPriceBoat.Font = new System.Drawing.Font("Century Gothic", 20.5F);
             this.lblPriceBoat.ForeColor = System.Drawing.Color.Gainsboro;
-            this.lblPriceBoat.Location = new System.Drawing.Point(369, 119);
-            this.lblPriceBoat.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.lblPriceBoat.Location = new System.Drawing.Point(246, 77);
             this.lblPriceBoat.Name = "lblPriceBoat";
             this.lblPriceBoat.Size = new System.Drawing.Size(3, 2);
             this.lblPriceBoat.TabIndex = 110;
@@ -549,38 +458,33 @@ namespace Test.ChildForms.EditForms
             this.guna2GradientCircleButton1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(7)))), ((int)(((byte)(7)))));
             this.guna2GradientCircleButton1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2GradientCircleButton1.ForeColor = System.Drawing.Color.White;
-            this.guna2GradientCircleButton1.Location = new System.Drawing.Point(-264, 14);
-            this.guna2GradientCircleButton1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.guna2GradientCircleButton1.Location = new System.Drawing.Point(-204, 12);
             this.guna2GradientCircleButton1.Name = "guna2GradientCircleButton1";
             this.guna2GradientCircleButton1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2GradientCircleButton1.Size = new System.Drawing.Size(549, 655);
+            this.guna2GradientCircleButton1.Size = new System.Drawing.Size(366, 426);
             this.guna2GradientCircleButton1.TabIndex = 109;
             // 
             // EditBikeForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
-            this.ClientSize = new System.Drawing.Size(1200, 692);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.comboBoxDependedEditBike);
             this.Controls.Add(this.comboBoxIsRentEditBike);
             this.Controls.Add(this.txtBoxPricePerEditBike);
             this.Controls.Add(this.txtBoxKnotEditBike);
             this.Controls.Add(this.txtboxManfactorEditBike);
-            this.Controls.Add(this.txtBoxImageEditBike);
             this.Controls.Add(this.txtBoxPassAmountEditBike);
             this.Controls.Add(this.txtBoxWeightEditBike);
             this.Controls.Add(this.txtBoxPriceEditBike);
             this.Controls.Add(this.lblDependedEditBike);
-            this.Controls.Add(this.lblPleaseChooseType);
             this.Controls.Add(this.lbl__6);
             this.Controls.Add(this.lbl__7);
             this.Controls.Add(this.lbl__8);
             this.Controls.Add(this.lbl__4);
-            this.Controls.Add(this.lbl__5);
             this.Controls.Add(this.lbl__2);
             this.Controls.Add(this.lbl__1);
-            this.Controls.Add(this.lblImageEditBike);
             this.Controls.Add(this.lblKnotEditBike);
             this.Controls.Add(this.lblPricePerDayEditBike);
             this.Controls.Add(this.lblManufactorEditBike);
@@ -594,6 +498,7 @@ namespace Test.ChildForms.EditForms
             this.Controls.Add(this.lblKnotBoat);
             this.Controls.Add(this.lblPriceBoat);
             this.Controls.Add(this.guna2GradientCircleButton1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "EditBikeForm";
             this.Text = "EditBikeForm";
             this.ResumeLayout(false);
@@ -607,20 +512,16 @@ namespace Test.ChildForms.EditForms
         private Guna.UI2.WinForms.Guna2TextBox txtBoxPricePerEditBike;
         private Guna.UI2.WinForms.Guna2TextBox txtBoxKnotEditBike;
         private Guna.UI2.WinForms.Guna2TextBox txtboxManfactorEditBike;
-        private Guna.UI2.WinForms.Guna2TextBox txtBoxImageEditBike;
         private Guna.UI2.WinForms.Guna2TextBox txtBoxPassAmountEditBike;
         private Guna.UI2.WinForms.Guna2TextBox txtBoxWeightEditBike;
         private Guna.UI2.WinForms.Guna2TextBox txtBoxPriceEditBike;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblDependedEditBike;
-        private Guna.UI2.WinForms.Guna2HtmlLabel lblPleaseChooseType;
         private Guna.UI2.WinForms.Guna2HtmlLabel lbl__6;
         private Guna.UI2.WinForms.Guna2HtmlLabel lbl__7;
         private Guna.UI2.WinForms.Guna2HtmlLabel lbl__8;
         private Guna.UI2.WinForms.Guna2HtmlLabel lbl__4;
-        private Guna.UI2.WinForms.Guna2HtmlLabel lbl__5;
         private Guna.UI2.WinForms.Guna2HtmlLabel lbl__2;
         private Guna.UI2.WinForms.Guna2HtmlLabel lbl__1;
-        private Guna.UI2.WinForms.Guna2HtmlLabel lblImageEditBike;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblKnotEditBike;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblPricePerDayEditBike;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblManufactorEditBike;

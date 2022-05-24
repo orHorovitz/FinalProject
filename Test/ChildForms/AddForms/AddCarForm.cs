@@ -125,10 +125,8 @@ namespace Test.ChildForms.AddForms
             lblPriceCar.Visible = false;
             lblWeightCar.Visible = false;
             lblPricePerDayCar.Visible = false;
-            lblImage.Visible = false;
             lblDepended.Visible = false;
             lbl__DependedCar.Visible = false;
-            lbl__ImageCar.Visible = false;
             lbl__ManfactorCar.Visible = false;
             lbl__MileageCar.Visible=false;
             lbl__PriceCar.Visible = false;
@@ -148,10 +146,8 @@ namespace Test.ChildForms.AddForms
             lblPriceCar.Visible = true;
             lblWeightCar.Visible = true;
             lblPricePerDayCar.Visible = true;
-            lblImage.Visible = true;
             lblDepended.Visible = true;
             lbl__DependedCar.Visible = true;
-            lbl__ImageCar.Visible = true;
             lbl__ManfactorCar.Visible = true;
             lbl__MileageCar.Visible = true;
             lbl__PriceCar.Visible = true;
@@ -179,16 +175,16 @@ namespace Test.ChildForms.AddForms
                 isRend = false;
             }
             int Mileage = int.Parse(txtBoxMileageCar.Text);
-            string Url = txtBoxImageCar.Text;
+            
             if (comboBoxType.SelectedIndex == 1)
             {
                 double FuelStorage = double.Parse(txtBoxDependedCar.Text);
-                newCar = new FinalProject.Models.PrivateCarEntities.GasCar(Price, Weight, PassangerAmount, dateTime, PricePerDay, isRend, Mileage, FuelStorage, Url);
+                newCar = new FinalProject.Models.PrivateCarEntities.GasCar(Price, Weight, PassangerAmount, dateTime, PricePerDay, isRend, Mileage, FuelStorage);
             }
             else if (comboBoxType.SelectedIndex == 2)
             {
                 double Power = double.Parse(txtBoxDependedCar.Text);
-                newCar = new FinalProject.Models.PrivateCarEntities.ElectricCar(Price, Weight, PassangerAmount, dateTime, PricePerDay, isRend, Mileage, Power, Url);
+                newCar = new FinalProject.Models.PrivateCarEntities.ElectricCar(Price, Weight, PassangerAmount, dateTime, PricePerDay, isRend, Mileage, Power);
             }
 
             //return newCar;

@@ -9,7 +9,7 @@ namespace FinalProject.Models
     [Serializable]
     public abstract class Boat : Vehicle
     {
-        public Boat(double price, double weight, int passangerAmount, DateTime manufactorDate, double pricePerDay, bool isRentedNow,int knot,string imageUri) : base(price, weight, passangerAmount, manufactorDate, pricePerDay, isRentedNow,imageUri)
+        public Boat(double price, double weight, int passangerAmount, DateTime manufactorDate, double pricePerDay, bool isRentedNow,int knot) : base(price, weight, passangerAmount, manufactorDate, pricePerDay, isRentedNow)
         {
                Knot= knot;
         }

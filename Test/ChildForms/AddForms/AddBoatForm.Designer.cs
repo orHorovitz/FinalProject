@@ -40,7 +40,6 @@ namespace Test.ChildForms.AddForms
             this.txtBoxPricePerB = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtBoxKnotB = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtBoxManufactorB = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtBoxImageB = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtBoxPassAmountB = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtBoxWeightB = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtBoxPriceB = new Guna.UI2.WinForms.Guna2TextBox();
@@ -50,10 +49,8 @@ namespace Test.ChildForms.AddForms
             this.lbl__7 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lbl__8 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lbl__4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lbl__5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lbl__2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lbl__1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lblImageB = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblKnotB = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblPricePerDayB = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblManufactorB = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -259,29 +256,6 @@ namespace Test.ChildForms.AddForms
             this.txtBoxManufactorB.Size = new System.Drawing.Size(111, 28);
             this.txtBoxManufactorB.TabIndex = 102;
             // 
-            // txtBoxImageB
-            // 
-            this.txtBoxImageB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
-            this.txtBoxImageB.BorderThickness = 0;
-            this.txtBoxImageB.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtBoxImageB.DefaultText = "";
-            this.txtBoxImageB.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtBoxImageB.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtBoxImageB.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtBoxImageB.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtBoxImageB.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
-            this.txtBoxImageB.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtBoxImageB.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtBoxImageB.ForeColor = System.Drawing.Color.White;
-            this.txtBoxImageB.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtBoxImageB.Location = new System.Drawing.Point(258, 338);
-            this.txtBoxImageB.Name = "txtBoxImageB";
-            this.txtBoxImageB.PasswordChar = '\0';
-            this.txtBoxImageB.PlaceholderText = "";
-            this.txtBoxImageB.SelectedText = "";
-            this.txtBoxImageB.Size = new System.Drawing.Size(183, 28);
-            this.txtBoxImageB.TabIndex = 100;
-            // 
             // txtBoxPassAmountB
             // 
             this.txtBoxPassAmountB.BorderThickness = 0;
@@ -416,17 +390,6 @@ namespace Test.ChildForms.AddForms
             this.lbl__4.TabIndex = 89;
             this.lbl__4.Text = "_________";
             // 
-            // lbl__5
-            // 
-            this.lbl__5.BackColor = System.Drawing.Color.Transparent;
-            this.lbl__5.Font = new System.Drawing.Font("Century Gothic", 18F);
-            this.lbl__5.ForeColor = System.Drawing.Color.White;
-            this.lbl__5.Location = new System.Drawing.Point(258, 338);
-            this.lbl__5.Name = "lbl__5";
-            this.lbl__5.Size = new System.Drawing.Size(183, 32);
-            this.lbl__5.TabIndex = 88;
-            this.lbl__5.Text = "_______________";
-            // 
             // lbl__2
             // 
             this.lbl__2.BackColor = System.Drawing.Color.Transparent;
@@ -448,17 +411,6 @@ namespace Test.ChildForms.AddForms
             this.lbl__1.Size = new System.Drawing.Size(111, 32);
             this.lbl__1.TabIndex = 85;
             this.lbl__1.Text = "_________";
-            // 
-            // lblImageB
-            // 
-            this.lblImageB.BackColor = System.Drawing.Color.Transparent;
-            this.lblImageB.Font = new System.Drawing.Font("Century Gothic", 16F);
-            this.lblImageB.ForeColor = System.Drawing.Color.White;
-            this.lblImageB.Location = new System.Drawing.Point(158, 344);
-            this.lblImageB.Name = "lblImageB";
-            this.lblImageB.Size = new System.Drawing.Size(118, 26);
-            this.lblImageB.TabIndex = 84;
-            this.lblImageB.Text = "ImageURL : ";
             // 
             // lblKnotB
             // 
@@ -653,7 +605,6 @@ namespace Test.ChildForms.AddForms
             this.Controls.Add(this.txtBoxPricePerB);
             this.Controls.Add(this.txtBoxKnotB);
             this.Controls.Add(this.txtBoxManufactorB);
-            this.Controls.Add(this.txtBoxImageB);
             this.Controls.Add(this.txtBoxPassAmountB);
             this.Controls.Add(this.txtBoxWeightB);
             this.Controls.Add(this.txtBoxPriceB);
@@ -663,10 +614,8 @@ namespace Test.ChildForms.AddForms
             this.Controls.Add(this.lbl__7);
             this.Controls.Add(this.lbl__8);
             this.Controls.Add(this.lbl__4);
-            this.Controls.Add(this.lbl__5);
             this.Controls.Add(this.lbl__2);
             this.Controls.Add(this.lbl__1);
-            this.Controls.Add(this.lblImageB);
             this.Controls.Add(this.lblKnotB);
             this.Controls.Add(this.lblPricePerDayB);
             this.Controls.Add(this.lblManufactorB);
@@ -706,7 +655,6 @@ namespace Test.ChildForms.AddForms
         private Guna.UI2.WinForms.Guna2TextBox txtBoxPricePerB;
         private Guna.UI2.WinForms.Guna2TextBox txtBoxKnotB;
         private Guna.UI2.WinForms.Guna2TextBox txtBoxManufactorB;
-        private Guna.UI2.WinForms.Guna2TextBox txtBoxImageB;
         private Guna.UI2.WinForms.Guna2TextBox txtBoxPassAmountB;
         private Guna.UI2.WinForms.Guna2TextBox txtBoxWeightB;
         private Guna.UI2.WinForms.Guna2TextBox txtBoxPriceB;
@@ -716,10 +664,8 @@ namespace Test.ChildForms.AddForms
         private Guna.UI2.WinForms.Guna2HtmlLabel lbl__7;
         private Guna.UI2.WinForms.Guna2HtmlLabel lbl__8;
         private Guna.UI2.WinForms.Guna2HtmlLabel lbl__4;
-        private Guna.UI2.WinForms.Guna2HtmlLabel lbl__5;
         private Guna.UI2.WinForms.Guna2HtmlLabel lbl__2;
         private Guna.UI2.WinForms.Guna2HtmlLabel lbl__1;
-        private Guna.UI2.WinForms.Guna2HtmlLabel lblImageB;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblKnotB;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblPricePerDayB;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblManufactorB;

@@ -98,6 +98,7 @@ namespace Test.ChildForms
             this.btnAdd.TabIndex = 2;
             this.btnAdd.Text = "ADD";
             this.btnAdd.UseVisualStyleBackColor = true;
+            
             // 
             // panelTitleSaction
             // 
@@ -125,12 +126,12 @@ namespace Test.ChildForms
             // lblHeader
             // 
             this.lblHeader.AutoSize = true;
-            this.lblHeader.Font = new System.Drawing.Font("Segoe Print", 40F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHeader.Font = new System.Drawing.Font("Century Gothic", 45F);
             this.lblHeader.ForeColor = System.Drawing.Color.LightGray;
-            this.lblHeader.Location = new System.Drawing.Point(349, -11);
+            this.lblHeader.Location = new System.Drawing.Point(316, 7);
             this.lblHeader.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblHeader.Name = "lblHeader";
-            this.lblHeader.Size = new System.Drawing.Size(200, 95);
+            this.lblHeader.Size = new System.Drawing.Size(214, 74);
             this.lblHeader.TabIndex = 0;
             this.lblHeader.Text = "label1";
             this.lblHeader.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;

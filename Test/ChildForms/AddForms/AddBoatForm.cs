@@ -22,7 +22,6 @@ namespace Test.ChildForms.AddForms
         {
             
             InitializeComponent();
-            lblImageB.Visible = false;
             MakeItFalse();
             this.view = view;
             this._agancy = _agancy;
@@ -133,7 +132,6 @@ namespace Test.ChildForms.AddForms
             lblDependedB.Visible = false;
             lblPricePerDayB.Visible = false;
             lblWeightB.Visible = false;
-            lblImageB.Visible=false;
             lblIsRendB.Visible = false;
             lblKnotB.Visible = false;
             lblManufactorB.Visible = false;
@@ -142,7 +140,6 @@ namespace Test.ChildForms.AddForms
             lbl__2.Visible = false;
             comboBoxIsRentBoat.Visible = false;
             lbl__4.Visible = false;
-            lbl__5.Visible = false;
             lbl__6.Visible = false;
             lbl__7.Visible = false;
             lbl__8.Visible = false;
@@ -158,7 +155,6 @@ namespace Test.ChildForms.AddForms
             lblDependedB.Visible = true;
             lblPricePerDayB.Visible = true;
             lblWeightB.Visible = true;
-            lblImageB.Visible = true;
             lblIsRendB.Visible = true;
             lblKnotB.Visible = true;
             lblManufactorB.Visible = true;
@@ -168,7 +164,6 @@ namespace Test.ChildForms.AddForms
             comboBoxIsRentBoat.Visible=true;
             comboBoxDependedBoat.Visible= true;
             lbl__4.Visible = true;
-            lbl__5.Visible = true;
             lbl__6.Visible = true;
             lbl__7.Visible = true;
             lbl__8.Visible = true;
@@ -197,7 +192,6 @@ namespace Test.ChildForms.AddForms
                 isRend=false;
             }
             int Knot = int.Parse(txtBoxKnotB.Text);
-            string Url = txtBoxImageB.Text;
             if (comboBoxChoose.SelectedIndex == 1)
             {
                 if (comboBoxDependedBoat.SelectedIndex == 1)
@@ -208,13 +202,13 @@ namespace Test.ChildForms.AddForms
                 {
                     IsWaterJet = false;
                 }
-                NewBoat = new FinalProject.Models.BoatEntities.JetSki(Price, Weight, PassangerAmount, dateTime, PricePerDay, isRend, Knot, IsWaterJet, Url);
+                NewBoat = new FinalProject.Models.BoatEntities.JetSki(Price, Weight, PassangerAmount, dateTime, PricePerDay, isRend, Knot, IsWaterJet);
             }
             else if (comboBoxChoose.SelectedIndex == 2)
             {
 
                 int RoomAmount = int.Parse(txtBoxDependedB.Text);
-                NewBoat = new FinalProject.Models.BoatEntities.Yacht(Price, Weight, PassangerAmount, dateTime, PricePerDay, isRend, Knot, RoomAmount, Url);
+                NewBoat = new FinalProject.Models.BoatEntities.Yacht(Price, Weight, PassangerAmount, dateTime, PricePerDay, isRend, Knot, RoomAmount);
             }
 
             //return newCar;

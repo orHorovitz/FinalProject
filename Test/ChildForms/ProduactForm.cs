@@ -83,6 +83,12 @@ namespace Test.ChildForms
                 var editView = new EditBikeForm(c);
                 editView.Show();
             }
+            if(SelectedItem is PrivateCar b)
+            {
+                var editView = new EditCarForms(b);
+                editView.Show();
+            }
+               
         }
 
         private void BtnDelete_Click(object sender, EventArgs e)
@@ -227,14 +233,5 @@ namespace Test.ChildForms
             RenderItemsOnChange();
         }
 
-        private void guna2Button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2Button2_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
