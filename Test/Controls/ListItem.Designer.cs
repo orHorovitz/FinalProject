@@ -49,10 +49,10 @@ namespace Test.Controls
             // 
             // pbx
             // 
-            this.pbx.Location = new System.Drawing.Point(3, 3);
-            this.pbx.Margin = new System.Windows.Forms.Padding(2);
+            this.pbx.Location = new System.Drawing.Point(4, 4);
+            this.pbx.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pbx.Name = "pbx";
-            this.pbx.Size = new System.Drawing.Size(145, 126);
+            this.pbx.Size = new System.Drawing.Size(193, 155);
             this.pbx.TabIndex = 0;
             this.pbx.TabStop = false;
             // 
@@ -62,10 +62,9 @@ namespace Test.Controls
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(20)))), ((int)(((byte)(45)))));
             this.label1.Font = new System.Drawing.Font("Century Gothic", 11F);
             this.label1.ForeColor = System.Drawing.Color.Transparent;
-            this.label1.Location = new System.Drawing.Point(162, 3);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(216, 4);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(28, 20);
+            this.label1.Size = new System.Drawing.Size(33, 22);
             this.label1.TabIndex = 1;
             this.label1.Text = "Id:";
             // 
@@ -74,10 +73,9 @@ namespace Test.Controls
             this.tblId.AutoSize = true;
             this.tblId.Font = new System.Drawing.Font("Century Gothic", 9F);
             this.tblId.ForeColor = System.Drawing.Color.White;
-            this.tblId.Location = new System.Drawing.Point(188, 3);
-            this.tblId.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.tblId.Location = new System.Drawing.Point(255, 4);
             this.tblId.Name = "tblId";
-            this.tblId.Size = new System.Drawing.Size(0, 17);
+            this.tblId.Size = new System.Drawing.Size(0, 20);
             this.tblId.TabIndex = 2;
             // 
             // label2
@@ -86,10 +84,9 @@ namespace Test.Controls
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(20)))), ((int)(((byte)(45)))));
             this.label2.Font = new System.Drawing.Font("Century Gothic", 11F);
             this.label2.ForeColor = System.Drawing.Color.Transparent;
-            this.label2.Location = new System.Drawing.Point(162, 33);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(216, 41);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(50, 20);
+            this.label2.Size = new System.Drawing.Size(59, 22);
             this.label2.TabIndex = 3;
             this.label2.Text = "Price:";
             // 
@@ -99,10 +96,9 @@ namespace Test.Controls
             this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(20)))), ((int)(((byte)(45)))));
             this.label3.Font = new System.Drawing.Font("Century Gothic", 11F);
             this.label3.ForeColor = System.Drawing.Color.Transparent;
-            this.label3.Location = new System.Drawing.Point(162, 61);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(216, 75);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(111, 20);
+            this.label3.Size = new System.Drawing.Size(136, 22);
             this.label3.TabIndex = 5;
             this.label3.Text = "Price Per Day:";
             // 
@@ -112,10 +108,9 @@ namespace Test.Controls
             this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(20)))), ((int)(((byte)(45)))));
             this.label4.Font = new System.Drawing.Font("Century Gothic", 11F);
             this.label4.ForeColor = System.Drawing.Color.Transparent;
-            this.label4.Location = new System.Drawing.Point(303, 109);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Location = new System.Drawing.Point(404, 134);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(141, 20);
+            this.label4.Size = new System.Drawing.Size(176, 22);
             this.label4.TabIndex = 6;
             this.label4.Text = "Manufactor Date:";
             // 
@@ -125,10 +120,9 @@ namespace Test.Controls
             this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(20)))), ((int)(((byte)(45)))));
             this.label5.Font = new System.Drawing.Font("Century Gothic", 11F);
             this.label5.ForeColor = System.Drawing.Color.Transparent;
-            this.label5.Location = new System.Drawing.Point(483, 3);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Location = new System.Drawing.Point(644, 4);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(112, 20);
+            this.label5.Size = new System.Drawing.Size(137, 22);
             this.label5.TabIndex = 7;
             this.label5.Text = "IsRentedNow:";
             // 
@@ -138,10 +132,9 @@ namespace Test.Controls
             this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(20)))), ((int)(((byte)(45)))));
             this.label6.Font = new System.Drawing.Font("Century Gothic", 11F);
             this.label6.ForeColor = System.Drawing.Color.Transparent;
-            this.label6.Location = new System.Drawing.Point(483, 39);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Location = new System.Drawing.Point(644, 48);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(65, 20);
+            this.label6.Size = new System.Drawing.Size(79, 22);
             this.label6.TabIndex = 8;
             this.label6.Text = "Weight:";
             // 
@@ -150,10 +143,9 @@ namespace Test.Controls
             this.tblPrice.AutoSize = true;
             this.tblPrice.Font = new System.Drawing.Font("Century Gothic", 9F);
             this.tblPrice.ForeColor = System.Drawing.Color.White;
-            this.tblPrice.Location = new System.Drawing.Point(207, 36);
-            this.tblPrice.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.tblPrice.Location = new System.Drawing.Point(292, 43);
             this.tblPrice.Name = "tblPrice";
-            this.tblPrice.Size = new System.Drawing.Size(0, 17);
+            this.tblPrice.Size = new System.Drawing.Size(0, 20);
             this.tblPrice.TabIndex = 9;
             // 
             // tblPPD
@@ -161,10 +153,9 @@ namespace Test.Controls
             this.tblPPD.AutoSize = true;
             this.tblPPD.Font = new System.Drawing.Font("Century Gothic", 9F);
             this.tblPPD.ForeColor = System.Drawing.Color.White;
-            this.tblPPD.Location = new System.Drawing.Point(277, 64);
-            this.tblPPD.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.tblPPD.Location = new System.Drawing.Point(374, 77);
             this.tblPPD.Name = "tblPPD";
-            this.tblPPD.Size = new System.Drawing.Size(0, 17);
+            this.tblPPD.Size = new System.Drawing.Size(0, 20);
             this.tblPPD.TabIndex = 10;
             // 
             // tblManufactorDate
@@ -172,10 +163,9 @@ namespace Test.Controls
             this.tblManufactorDate.AutoSize = true;
             this.tblManufactorDate.Font = new System.Drawing.Font("Century Gothic", 9F);
             this.tblManufactorDate.ForeColor = System.Drawing.Color.White;
-            this.tblManufactorDate.Location = new System.Drawing.Point(448, 112);
-            this.tblManufactorDate.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.tblManufactorDate.Location = new System.Drawing.Point(604, 135);
             this.tblManufactorDate.Name = "tblManufactorDate";
-            this.tblManufactorDate.Size = new System.Drawing.Size(0, 17);
+            this.tblManufactorDate.Size = new System.Drawing.Size(0, 20);
             this.tblManufactorDate.TabIndex = 11;
             // 
             // tblIsRented
@@ -183,10 +173,9 @@ namespace Test.Controls
             this.tblIsRented.AutoSize = true;
             this.tblIsRented.Font = new System.Drawing.Font("Century Gothic", 9F);
             this.tblIsRented.ForeColor = System.Drawing.Color.White;
-            this.tblIsRented.Location = new System.Drawing.Point(599, 3);
-            this.tblIsRented.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.tblIsRented.Location = new System.Drawing.Point(804, 4);
             this.tblIsRented.Name = "tblIsRented";
-            this.tblIsRented.Size = new System.Drawing.Size(0, 17);
+            this.tblIsRented.Size = new System.Drawing.Size(0, 20);
             this.tblIsRented.TabIndex = 12;
             // 
             // tlbWeight
@@ -194,10 +183,9 @@ namespace Test.Controls
             this.tlbWeight.AutoSize = true;
             this.tlbWeight.Font = new System.Drawing.Font("Century Gothic", 9F);
             this.tlbWeight.ForeColor = System.Drawing.Color.White;
-            this.tlbWeight.Location = new System.Drawing.Point(553, 39);
-            this.tlbWeight.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.tlbWeight.Location = new System.Drawing.Point(743, 48);
             this.tlbWeight.Name = "tlbWeight";
-            this.tlbWeight.Size = new System.Drawing.Size(0, 17);
+            this.tlbWeight.Size = new System.Drawing.Size(0, 20);
             this.tlbWeight.TabIndex = 13;
             // 
             // label7
@@ -206,10 +194,9 @@ namespace Test.Controls
             this.label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(20)))), ((int)(((byte)(45)))));
             this.label7.Font = new System.Drawing.Font("Century Gothic", 11F);
             this.label7.ForeColor = System.Drawing.Color.Transparent;
-            this.label7.Location = new System.Drawing.Point(483, 70);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label7.Location = new System.Drawing.Point(644, 86);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(145, 20);
+            this.label7.Size = new System.Drawing.Size(184, 22);
             this.label7.TabIndex = 14;
             this.label7.Text = "PassangerAmount:";
             // 
@@ -218,15 +205,14 @@ namespace Test.Controls
             this.tlbPassangerAmount.AutoSize = true;
             this.tlbPassangerAmount.Font = new System.Drawing.Font("Century Gothic", 9F);
             this.tlbPassangerAmount.ForeColor = System.Drawing.Color.White;
-            this.tlbPassangerAmount.Location = new System.Drawing.Point(632, 71);
-            this.tlbPassangerAmount.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.tlbPassangerAmount.Location = new System.Drawing.Point(847, 87);
             this.tlbPassangerAmount.Name = "tlbPassangerAmount";
-            this.tlbPassangerAmount.Size = new System.Drawing.Size(0, 17);
+            this.tlbPassangerAmount.Size = new System.Drawing.Size(0, 20);
             this.tlbPassangerAmount.TabIndex = 16;
             // 
             // ListItem
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
             this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -245,9 +231,9 @@ namespace Test.Controls
             this.Controls.Add(this.tblId);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pbx);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "ListItem";
-            this.Size = new System.Drawing.Size(770, 131);
+            this.Size = new System.Drawing.Size(1027, 161);
             this.Load += new System.EventHandler(this.ListItem_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbx)).EndInit();
             this.ResumeLayout(false);

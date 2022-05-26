@@ -72,9 +72,10 @@
             this.comboBoxIsRentEditC.Items.AddRange(new object[] {
             "Yes",
             "No"});
-            this.comboBoxIsRentEditC.Location = new System.Drawing.Point(282, 194);
+            this.comboBoxIsRentEditC.Location = new System.Drawing.Point(366, 188);
+            this.comboBoxIsRentEditC.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.comboBoxIsRentEditC.Name = "comboBoxIsRentEditC";
-            this.comboBoxIsRentEditC.Size = new System.Drawing.Size(140, 36);
+            this.comboBoxIsRentEditC.Size = new System.Drawing.Size(185, 36);
             this.comboBoxIsRentEditC.TabIndex = 169;
             // 
             // txtBoxPricePerEditC
@@ -92,12 +93,13 @@
             this.txtBoxPricePerEditC.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtBoxPricePerEditC.ForeColor = System.Drawing.Color.White;
             this.txtBoxPricePerEditC.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtBoxPricePerEditC.Location = new System.Drawing.Point(639, 103);
+            this.txtBoxPricePerEditC.Location = new System.Drawing.Point(842, 76);
+            this.txtBoxPricePerEditC.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtBoxPricePerEditC.Name = "txtBoxPricePerEditC";
             this.txtBoxPricePerEditC.PasswordChar = '\0';
             this.txtBoxPricePerEditC.PlaceholderText = "";
             this.txtBoxPricePerEditC.SelectedText = "";
-            this.txtBoxPricePerEditC.Size = new System.Drawing.Size(111, 28);
+            this.txtBoxPricePerEditC.Size = new System.Drawing.Size(148, 34);
             this.txtBoxPricePerEditC.TabIndex = 168;
             // 
             // txtBoxMileageEditC
@@ -115,12 +117,13 @@
             this.txtBoxMileageEditC.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtBoxMileageEditC.ForeColor = System.Drawing.Color.White;
             this.txtBoxMileageEditC.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtBoxMileageEditC.Location = new System.Drawing.Point(620, 159);
+            this.txtBoxMileageEditC.Location = new System.Drawing.Point(817, 145);
+            this.txtBoxMileageEditC.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtBoxMileageEditC.Name = "txtBoxMileageEditC";
             this.txtBoxMileageEditC.PasswordChar = '\0';
             this.txtBoxMileageEditC.PlaceholderText = "";
             this.txtBoxMileageEditC.SelectedText = "";
-            this.txtBoxMileageEditC.Size = new System.Drawing.Size(111, 28);
+            this.txtBoxMileageEditC.Size = new System.Drawing.Size(148, 34);
             this.txtBoxMileageEditC.TabIndex = 167;
             // 
             // txtboxManfactorEditC
@@ -138,12 +141,13 @@
             this.txtboxManfactorEditC.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtboxManfactorEditC.ForeColor = System.Drawing.Color.White;
             this.txtboxManfactorEditC.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtboxManfactorEditC.Location = new System.Drawing.Point(681, 207);
+            this.txtboxManfactorEditC.Location = new System.Drawing.Point(898, 204);
+            this.txtboxManfactorEditC.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtboxManfactorEditC.Name = "txtboxManfactorEditC";
             this.txtboxManfactorEditC.PasswordChar = '\0';
             this.txtboxManfactorEditC.PlaceholderText = "";
             this.txtboxManfactorEditC.SelectedText = "";
-            this.txtboxManfactorEditC.Size = new System.Drawing.Size(111, 28);
+            this.txtboxManfactorEditC.Size = new System.Drawing.Size(148, 34);
             this.txtboxManfactorEditC.TabIndex = 166;
             // 
             // txtBoxPassAmountEditC
@@ -160,12 +164,13 @@
             this.txtBoxPassAmountEditC.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtBoxPassAmountEditC.ForeColor = System.Drawing.Color.White;
             this.txtBoxPassAmountEditC.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtBoxPassAmountEditC.Location = new System.Drawing.Point(353, 256);
+            this.txtBoxPassAmountEditC.Location = new System.Drawing.Point(461, 264);
+            this.txtBoxPassAmountEditC.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtBoxPassAmountEditC.Name = "txtBoxPassAmountEditC";
             this.txtBoxPassAmountEditC.PasswordChar = '\0';
             this.txtBoxPassAmountEditC.PlaceholderText = "";
             this.txtBoxPassAmountEditC.SelectedText = "";
-            this.txtBoxPassAmountEditC.Size = new System.Drawing.Size(111, 28);
+            this.txtBoxPassAmountEditC.Size = new System.Drawing.Size(148, 34);
             this.txtBoxPassAmountEditC.TabIndex = 165;
             // 
             // txtBoxWeightEditC
@@ -183,12 +188,13 @@
             this.txtBoxWeightEditC.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtBoxWeightEditC.ForeColor = System.Drawing.Color.White;
             this.txtBoxWeightEditC.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtBoxWeightEditC.Location = new System.Drawing.Point(236, 149);
+            this.txtBoxWeightEditC.Location = new System.Drawing.Point(305, 132);
+            this.txtBoxWeightEditC.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtBoxWeightEditC.Name = "txtBoxWeightEditC";
             this.txtBoxWeightEditC.PasswordChar = '\0';
             this.txtBoxWeightEditC.PlaceholderText = "";
             this.txtBoxWeightEditC.SelectedText = "";
-            this.txtBoxWeightEditC.Size = new System.Drawing.Size(111, 28);
+            this.txtBoxWeightEditC.Size = new System.Drawing.Size(148, 34);
             this.txtBoxWeightEditC.TabIndex = 164;
             // 
             // txtBoxPriceEditC
@@ -206,12 +212,13 @@
             this.txtBoxPriceEditC.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtBoxPriceEditC.ForeColor = System.Drawing.Color.White;
             this.txtBoxPriceEditC.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtBoxPriceEditC.Location = new System.Drawing.Point(214, 96);
+            this.txtBoxPriceEditC.Location = new System.Drawing.Point(275, 67);
+            this.txtBoxPriceEditC.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtBoxPriceEditC.Name = "txtBoxPriceEditC";
             this.txtBoxPriceEditC.PasswordChar = '\0';
             this.txtBoxPriceEditC.PlaceholderText = "";
             this.txtBoxPriceEditC.SelectedText = "";
-            this.txtBoxPriceEditC.Size = new System.Drawing.Size(111, 28);
+            this.txtBoxPriceEditC.Size = new System.Drawing.Size(148, 34);
             this.txtBoxPriceEditC.TabIndex = 163;
             // 
             // lblDependedEditC
@@ -219,9 +226,10 @@
             this.lblDependedEditC.BackColor = System.Drawing.Color.Transparent;
             this.lblDependedEditC.Font = new System.Drawing.Font("Century Gothic", 16F);
             this.lblDependedEditC.ForeColor = System.Drawing.Color.White;
-            this.lblDependedEditC.Location = new System.Drawing.Point(485, 283);
+            this.lblDependedEditC.Location = new System.Drawing.Point(637, 297);
+            this.lblDependedEditC.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lblDependedEditC.Name = "lblDependedEditC";
-            this.lblDependedEditC.Size = new System.Drawing.Size(78, 26);
+            this.lblDependedEditC.Size = new System.Drawing.Size(101, 35);
             this.lblDependedEditC.TabIndex = 162;
             this.lblDependedEditC.Text = "Power :";
             // 
@@ -230,9 +238,10 @@
             this.lbl__6.BackColor = System.Drawing.Color.Transparent;
             this.lbl__6.Font = new System.Drawing.Font("Century Gothic", 18F);
             this.lbl__6.ForeColor = System.Drawing.Color.White;
-            this.lbl__6.Location = new System.Drawing.Point(639, 106);
+            this.lbl__6.Location = new System.Drawing.Point(842, 79);
+            this.lbl__6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lbl__6.Name = "lbl__6";
-            this.lbl__6.Size = new System.Drawing.Size(111, 32);
+            this.lbl__6.Size = new System.Drawing.Size(138, 39);
             this.lbl__6.TabIndex = 161;
             this.lbl__6.Text = "_________";
             // 
@@ -241,9 +250,10 @@
             this.lbl__7.BackColor = System.Drawing.Color.Transparent;
             this.lbl__7.Font = new System.Drawing.Font("Century Gothic", 18F);
             this.lbl__7.ForeColor = System.Drawing.Color.White;
-            this.lbl__7.Location = new System.Drawing.Point(620, 159);
+            this.lbl__7.Location = new System.Drawing.Point(817, 145);
+            this.lbl__7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lbl__7.Name = "lbl__7";
-            this.lbl__7.Size = new System.Drawing.Size(111, 32);
+            this.lbl__7.Size = new System.Drawing.Size(138, 39);
             this.lbl__7.TabIndex = 160;
             this.lbl__7.Text = "_________";
             // 
@@ -252,9 +262,10 @@
             this.lbl__8.BackColor = System.Drawing.Color.Transparent;
             this.lbl__8.Font = new System.Drawing.Font("Century Gothic", 18F);
             this.lbl__8.ForeColor = System.Drawing.Color.White;
-            this.lbl__8.Location = new System.Drawing.Point(681, 207);
+            this.lbl__8.Location = new System.Drawing.Point(898, 204);
+            this.lbl__8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lbl__8.Name = "lbl__8";
-            this.lbl__8.Size = new System.Drawing.Size(111, 32);
+            this.lbl__8.Size = new System.Drawing.Size(138, 39);
             this.lbl__8.TabIndex = 159;
             this.lbl__8.Text = "_________";
             // 
@@ -263,9 +274,10 @@
             this.lbl__4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
             this.lbl__4.Font = new System.Drawing.Font("Century Gothic", 18F);
             this.lbl__4.ForeColor = System.Drawing.Color.White;
-            this.lbl__4.Location = new System.Drawing.Point(353, 256);
+            this.lbl__4.Location = new System.Drawing.Point(461, 264);
+            this.lbl__4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lbl__4.Name = "lbl__4";
-            this.lbl__4.Size = new System.Drawing.Size(111, 32);
+            this.lbl__4.Size = new System.Drawing.Size(138, 39);
             this.lbl__4.TabIndex = 158;
             this.lbl__4.Text = "_________";
             // 
@@ -274,9 +286,10 @@
             this.lbl__2.BackColor = System.Drawing.Color.Transparent;
             this.lbl__2.Font = new System.Drawing.Font("Century Gothic", 18F);
             this.lbl__2.ForeColor = System.Drawing.Color.White;
-            this.lbl__2.Location = new System.Drawing.Point(236, 149);
+            this.lbl__2.Location = new System.Drawing.Point(305, 132);
+            this.lbl__2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lbl__2.Name = "lbl__2";
-            this.lbl__2.Size = new System.Drawing.Size(111, 32);
+            this.lbl__2.Size = new System.Drawing.Size(138, 39);
             this.lbl__2.TabIndex = 157;
             this.lbl__2.Text = "_________";
             // 
@@ -285,9 +298,10 @@
             this.lbl__1.BackColor = System.Drawing.Color.Transparent;
             this.lbl__1.Font = new System.Drawing.Font("Century Gothic", 18F);
             this.lbl__1.ForeColor = System.Drawing.Color.White;
-            this.lbl__1.Location = new System.Drawing.Point(214, 96);
+            this.lbl__1.Location = new System.Drawing.Point(275, 67);
+            this.lbl__1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lbl__1.Name = "lbl__1";
-            this.lbl__1.Size = new System.Drawing.Size(111, 32);
+            this.lbl__1.Size = new System.Drawing.Size(138, 39);
             this.lbl__1.TabIndex = 156;
             this.lbl__1.Text = "_________";
             // 
@@ -296,9 +310,10 @@
             this.lblMileageEditC.BackColor = System.Drawing.Color.Transparent;
             this.lblMileageEditC.Font = new System.Drawing.Font("Century Gothic", 16F);
             this.lblMileageEditC.ForeColor = System.Drawing.Color.White;
-            this.lblMileageEditC.Location = new System.Drawing.Point(485, 166);
+            this.lblMileageEditC.Location = new System.Drawing.Point(637, 153);
+            this.lblMileageEditC.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lblMileageEditC.Name = "lblMileageEditC";
-            this.lblMileageEditC.Size = new System.Drawing.Size(97, 26);
+            this.lblMileageEditC.Size = new System.Drawing.Size(126, 35);
             this.lblMileageEditC.TabIndex = 155;
             this.lblMileageEditC.Text = "Mileage :";
             // 
@@ -307,9 +322,10 @@
             this.lblPricePerDayEditC.BackColor = System.Drawing.Color.Transparent;
             this.lblPricePerDayEditC.Font = new System.Drawing.Font("Century Gothic", 16F);
             this.lblPricePerDayEditC.ForeColor = System.Drawing.Color.White;
-            this.lblPricePerDayEditC.Location = new System.Drawing.Point(485, 106);
+            this.lblPricePerDayEditC.Location = new System.Drawing.Point(637, 79);
+            this.lblPricePerDayEditC.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lblPricePerDayEditC.Name = "lblPricePerDayEditC";
-            this.lblPricePerDayEditC.Size = new System.Drawing.Size(148, 26);
+            this.lblPricePerDayEditC.Size = new System.Drawing.Size(192, 35);
             this.lblPricePerDayEditC.TabIndex = 154;
             this.lblPricePerDayEditC.Text = "Price per day :";
             // 
@@ -318,9 +334,10 @@
             this.lblManufactorEditC.BackColor = System.Drawing.Color.Transparent;
             this.lblManufactorEditC.Font = new System.Drawing.Font("Century Gothic", 16F);
             this.lblManufactorEditC.ForeColor = System.Drawing.Color.White;
-            this.lblManufactorEditC.Location = new System.Drawing.Point(485, 217);
+            this.lblManufactorEditC.Location = new System.Drawing.Point(637, 216);
+            this.lblManufactorEditC.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lblManufactorEditC.Name = "lblManufactorEditC";
-            this.lblManufactorEditC.Size = new System.Drawing.Size(186, 26);
+            this.lblManufactorEditC.Size = new System.Drawing.Size(237, 35);
             this.lblManufactorEditC.TabIndex = 153;
             this.lblManufactorEditC.Text = "ManufactorDate :";
             // 
@@ -329,9 +346,10 @@
             this.lblPassAmountEditC.BackColor = System.Drawing.Color.Transparent;
             this.lblPassAmountEditC.Font = new System.Drawing.Font("Century Gothic", 16F);
             this.lblPassAmountEditC.ForeColor = System.Drawing.Color.White;
-            this.lblPassAmountEditC.Location = new System.Drawing.Point(147, 258);
+            this.lblPassAmountEditC.Location = new System.Drawing.Point(186, 267);
+            this.lblPassAmountEditC.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lblPassAmountEditC.Name = "lblPassAmountEditC";
-            this.lblPassAmountEditC.Size = new System.Drawing.Size(200, 26);
+            this.lblPassAmountEditC.Size = new System.Drawing.Size(254, 35);
             this.lblPassAmountEditC.TabIndex = 152;
             this.lblPassAmountEditC.Text = "Passenger Amount:";
             // 
@@ -340,9 +358,10 @@
             this.lblIsRendEditC.BackColor = System.Drawing.Color.Transparent;
             this.lblIsRendEditC.Font = new System.Drawing.Font("Century Gothic", 16F);
             this.lblIsRendEditC.ForeColor = System.Drawing.Color.White;
-            this.lblIsRendEditC.Location = new System.Drawing.Point(145, 211);
+            this.lblIsRendEditC.Location = new System.Drawing.Point(183, 209);
+            this.lblIsRendEditC.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lblIsRendEditC.Name = "lblIsRendEditC";
-            this.lblIsRendEditC.Size = new System.Drawing.Size(129, 26);
+            this.lblIsRendEditC.Size = new System.Drawing.Size(164, 35);
             this.lblIsRendEditC.TabIndex = 151;
             this.lblIsRendEditC.Text = "IsRendNow :";
             // 
@@ -351,9 +370,10 @@
             this.lblWeightEditC.BackColor = System.Drawing.Color.Transparent;
             this.lblWeightEditC.Font = new System.Drawing.Font("Century Gothic", 16F);
             this.lblWeightEditC.ForeColor = System.Drawing.Color.White;
-            this.lblWeightEditC.Location = new System.Drawing.Point(145, 155);
+            this.lblWeightEditC.Location = new System.Drawing.Point(183, 140);
+            this.lblWeightEditC.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lblWeightEditC.Name = "lblWeightEditC";
-            this.lblWeightEditC.Size = new System.Drawing.Size(84, 26);
+            this.lblWeightEditC.Size = new System.Drawing.Size(110, 35);
             this.lblWeightEditC.TabIndex = 150;
             this.lblWeightEditC.Text = "Weight :";
             // 
@@ -362,9 +382,10 @@
             this.lblPriceEditC.BackColor = System.Drawing.Color.Transparent;
             this.lblPriceEditC.Font = new System.Drawing.Font("Century Gothic", 16F);
             this.lblPriceEditC.ForeColor = System.Drawing.Color.White;
-            this.lblPriceEditC.Location = new System.Drawing.Point(145, 102);
+            this.lblPriceEditC.Location = new System.Drawing.Point(183, 75);
+            this.lblPriceEditC.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lblPriceEditC.Name = "lblPriceEditC";
-            this.lblPriceEditC.Size = new System.Drawing.Size(63, 26);
+            this.lblPriceEditC.Size = new System.Drawing.Size(82, 35);
             this.lblPriceEditC.TabIndex = 149;
             this.lblPriceEditC.Text = "Price :";
             // 
@@ -373,7 +394,8 @@
             this.lblTypeDepended.BackColor = System.Drawing.Color.Transparent;
             this.lblTypeDepended.Font = new System.Drawing.Font("Century Gothic", 20.5F);
             this.lblTypeDepended.ForeColor = System.Drawing.Color.Gainsboro;
-            this.lblTypeDepended.Location = new System.Drawing.Point(247, 264);
+            this.lblTypeDepended.Location = new System.Drawing.Point(319, 274);
+            this.lblTypeDepended.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lblTypeDepended.Name = "lblTypeDepended";
             this.lblTypeDepended.Size = new System.Drawing.Size(3, 2);
             this.lblTypeDepended.TabIndex = 148;
@@ -390,9 +412,10 @@
             this.btnEditCar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
             this.btnEditCar.Font = new System.Drawing.Font("Century Gothic", 11F);
             this.btnEditCar.ForeColor = System.Drawing.Color.White;
-            this.btnEditCar.Location = new System.Drawing.Point(298, 391);
+            this.btnEditCar.Location = new System.Drawing.Point(397, 481);
+            this.btnEditCar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnEditCar.Name = "btnEditCar";
-            this.btnEditCar.Size = new System.Drawing.Size(284, 34);
+            this.btnEditCar.Size = new System.Drawing.Size(379, 42);
             this.btnEditCar.TabIndex = 147;
             this.btnEditCar.Text = "EDIT";
             this.btnEditCar.Click += new System.EventHandler(this.btnEditCar_Click);
@@ -402,7 +425,8 @@
             this.lblWightBoat.BackColor = System.Drawing.Color.Transparent;
             this.lblWightBoat.Font = new System.Drawing.Font("Century Gothic", 20.5F);
             this.lblWightBoat.ForeColor = System.Drawing.Color.Gainsboro;
-            this.lblWightBoat.Location = new System.Drawing.Point(236, 162);
+            this.lblWightBoat.Location = new System.Drawing.Point(305, 148);
+            this.lblWightBoat.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lblWightBoat.Name = "lblWightBoat";
             this.lblWightBoat.Size = new System.Drawing.Size(3, 2);
             this.lblWightBoat.TabIndex = 146;
@@ -413,7 +437,8 @@
             this.lblKnotBoat.BackColor = System.Drawing.Color.Transparent;
             this.lblKnotBoat.Font = new System.Drawing.Font("Century Gothic", 20.5F);
             this.lblKnotBoat.ForeColor = System.Drawing.Color.Gainsboro;
-            this.lblKnotBoat.Location = new System.Drawing.Point(245, 211);
+            this.lblKnotBoat.Location = new System.Drawing.Point(317, 209);
+            this.lblKnotBoat.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lblKnotBoat.Name = "lblKnotBoat";
             this.lblKnotBoat.Size = new System.Drawing.Size(3, 2);
             this.lblKnotBoat.TabIndex = 145;
@@ -424,7 +449,8 @@
             this.lblPriceBoat.BackColor = System.Drawing.Color.Transparent;
             this.lblPriceBoat.Font = new System.Drawing.Font("Century Gothic", 20.5F);
             this.lblPriceBoat.ForeColor = System.Drawing.Color.Gainsboro;
-            this.lblPriceBoat.Location = new System.Drawing.Point(223, 126);
+            this.lblPriceBoat.Location = new System.Drawing.Point(287, 104);
+            this.lblPriceBoat.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lblPriceBoat.Name = "lblPriceBoat";
             this.lblPriceBoat.Size = new System.Drawing.Size(3, 2);
             this.lblPriceBoat.TabIndex = 144;
@@ -441,10 +467,11 @@
             this.guna2GradientCircleButton1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(7)))), ((int)(((byte)(7)))));
             this.guna2GradientCircleButton1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2GradientCircleButton1.ForeColor = System.Drawing.Color.White;
-            this.guna2GradientCircleButton1.Location = new System.Drawing.Point(-246, 12);
+            this.guna2GradientCircleButton1.Location = new System.Drawing.Point(-328, 15);
+            this.guna2GradientCircleButton1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2GradientCircleButton1.Name = "guna2GradientCircleButton1";
             this.guna2GradientCircleButton1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2GradientCircleButton1.Size = new System.Drawing.Size(366, 426);
+            this.guna2GradientCircleButton1.Size = new System.Drawing.Size(488, 524);
             this.guna2GradientCircleButton1.TabIndex = 143;
             // 
             // txtboxEditDependedC
@@ -462,12 +489,13 @@
             this.txtboxEditDependedC.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtboxEditDependedC.ForeColor = System.Drawing.Color.White;
             this.txtboxEditDependedC.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtboxEditDependedC.Location = new System.Drawing.Point(569, 283);
+            this.txtboxEditDependedC.Location = new System.Drawing.Point(749, 297);
+            this.txtboxEditDependedC.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtboxEditDependedC.Name = "txtboxEditDependedC";
             this.txtboxEditDependedC.PasswordChar = '\0';
             this.txtboxEditDependedC.PlaceholderText = "";
             this.txtboxEditDependedC.SelectedText = "";
-            this.txtboxEditDependedC.Size = new System.Drawing.Size(111, 28);
+            this.txtboxEditDependedC.Size = new System.Drawing.Size(148, 34);
             this.txtboxEditDependedC.TabIndex = 170;
             // 
             // guna2HtmlLabel1
@@ -475,18 +503,19 @@
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Century Gothic", 18F);
             this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.White;
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(569, 283);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(749, 297);
+            this.guna2HtmlLabel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(111, 32);
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(138, 39);
             this.guna2HtmlLabel1.TabIndex = 171;
             this.guna2HtmlLabel1.Text = "_________";
             // 
             // EditCarForms
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.guna2HtmlLabel1);
             this.Controls.Add(this.txtboxEditDependedC);
             this.Controls.Add(this.comboBoxIsRentEditC);
@@ -516,6 +545,7 @@
             this.Controls.Add(this.lblKnotBoat);
             this.Controls.Add(this.lblPriceBoat);
             this.Controls.Add(this.guna2GradientCircleButton1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "EditCarForms";
             this.Text = "EditCarForms";
             this.ResumeLayout(false);

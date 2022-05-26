@@ -21,7 +21,7 @@ namespace FinalProject
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FinalProject.Forms.HomePage());
+            Application.Run(new FinalProject.Forms.Spl());
         }
        
     }

@@ -22,7 +22,7 @@ namespace Test.ChildForms
     {
         public List<Vehicle> Vehicles { get; set; }
         public List<Vehicle> FilteredVehicles { get; set; }
-        public Vehicle SelectedItem { get; set; }
+        public ListItem SelectedItem { get; set; }
         public string HeaderName { get;private set; }
         private string[] _categories = new string[100];
 
@@ -78,17 +78,17 @@ namespace Test.ChildForms
 
         private void BtnEdit_Click(object sender, EventArgs e)
         {
-            if(SelectedItem is Motorcycle c)
+            if(SelectedItem.Vehicle is Motorcycle c)
             {
                 var editView = new EditBikeForm(c);
                 editView.Show();
             }
-            else if(SelectedItem is PrivateCar b)
+            else if(SelectedItem.Vehicle is PrivateCar b)
             {
                 var editView = new EditCarForms(b);
                 editView.Show();
             }
-            else if(SelectedItem is Boat t)
+            else if(SelectedItem.Vehicle is Boat t)
             {
                 var editView = new EditShipForms(t);
                 editView.Show();
@@ -105,8 +105,9 @@ namespace Test.ChildForms
                 var result = MessageBox.Show("Are You Sure ? ", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
                 if (result == DialogResult.Yes)
                 {
-                    _agancy.DeleteItem(SelectedItem.Id);
-                    Vehicles.Remove(Vehicles.Find(v => v.Id == SelectedItem.Id));
+                    _agancy.DeleteItem(SelectedItem.Vehicle.Id);
+                    Vehicles.Remove(Vehicles.Find(v => v.Id == SelectedItem.Vehicle.Id));
+                    unSetSelectedItem(SelectedItem);
                     RenderItemsOnChange();
                 }
                 else return;
@@ -193,24 +194,44 @@ namespace Test.ChildForms
         {
             if(sender is ListItem li)
             {
-                if (!_selectedFlag)
+                if(this.SelectedItem == null)
                 {
-                    this.SelectedItem = li.Vehicle;
-                    li.BackColor = Color.Gray;
-                    btnDelete.Enabled = true;
-                    btnEdit.Enabled = true;
-                    _selectedFlag = true;
+                    setSelectedItem(li);
+
                 }
                 else
                 {
-                    li.BackColor = Color.White;
-                    btnDelete.Enabled = false;
-                    btnEdit.Enabled = false;
-                    _selectedFlag = false;
+                    if(this.SelectedItem == li)
+                    {
+                        unSetSelectedItem(li);
+                    }
+                    else
+                    {
+                        this.SelectedItem.BackColor = Color.Transparent;
+                        setSelectedItem(li);
+
+                    }
                 }
+
+
             }
         }
 
+        private void unSetSelectedItem(ListItem li)
+        {
+            this.SelectedItem = null;
+            li.BackColor = Color.Transparent;
+            btnDelete.Enabled = false;
+            btnEdit.Enabled = false;
+        }
+
+        private void setSelectedItem(ListItem li)
+        {
+            this.SelectedItem = li;
+            li.BackColor = Color.Gray;
+            btnDelete.Enabled = true;
+            btnEdit.Enabled = true;
+        }
 
         private void GetTypesList()
         {

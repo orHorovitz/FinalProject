@@ -75,11 +75,12 @@ namespace Test.ChildForms.AddForms
             this.btnRefrash.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
             this.btnRefrash.Font = new System.Drawing.Font("Century Gothic", 11F);
             this.btnRefrash.ForeColor = System.Drawing.Color.White;
-            this.btnRefrash.Location = new System.Drawing.Point(677, 14);
+            this.btnRefrash.Location = new System.Drawing.Point(903, 17);
+            this.btnRefrash.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnRefrash.Name = "btnRefrash";
-            this.btnRefrash.Size = new System.Drawing.Size(93, 34);
+            this.btnRefrash.Size = new System.Drawing.Size(151, 42);
             this.btnRefrash.TabIndex = 44;
-            this.btnRefrash.Text = "Refrash";
+            this.btnRefrash.Text = "Refresh";
             this.btnRefrash.Click += new System.EventHandler(this.btnRefrash_Click);
             // 
             // comboBoxChoose
@@ -99,9 +100,10 @@ namespace Test.ChildForms.AddForms
             "Choose Type",
             "Jetski",
             "Yacht"});
-            this.comboBoxChoose.Location = new System.Drawing.Point(557, -56);
+            this.comboBoxChoose.Location = new System.Drawing.Point(743, -69);
+            this.comboBoxChoose.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.comboBoxChoose.Name = "comboBoxChoose";
-            this.comboBoxChoose.Size = new System.Drawing.Size(176, 36);
+            this.comboBoxChoose.Size = new System.Drawing.Size(233, 36);
             this.comboBoxChoose.StartIndex = 0;
             this.comboBoxChoose.TabIndex = 42;
             // 
@@ -110,7 +112,8 @@ namespace Test.ChildForms.AddForms
             this.lblTypeDepended.BackColor = System.Drawing.Color.Transparent;
             this.lblTypeDepended.Font = new System.Drawing.Font("Century Gothic", 20.5F);
             this.lblTypeDepended.ForeColor = System.Drawing.Color.Gainsboro;
-            this.lblTypeDepended.Location = new System.Drawing.Point(182, 204);
+            this.lblTypeDepended.Location = new System.Drawing.Point(243, 251);
+            this.lblTypeDepended.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lblTypeDepended.Name = "lblTypeDepended";
             this.lblTypeDepended.Size = new System.Drawing.Size(3, 2);
             this.lblTypeDepended.TabIndex = 40;
@@ -127,9 +130,10 @@ namespace Test.ChildForms.AddForms
             this.btnAddCar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
             this.btnAddCar.Font = new System.Drawing.Font("Century Gothic", 11F);
             this.btnAddCar.ForeColor = System.Drawing.Color.White;
-            this.btnAddCar.Location = new System.Drawing.Point(301, 391);
+            this.btnAddCar.Location = new System.Drawing.Point(401, 481);
+            this.btnAddCar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnAddCar.Name = "btnAddCar";
-            this.btnAddCar.Size = new System.Drawing.Size(284, 34);
+            this.btnAddCar.Size = new System.Drawing.Size(379, 42);
             this.btnAddCar.TabIndex = 39;
             this.btnAddCar.Text = "ADD";
             this.btnAddCar.Click += new System.EventHandler(this.btnAddCar_Click);
@@ -139,7 +143,8 @@ namespace Test.ChildForms.AddForms
             this.lblWightBoat.BackColor = System.Drawing.Color.Transparent;
             this.lblWightBoat.Font = new System.Drawing.Font("Century Gothic", 20.5F);
             this.lblWightBoat.ForeColor = System.Drawing.Color.Gainsboro;
-            this.lblWightBoat.Location = new System.Drawing.Point(173, 62);
+            this.lblWightBoat.Location = new System.Drawing.Point(231, 76);
+            this.lblWightBoat.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lblWightBoat.Name = "lblWightBoat";
             this.lblWightBoat.Size = new System.Drawing.Size(3, 2);
             this.lblWightBoat.TabIndex = 32;
@@ -150,7 +155,8 @@ namespace Test.ChildForms.AddForms
             this.lblKnotBoat.BackColor = System.Drawing.Color.Transparent;
             this.lblKnotBoat.Font = new System.Drawing.Font("Century Gothic", 20.5F);
             this.lblKnotBoat.ForeColor = System.Drawing.Color.Gainsboro;
-            this.lblKnotBoat.Location = new System.Drawing.Point(182, 132);
+            this.lblKnotBoat.Location = new System.Drawing.Point(243, 162);
+            this.lblKnotBoat.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lblKnotBoat.Name = "lblKnotBoat";
             this.lblKnotBoat.Size = new System.Drawing.Size(3, 2);
             this.lblKnotBoat.TabIndex = 31;
@@ -161,7 +167,8 @@ namespace Test.ChildForms.AddForms
             this.lblPriceBoat.BackColor = System.Drawing.Color.Transparent;
             this.lblPriceBoat.Font = new System.Drawing.Font("Century Gothic", 20.5F);
             this.lblPriceBoat.ForeColor = System.Drawing.Color.Gainsboro;
-            this.lblPriceBoat.Location = new System.Drawing.Point(173, -11);
+            this.lblPriceBoat.Location = new System.Drawing.Point(231, -14);
+            this.lblPriceBoat.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lblPriceBoat.Name = "lblPriceBoat";
             this.lblPriceBoat.Size = new System.Drawing.Size(3, 2);
             this.lblPriceBoat.TabIndex = 30;
@@ -178,10 +185,11 @@ namespace Test.ChildForms.AddForms
             this.guna2GradientCircleButton1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(7)))), ((int)(((byte)(7)))));
             this.guna2GradientCircleButton1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2GradientCircleButton1.ForeColor = System.Drawing.Color.White;
-            this.guna2GradientCircleButton1.Location = new System.Drawing.Point(-226, 12);
+            this.guna2GradientCircleButton1.Location = new System.Drawing.Point(-301, 15);
+            this.guna2GradientCircleButton1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2GradientCircleButton1.Name = "guna2GradientCircleButton1";
             this.guna2GradientCircleButton1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2GradientCircleButton1.Size = new System.Drawing.Size(366, 426);
+            this.guna2GradientCircleButton1.Size = new System.Drawing.Size(488, 524);
             this.guna2GradientCircleButton1.TabIndex = 29;
             // 
             // comboBoxType
@@ -201,9 +209,10 @@ namespace Test.ChildForms.AddForms
             "Choose Type",
             "Gas car",
             "ElectricCar"});
-            this.comboBoxType.Location = new System.Drawing.Point(485, 12);
+            this.comboBoxType.Location = new System.Drawing.Point(647, 15);
+            this.comboBoxType.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.comboBoxType.Name = "comboBoxType";
-            this.comboBoxType.Size = new System.Drawing.Size(176, 36);
+            this.comboBoxType.Size = new System.Drawing.Size(233, 36);
             this.comboBoxType.StartIndex = 0;
             this.comboBoxType.TabIndex = 45;
             // 
@@ -212,9 +221,10 @@ namespace Test.ChildForms.AddForms
             this.lblPriceCar.BackColor = System.Drawing.Color.Transparent;
             this.lblPriceCar.Font = new System.Drawing.Font("Century Gothic", 16F);
             this.lblPriceCar.ForeColor = System.Drawing.Color.White;
-            this.lblPriceCar.Location = new System.Drawing.Point(146, 51);
+            this.lblPriceCar.Location = new System.Drawing.Point(195, 63);
+            this.lblPriceCar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lblPriceCar.Name = "lblPriceCar";
-            this.lblPriceCar.Size = new System.Drawing.Size(63, 26);
+            this.lblPriceCar.Size = new System.Drawing.Size(82, 35);
             this.lblPriceCar.TabIndex = 46;
             this.lblPriceCar.Text = "Price :";
             // 
@@ -223,9 +233,10 @@ namespace Test.ChildForms.AddForms
             this.lblWeightCar.BackColor = System.Drawing.Color.Transparent;
             this.lblWeightCar.Font = new System.Drawing.Font("Century Gothic", 16F);
             this.lblWeightCar.ForeColor = System.Drawing.Color.White;
-            this.lblWeightCar.Location = new System.Drawing.Point(146, 112);
+            this.lblWeightCar.Location = new System.Drawing.Point(195, 138);
+            this.lblWeightCar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lblWeightCar.Name = "lblWeightCar";
-            this.lblWeightCar.Size = new System.Drawing.Size(84, 26);
+            this.lblWeightCar.Size = new System.Drawing.Size(110, 35);
             this.lblWeightCar.TabIndex = 47;
             this.lblWeightCar.Text = "Weight :";
             // 
@@ -234,9 +245,10 @@ namespace Test.ChildForms.AddForms
             this.lblIsRendCar.BackColor = System.Drawing.Color.Transparent;
             this.lblIsRendCar.Font = new System.Drawing.Font("Century Gothic", 16F);
             this.lblIsRendCar.ForeColor = System.Drawing.Color.White;
-            this.lblIsRendCar.Location = new System.Drawing.Point(146, 189);
+            this.lblIsRendCar.Location = new System.Drawing.Point(195, 233);
+            this.lblIsRendCar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lblIsRendCar.Name = "lblIsRendCar";
-            this.lblIsRendCar.Size = new System.Drawing.Size(129, 26);
+            this.lblIsRendCar.Size = new System.Drawing.Size(164, 35);
             this.lblIsRendCar.TabIndex = 48;
             this.lblIsRendCar.Text = "IsRendNow :";
             // 
@@ -245,9 +257,10 @@ namespace Test.ChildForms.AddForms
             this.lblPassAmountCar.BackColor = System.Drawing.Color.Transparent;
             this.lblPassAmountCar.Font = new System.Drawing.Font("Century Gothic", 16F);
             this.lblPassAmountCar.ForeColor = System.Drawing.Color.White;
-            this.lblPassAmountCar.Location = new System.Drawing.Point(146, 260);
+            this.lblPassAmountCar.Location = new System.Drawing.Point(195, 320);
+            this.lblPassAmountCar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lblPassAmountCar.Name = "lblPassAmountCar";
-            this.lblPassAmountCar.Size = new System.Drawing.Size(200, 26);
+            this.lblPassAmountCar.Size = new System.Drawing.Size(254, 35);
             this.lblPassAmountCar.TabIndex = 49;
             this.lblPassAmountCar.Text = "Passenger Amount:";
             // 
@@ -256,9 +269,10 @@ namespace Test.ChildForms.AddForms
             this.lblManufactorCar.BackColor = System.Drawing.Color.Transparent;
             this.lblManufactorCar.Font = new System.Drawing.Font("Century Gothic", 16F);
             this.lblManufactorCar.ForeColor = System.Drawing.Color.White;
-            this.lblManufactorCar.Location = new System.Drawing.Point(461, 222);
+            this.lblManufactorCar.Location = new System.Drawing.Point(615, 273);
+            this.lblManufactorCar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lblManufactorCar.Name = "lblManufactorCar";
-            this.lblManufactorCar.Size = new System.Drawing.Size(186, 26);
+            this.lblManufactorCar.Size = new System.Drawing.Size(237, 35);
             this.lblManufactorCar.TabIndex = 50;
             this.lblManufactorCar.Text = "ManufactorDate :";
             // 
@@ -267,9 +281,10 @@ namespace Test.ChildForms.AddForms
             this.lblPricePerDayCar.BackColor = System.Drawing.Color.Transparent;
             this.lblPricePerDayCar.Font = new System.Drawing.Font("Century Gothic", 16F);
             this.lblPricePerDayCar.ForeColor = System.Drawing.Color.White;
-            this.lblPricePerDayCar.Location = new System.Drawing.Point(461, 62);
+            this.lblPricePerDayCar.Location = new System.Drawing.Point(615, 76);
+            this.lblPricePerDayCar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lblPricePerDayCar.Name = "lblPricePerDayCar";
-            this.lblPricePerDayCar.Size = new System.Drawing.Size(148, 26);
+            this.lblPricePerDayCar.Size = new System.Drawing.Size(192, 35);
             this.lblPricePerDayCar.TabIndex = 51;
             this.lblPricePerDayCar.Text = "Price per day :";
             // 
@@ -278,9 +293,10 @@ namespace Test.ChildForms.AddForms
             this.lblMileageCar.BackColor = System.Drawing.Color.Transparent;
             this.lblMileageCar.Font = new System.Drawing.Font("Century Gothic", 16F);
             this.lblMileageCar.ForeColor = System.Drawing.Color.White;
-            this.lblMileageCar.Location = new System.Drawing.Point(469, 151);
+            this.lblMileageCar.Location = new System.Drawing.Point(625, 186);
+            this.lblMileageCar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lblMileageCar.Name = "lblMileageCar";
-            this.lblMileageCar.Size = new System.Drawing.Size(97, 26);
+            this.lblMileageCar.Size = new System.Drawing.Size(126, 35);
             this.lblMileageCar.TabIndex = 52;
             this.lblMileageCar.Text = "Mileage :";
             // 
@@ -289,9 +305,10 @@ namespace Test.ChildForms.AddForms
             this.lbl__PriceCar.BackColor = System.Drawing.Color.Transparent;
             this.lbl__PriceCar.Font = new System.Drawing.Font("Century Gothic", 18F);
             this.lbl__PriceCar.ForeColor = System.Drawing.Color.White;
-            this.lbl__PriceCar.Location = new System.Drawing.Point(215, 45);
+            this.lbl__PriceCar.Location = new System.Drawing.Point(287, 55);
+            this.lbl__PriceCar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lbl__PriceCar.Name = "lbl__PriceCar";
-            this.lbl__PriceCar.Size = new System.Drawing.Size(111, 32);
+            this.lbl__PriceCar.Size = new System.Drawing.Size(138, 39);
             this.lbl__PriceCar.TabIndex = 54;
             this.lbl__PriceCar.Text = "_________";
             // 
@@ -300,9 +317,10 @@ namespace Test.ChildForms.AddForms
             this.lbl__WeightCar.BackColor = System.Drawing.Color.Transparent;
             this.lbl__WeightCar.Font = new System.Drawing.Font("Century Gothic", 18F);
             this.lbl__WeightCar.ForeColor = System.Drawing.Color.White;
-            this.lbl__WeightCar.Location = new System.Drawing.Point(235, 106);
+            this.lbl__WeightCar.Location = new System.Drawing.Point(313, 130);
+            this.lbl__WeightCar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lbl__WeightCar.Name = "lbl__WeightCar";
-            this.lbl__WeightCar.Size = new System.Drawing.Size(111, 32);
+            this.lbl__WeightCar.Size = new System.Drawing.Size(138, 39);
             this.lbl__WeightCar.TabIndex = 55;
             this.lbl__WeightCar.Text = "_________";
             // 
@@ -311,9 +329,10 @@ namespace Test.ChildForms.AddForms
             this.lbl__PassCar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
             this.lbl__PassCar.Font = new System.Drawing.Font("Century Gothic", 18F);
             this.lbl__PassCar.ForeColor = System.Drawing.Color.White;
-            this.lbl__PassCar.Location = new System.Drawing.Point(352, 254);
+            this.lbl__PassCar.Location = new System.Drawing.Point(469, 313);
+            this.lbl__PassCar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lbl__PassCar.Name = "lbl__PassCar";
-            this.lbl__PassCar.Size = new System.Drawing.Size(111, 32);
+            this.lbl__PassCar.Size = new System.Drawing.Size(138, 39);
             this.lbl__PassCar.TabIndex = 58;
             this.lbl__PassCar.Text = "_________";
             // 
@@ -322,9 +341,10 @@ namespace Test.ChildForms.AddForms
             this.lbl__ManfactorCar.BackColor = System.Drawing.Color.Transparent;
             this.lbl__ManfactorCar.Font = new System.Drawing.Font("Century Gothic", 18F);
             this.lbl__ManfactorCar.ForeColor = System.Drawing.Color.White;
-            this.lbl__ManfactorCar.Location = new System.Drawing.Point(653, 216);
+            this.lbl__ManfactorCar.Location = new System.Drawing.Point(871, 266);
+            this.lbl__ManfactorCar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lbl__ManfactorCar.Name = "lbl__ManfactorCar";
-            this.lbl__ManfactorCar.Size = new System.Drawing.Size(111, 32);
+            this.lbl__ManfactorCar.Size = new System.Drawing.Size(138, 39);
             this.lbl__ManfactorCar.TabIndex = 59;
             this.lbl__ManfactorCar.Text = "_________";
             // 
@@ -333,9 +353,10 @@ namespace Test.ChildForms.AddForms
             this.lbl__MileageCar.BackColor = System.Drawing.Color.Transparent;
             this.lbl__MileageCar.Font = new System.Drawing.Font("Century Gothic", 18F);
             this.lbl__MileageCar.ForeColor = System.Drawing.Color.White;
-            this.lbl__MileageCar.Location = new System.Drawing.Point(572, 145);
+            this.lbl__MileageCar.Location = new System.Drawing.Point(763, 178);
+            this.lbl__MileageCar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lbl__MileageCar.Name = "lbl__MileageCar";
-            this.lbl__MileageCar.Size = new System.Drawing.Size(111, 32);
+            this.lbl__MileageCar.Size = new System.Drawing.Size(138, 39);
             this.lbl__MileageCar.TabIndex = 60;
             this.lbl__MileageCar.Text = "_________";
             // 
@@ -344,9 +365,10 @@ namespace Test.ChildForms.AddForms
             this.lbl__PricePerDayCar.BackColor = System.Drawing.Color.Transparent;
             this.lbl__PricePerDayCar.Font = new System.Drawing.Font("Century Gothic", 18F);
             this.lbl__PricePerDayCar.ForeColor = System.Drawing.Color.White;
-            this.lbl__PricePerDayCar.Location = new System.Drawing.Point(615, 56);
+            this.lbl__PricePerDayCar.Location = new System.Drawing.Point(820, 69);
+            this.lbl__PricePerDayCar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lbl__PricePerDayCar.Name = "lbl__PricePerDayCar";
-            this.lbl__PricePerDayCar.Size = new System.Drawing.Size(111, 32);
+            this.lbl__PricePerDayCar.Size = new System.Drawing.Size(138, 39);
             this.lbl__PricePerDayCar.TabIndex = 61;
             this.lbl__PricePerDayCar.Text = "_________";
             // 
@@ -355,9 +377,10 @@ namespace Test.ChildForms.AddForms
             this.lblPleaseChooseType.BackColor = System.Drawing.Color.Transparent;
             this.lblPleaseChooseType.Font = new System.Drawing.Font("Century Gothic", 18F);
             this.lblPleaseChooseType.ForeColor = System.Drawing.Color.White;
-            this.lblPleaseChooseType.Location = new System.Drawing.Point(301, 151);
+            this.lblPleaseChooseType.Location = new System.Drawing.Point(401, 186);
+            this.lblPleaseChooseType.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lblPleaseChooseType.Name = "lblPleaseChooseType";
-            this.lblPleaseChooseType.Size = new System.Drawing.Size(244, 32);
+            this.lblPleaseChooseType.Size = new System.Drawing.Size(295, 39);
             this.lblPleaseChooseType.TabIndex = 62;
             this.lblPleaseChooseType.Text = "Please Choose Type";
             // 
@@ -366,9 +389,10 @@ namespace Test.ChildForms.AddForms
             this.lblDepended.BackColor = System.Drawing.Color.Transparent;
             this.lblDepended.Font = new System.Drawing.Font("Century Gothic", 16F);
             this.lblDepended.ForeColor = System.Drawing.Color.White;
-            this.lblDepended.Location = new System.Drawing.Point(461, 317);
+            this.lblDepended.Location = new System.Drawing.Point(615, 390);
+            this.lblDepended.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lblDepended.Name = "lblDepended";
-            this.lblDepended.Size = new System.Drawing.Size(78, 26);
+            this.lblDepended.Size = new System.Drawing.Size(101, 35);
             this.lblDepended.TabIndex = 63;
             this.lblDepended.Text = "Power :";
             // 
@@ -387,12 +411,13 @@ namespace Test.ChildForms.AddForms
             this.txtBoxPriceCar.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtBoxPriceCar.ForeColor = System.Drawing.Color.White;
             this.txtBoxPriceCar.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtBoxPriceCar.Location = new System.Drawing.Point(215, 45);
+            this.txtBoxPriceCar.Location = new System.Drawing.Point(287, 55);
+            this.txtBoxPriceCar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtBoxPriceCar.Name = "txtBoxPriceCar";
             this.txtBoxPriceCar.PasswordChar = '\0';
             this.txtBoxPriceCar.PlaceholderText = "";
             this.txtBoxPriceCar.SelectedText = "";
-            this.txtBoxPriceCar.Size = new System.Drawing.Size(111, 28);
+            this.txtBoxPriceCar.Size = new System.Drawing.Size(148, 34);
             this.txtBoxPriceCar.TabIndex = 65;
             // 
             // txtBoxWeightCar
@@ -410,12 +435,13 @@ namespace Test.ChildForms.AddForms
             this.txtBoxWeightCar.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtBoxWeightCar.ForeColor = System.Drawing.Color.White;
             this.txtBoxWeightCar.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtBoxWeightCar.Location = new System.Drawing.Point(235, 106);
+            this.txtBoxWeightCar.Location = new System.Drawing.Point(313, 130);
+            this.txtBoxWeightCar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtBoxWeightCar.Name = "txtBoxWeightCar";
             this.txtBoxWeightCar.PasswordChar = '\0';
             this.txtBoxWeightCar.PlaceholderText = "";
             this.txtBoxWeightCar.SelectedText = "";
-            this.txtBoxWeightCar.Size = new System.Drawing.Size(111, 28);
+            this.txtBoxWeightCar.Size = new System.Drawing.Size(148, 34);
             this.txtBoxWeightCar.TabIndex = 66;
             // 
             // txtBoxPassAmountCar
@@ -432,12 +458,13 @@ namespace Test.ChildForms.AddForms
             this.txtBoxPassAmountCar.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtBoxPassAmountCar.ForeColor = System.Drawing.Color.White;
             this.txtBoxPassAmountCar.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtBoxPassAmountCar.Location = new System.Drawing.Point(352, 254);
+            this.txtBoxPassAmountCar.Location = new System.Drawing.Point(469, 313);
+            this.txtBoxPassAmountCar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtBoxPassAmountCar.Name = "txtBoxPassAmountCar";
             this.txtBoxPassAmountCar.PasswordChar = '\0';
             this.txtBoxPassAmountCar.PlaceholderText = "";
             this.txtBoxPassAmountCar.SelectedText = "";
-            this.txtBoxPassAmountCar.Size = new System.Drawing.Size(111, 28);
+            this.txtBoxPassAmountCar.Size = new System.Drawing.Size(148, 34);
             this.txtBoxPassAmountCar.TabIndex = 68;
             // 
             // txtBoxDependedCar
@@ -455,12 +482,13 @@ namespace Test.ChildForms.AddForms
             this.txtBoxDependedCar.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtBoxDependedCar.ForeColor = System.Drawing.Color.White;
             this.txtBoxDependedCar.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtBoxDependedCar.Location = new System.Drawing.Point(545, 302);
+            this.txtBoxDependedCar.Location = new System.Drawing.Point(727, 372);
+            this.txtBoxDependedCar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtBoxDependedCar.Name = "txtBoxDependedCar";
             this.txtBoxDependedCar.PasswordChar = '\0';
             this.txtBoxDependedCar.PlaceholderText = "";
             this.txtBoxDependedCar.SelectedText = "";
-            this.txtBoxDependedCar.Size = new System.Drawing.Size(111, 28);
+            this.txtBoxDependedCar.Size = new System.Drawing.Size(148, 34);
             this.txtBoxDependedCar.TabIndex = 70;
             // 
             // txtBoxManufactorCar
@@ -478,12 +506,13 @@ namespace Test.ChildForms.AddForms
             this.txtBoxManufactorCar.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtBoxManufactorCar.ForeColor = System.Drawing.Color.White;
             this.txtBoxManufactorCar.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtBoxManufactorCar.Location = new System.Drawing.Point(653, 216);
+            this.txtBoxManufactorCar.Location = new System.Drawing.Point(871, 266);
+            this.txtBoxManufactorCar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtBoxManufactorCar.Name = "txtBoxManufactorCar";
             this.txtBoxManufactorCar.PasswordChar = '\0';
             this.txtBoxManufactorCar.PlaceholderText = "";
             this.txtBoxManufactorCar.SelectedText = "";
-            this.txtBoxManufactorCar.Size = new System.Drawing.Size(111, 28);
+            this.txtBoxManufactorCar.Size = new System.Drawing.Size(148, 34);
             this.txtBoxManufactorCar.TabIndex = 71;
             // 
             // txtBoxMileageCar
@@ -501,12 +530,13 @@ namespace Test.ChildForms.AddForms
             this.txtBoxMileageCar.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtBoxMileageCar.ForeColor = System.Drawing.Color.White;
             this.txtBoxMileageCar.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtBoxMileageCar.Location = new System.Drawing.Point(572, 145);
+            this.txtBoxMileageCar.Location = new System.Drawing.Point(763, 178);
+            this.txtBoxMileageCar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtBoxMileageCar.Name = "txtBoxMileageCar";
             this.txtBoxMileageCar.PasswordChar = '\0';
             this.txtBoxMileageCar.PlaceholderText = "";
             this.txtBoxMileageCar.SelectedText = "";
-            this.txtBoxMileageCar.Size = new System.Drawing.Size(111, 28);
+            this.txtBoxMileageCar.Size = new System.Drawing.Size(148, 34);
             this.txtBoxMileageCar.TabIndex = 72;
             // 
             // txtBoxPricePerCar
@@ -524,12 +554,13 @@ namespace Test.ChildForms.AddForms
             this.txtBoxPricePerCar.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtBoxPricePerCar.ForeColor = System.Drawing.Color.White;
             this.txtBoxPricePerCar.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtBoxPricePerCar.Location = new System.Drawing.Point(615, 54);
+            this.txtBoxPricePerCar.Location = new System.Drawing.Point(820, 66);
+            this.txtBoxPricePerCar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtBoxPricePerCar.Name = "txtBoxPricePerCar";
             this.txtBoxPricePerCar.PasswordChar = '\0';
             this.txtBoxPricePerCar.PlaceholderText = "";
             this.txtBoxPricePerCar.SelectedText = "";
-            this.txtBoxPricePerCar.Size = new System.Drawing.Size(111, 28);
+            this.txtBoxPricePerCar.Size = new System.Drawing.Size(148, 34);
             this.txtBoxPricePerCar.TabIndex = 73;
             // 
             // lbl__DependedCar
@@ -537,9 +568,10 @@ namespace Test.ChildForms.AddForms
             this.lbl__DependedCar.BackColor = System.Drawing.Color.Transparent;
             this.lbl__DependedCar.Font = new System.Drawing.Font("Century Gothic", 18F);
             this.lbl__DependedCar.ForeColor = System.Drawing.Color.White;
-            this.lbl__DependedCar.Location = new System.Drawing.Point(545, 311);
+            this.lbl__DependedCar.Location = new System.Drawing.Point(727, 383);
+            this.lbl__DependedCar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lbl__DependedCar.Name = "lbl__DependedCar";
-            this.lbl__DependedCar.Size = new System.Drawing.Size(111, 32);
+            this.lbl__DependedCar.Size = new System.Drawing.Size(138, 39);
             this.lbl__DependedCar.TabIndex = 64;
             this.lbl__DependedCar.Text = "_________";
             // 
@@ -556,18 +588,19 @@ namespace Test.ChildForms.AddForms
             this.comboBoxRentCar.Items.AddRange(new object[] {
             "Yes",
             "No"});
-            this.comboBoxRentCar.Location = new System.Drawing.Point(281, 189);
+            this.comboBoxRentCar.Location = new System.Drawing.Point(375, 233);
+            this.comboBoxRentCar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.comboBoxRentCar.Name = "comboBoxRentCar";
-            this.comboBoxRentCar.Size = new System.Drawing.Size(103, 36);
+            this.comboBoxRentCar.Size = new System.Drawing.Size(136, 36);
             this.comboBoxRentCar.StartIndex = 0;
             this.comboBoxRentCar.TabIndex = 75;
             // 
             // AddCarForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.comboBoxRentCar);
             this.Controls.Add(this.txtBoxPricePerCar);
             this.Controls.Add(this.txtBoxMileageCar);
@@ -601,7 +634,7 @@ namespace Test.ChildForms.AddForms
             this.Controls.Add(this.lblKnotBoat);
             this.Controls.Add(this.lblPriceBoat);
             this.Controls.Add(this.guna2GradientCircleButton1);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "AddCarForm";
             this.Text = "AddCarForm";
             this.Load += new System.EventHandler(this.AddCarForm_Load);

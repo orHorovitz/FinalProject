@@ -23,7 +23,7 @@ namespace Test.ChildForms.EditForms
             this._boat = boat;
             _service = new AgancyService();
             GenerateFields(_boat);
-            btnEditShips.Click += btnEditShips_Click;
+            
         }
 
         private void GenerateFields(Boat boat)

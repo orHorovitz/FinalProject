@@ -16,8 +16,8 @@ namespace Test
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MainPage());
-            //Splash();
+            Application.Run(new Splash());
+            
         }
     }
 }

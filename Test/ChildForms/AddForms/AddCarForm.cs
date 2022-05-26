@@ -93,6 +93,7 @@ namespace Test.ChildForms.AddForms
 
         private void btnRefrash_Click(object sender, EventArgs e)
         {
+            
             if (comboBoxType.SelectedIndex == 1)
             {
                 lblDepended.Text = "Fuel Storage :";

@@ -19,8 +19,8 @@ namespace FinalProject.DAL
          private Repository()
         {
             _filePath =Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "vehiclesp.bin");
-            Vehicles.SeedData();
-            SaveChanges();
+            //Vehicles.SeedData();
+            //SaveChanges();
             InitFromFile();
             GetLastId();
         }

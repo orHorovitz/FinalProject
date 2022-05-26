@@ -23,7 +23,7 @@ namespace Test.ChildForms.EditForms
             this._privateCar = _privateCar;
             _service = new AgancyService();
             GenerateFields(_privateCar);
-            btnEditCar.Click += btnEditCar_Click;
+            
         }
 
         private void btnEditCar_Click(object sender, EventArgs e)
